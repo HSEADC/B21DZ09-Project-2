@@ -93,6 +93,27 @@ module.exports = {
       chunks: ['page']
     }),
 
+    // About
+    // new HtmlWebpackPlugin({
+    //   hash: true,
+    //   scriptLoading: 'blocking',
+    //   template: './src/about.html',
+    //   filename: './about.html',
+    //   chunks: ['about']
+    // }),
+
+    // About
+    new HtmlWebpackPlugin({
+      template: './src/about.html',
+      filename: './about.html'
+    }),
+
+    // Craft
+    new HtmlWebpackPlugin({
+      template: './src/crafts/uelen_bone_carving.html',
+      filename: './crafts/uelen_bone_carving.html'
+    }),
+
     // Partials
     new HtmlWebpackPartialsPlugin([
       {
