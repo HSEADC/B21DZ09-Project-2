@@ -8,8 +8,8 @@ const path = require('path')
 
 module.exports = {
   entry: {
-    index: './src/index.js',
-    page: './src/page.jsx'
+    index: './src/index.js'
+    // page: './src/page.jsx'
   },
   output: {
     filename: '[name].js',
@@ -75,31 +75,19 @@ module.exports = {
       chunkFilename: '[id].css'
     }),
 
-    // Landing page
+    // Index
     new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
       template: './src/index.html',
-      filename: './index.html',
-      chunks: ['index']
+      filename: './index.html'
     }),
 
-    // Internal pages
-    new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
-      template: './src/pages/page.html',
-      filename: './pages/page.html',
-      chunks: ['page']
-    }),
-
-    // About
+    // // Internal pages
     // new HtmlWebpackPlugin({
     //   hash: true,
     //   scriptLoading: 'blocking',
-    //   template: './src/about.html',
-    //   filename: './about.html',
-    //   chunks: ['about']
+    //   template: './src/pages/page.html',
+    //   filename: './pages/page.html',
+    //   chunks: ['page']
     // }),
 
     // About
@@ -108,10 +96,34 @@ module.exports = {
       filename: './about.html'
     }),
 
-    // Craft
+    // Crafts — страница со всеми материалами о ремёслах
+    new HtmlWebpackPlugin({
+      template: './src/crafts.html',
+      filename: './crafts.html'
+    }),
+
+    // Article — страница со всеми подборками и мини-статьями
+    new HtmlWebpackPlugin({
+      template: './src/articles.html',
+      filename: './articles.html'
+    }),
+
+    // Craft — страница отдельного ремесла
     new HtmlWebpackPlugin({
       template: './src/crafts/uelen_bone_carving.html',
       filename: './crafts/uelen_bone_carving.html'
+    }),
+
+    // Articles — отдельная страница подборки/мини-статьи
+    new HtmlWebpackPlugin({
+      template: './src/articles/targaryen_and_kokoshnik.html',
+      filename: './articles/targaryen_and_kokoshnik.html.html'
+    }),
+
+    // Map
+    new HtmlWebpackPlugin({
+      template: './src/map.html',
+      filename: './map.html'
     }),
 
     // Partials
