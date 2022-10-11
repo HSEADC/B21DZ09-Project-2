@@ -117,7 +117,7 @@ module.exports = {
     // Articles — отдельная страница подборки/мини-статьи
     new HtmlWebpackPlugin({
       template: './src/articles/targaryen_and_kokoshnik.html',
-      filename: './articles/targaryen_and_kokoshnik.html.html'
+      filename: './articles/targaryen_and_kokoshnik.html'
     }),
 
     // Map
