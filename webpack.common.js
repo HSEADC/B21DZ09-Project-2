@@ -108,13 +108,13 @@ module.exports = {
       filename: './articles.html'
     }),
 
-    // Craft — страница отдельного ремесла
+    // Craft, уэленская резьба по кости — страница отдельного ремесла
     new HtmlWebpackPlugin({
       template: './src/crafts/uelen_bone_carving.html',
       filename: './crafts/uelen_bone_carving.html'
     }),
 
-    // Articles — отдельная страница подборки/мини-статьи
+    // Articles, Таргариены в кокошниках — отдельная страница подборки/мини-статьи
     new HtmlWebpackPlugin({
       template: './src/articles/targaryen_and_kokoshnik.html',
       filename: './articles/targaryen_and_kokoshnik.html'
