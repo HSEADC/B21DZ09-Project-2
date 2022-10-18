@@ -17,14 +17,6 @@ body.index {
     font-size: 97px;
   }
 
-  a {
-    margin-top: 30px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-  }
-
   h2 {
     margin-top: 60px;
     font-family: 'PP Pangram Sans';
@@ -51,6 +43,8 @@ body.index {
 
   #my-form {
     margin-top: 10px;
+    margin-bottom: 40px;
+    // margin: 10px 0 40px 0;
   }
 
   #my-form-button,
