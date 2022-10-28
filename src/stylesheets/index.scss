@@ -42,8 +42,8 @@ body.index {
   }
 
   .content {
-    align-items: center;
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
 
@@ -73,7 +73,6 @@ body.index {
     #my-form {
       margin-top: 2.56vw;
       margin-bottom: 40px;
-      // margin: 10px 0 40px 0;
     }
 
     #my-form-button,
@@ -97,7 +96,6 @@ body.index {
       margin-left: 2.024vw;
       width: 13.988vw;
       height: 3.452vw;
-      // padding-left: 1.667vw;
       background: var(--black);
       border: 2px solid var(--white);
       border-radius: 1.786vw;
@@ -114,30 +112,31 @@ body.index {
     padding: 2.917vw 13.869vw 2.143vw;
 
     .nav {
-      width: max-content;
       margin-right: auto;
       h3 {
-        color: var(--black);
+        margin-bottom: 0.893vw;
         font-family: 'PP Pangram Sans';
         font-style: normal;
         font-weight: 600;
         font-size: 1.369vw;
-        margin-bottom: 0.893vw;
+        color: var(--black);
       }
       a {
-        color: var(--black);
         display: block;
+        width: max-content;
         font-size: 1.19vw;
         line-height: 2.024vw;
+        color: var(--black);
       }
     }
+
     h4 {
       margin-top: 6.786vw;
-      color: var(--black);
       font-family: 'PP Pangram Sans';
       font-style: normal;
       font-weight: 600;
       font-size: 1.19vw;
+      color: var(--black);
     }
   }
 }
