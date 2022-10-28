@@ -7,73 +7,85 @@
   </head>
 
   <body class="index">
-    <div class="sn_icons">
-      <a href="https://vk.com/crafts_ru" target="_blank">
-        <img src="images/icon_vk.png" alt="Мы ВКонтакте"
-      /></a>
-      <a href="https://t.me/crafts_ru" target="_blank">
-        <img src="images/icon_tg.png" alt="Мы в Телеграме" />
-      </a>
+    <div class="header">
+      <a class="about" href="about.html">О проекте</a>
+
+      <a class="vk" href="https://vk.com/crafts_ru" target="_blank"></a>
+      <a class="tg" href="https://t.me/crafts_ru" target="_blank"></a>
+      <a class="dzen" href="https://dzen.ru/crafts_ru" target="_blank"></a>
     </div>
 
-    <h1>Ремёсла России</h1>
-    <p>
-      Информационный ресурс, цель которого — популяризация народных ремёсел
-      и искусств
-    </p>
-    <a href="about.html">Подробнее о проекте</a>
-    <h2>Узнайте первыми о запуске ресурса</h2>
-    <!-- сборщик почт -->
-    <form id="my-form" action="https://formspree.io/f/mgeqleal" method="POST">
-      <!-- <label>Ваша почта:</label> -->
-      <input type="email" name="email" value="" placeholder="Ваша эл. почта" />
-      <!-- <label>Message:</label>
-      <input type="text" name="message" /> -->
-      <button id="my-form-button">подписаться</button>
-      <p id="my-form-status"></p>
-    </form>
-    <!-- Place this script at the end of the body tag -->
-    <script>
-      var form = document.getElementById('my-form')
+    <div class="content">
+      <h1>Ремёсла России</h1>
+      <p>
+        Информационный ресурс, цель которого — популяризация народных ремёсел
+        и искусств
+      </p>
+      <h2>Узнайте первыми о запуске ресурса</h2>
+      <!-- сборщик почт -->
+      <form id="my-form" action="https://formspree.io/f/mgeqleal" method="POST">
+        <!-- <label>Ваша почта:</label> -->
+        <input
+          type="email"
+          name="email"
+          value=""
+          placeholder="Ваша эл. почта"
+        />
+        <!-- <label>Message:</label>
+    <input type="text" name="message" /> -->
+        <button id="my-form-button">подписаться</button>
+        <p id="my-form-status"></p>
+      </form>
+      <!-- Place this script at the end of the body tag -->
+      <script>
+        var form = document.getElementById('my-form')
 
-      async function handleSubmit(event) {
-        event.preventDefault()
-        var status = document.getElementById('my-form-status')
-        var data = new FormData(event.target)
-        fetch(event.target.action, {
-          method: form.method,
-          body: data,
-          headers: {
-            Accept: 'application/json'
-          }
-        })
-          .then((response) => {
-            if (response.ok) {
-              status.innerHTML = 'Спасибо за подписку!'
-              form.reset()
-            } else {
-              response.json().then((data) => {
-                if (Object.hasOwn(data, 'errors')) {
-                  status.innerHTML = data['errors']
-                    .map((error) => error['message'])
-                    .join(', ')
-                } else {
-                  status.innerHTML =
-                    'Oops! There was a problem submitting your form'
-                }
-              })
+        async function handleSubmit(event) {
+          event.preventDefault()
+          var status = document.getElementById('my-form-status')
+          var data = new FormData(event.target)
+          fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+              Accept: 'application/json'
             }
           })
-          .catch((error) => {
-            status.innerHTML = 'Oops! There was a problem submitting your form'
-          })
-      }
-      form.addEventListener('submit', handleSubmit)
-    </script>
+            .then((response) => {
+              if (response.ok) {
+                status.innerHTML = 'Спасибо за подписку!'
+                form.reset()
+              } else {
+                response.json().then((data) => {
+                  if (Object.hasOwn(data, 'errors')) {
+                    status.innerHTML = data['errors']
+                      .map((error) => error['message'])
+                      .join(', ')
+                  } else {
+                    status.innerHTML =
+                      'Oops! There was a problem submitting your form'
+                  }
+                })
+              }
+            })
+            .catch((error) => {
+              status.innerHTML =
+                'Oops! There was a problem submitting your form'
+            })
+        }
+        form.addEventListener('submit', handleSubmit)
+      </script>
+    </div>
 
-    <a href="crafts.html">Библиотека ремёсел</a>
-    <a href="articles.html">Cтатьи и подборки</a>
-    <a href="map.html">Карта</a>
+    <div class="footer">
+      <div class="nav">
+        <h3>Навигация</h3>
+        <a href="crafts.html">Библиотека ремёсел</a>
+        <a href="map.html">Карта ремёсел</a>
+        <a href="articles.html">Cтатьи и подборки</a>
+      </div>
+      <h4>HSE ADC 2022</h4>
+    </div>
 
     <!-- <p>hello, Arseniy</p>
     <p>hello, Lena</p> -->
