@@ -131,6 +131,12 @@ module.exports = {
       filename: './map.html'
     }),
 
+    //Lending
+    new HtmlWebpackPlugin({
+      template: './src/lending.html',
+      filename: './lending.html'
+    }),
+
     // Partials
     new HtmlWebpackPartialsPlugin([
       {
