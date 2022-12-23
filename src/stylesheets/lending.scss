@@ -18,6 +18,37 @@ body.lending {
       font-size: 1.31vw;
     }
 
+    .aboutpr {
+      margin-left: -120px;
+      width: 156px;
+      height: 30px;
+      font-family: 'PP Neue Machina';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 29px;
+      line-height: 30px;
+    }
+    .len {
+      margin-left: 30px;
+      width: 134px;
+      height: 30px;
+      font-family: 'PP Neue Machina';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 29px;
+      line-height: 30px;
+      background-image: url('images/lending.png');
+    }
+    .styleg {
+      margin-left: 30px;
+      width: 171px;
+      height: 30px;
+      font-family: 'PP Neue Machina';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 29px;
+      line-height: 30px;
+    }
     .vk,
     .tg,
     .dzen {
@@ -42,84 +73,7 @@ body.lending {
       margin-left: 1190px;
     }
   }
-
   .content {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-
-    .n1 {
-      width: 350px;
-      height: 220px;
-      margin-left: -680px;
-      margin-top: -200px;
-      transform: rotate(1deg);
-      background-image: url('images/kruzheva1.png');
-    }
-    .n2 {
-      width: 160px;
-      height: 170px;
-      margin-left: -1300px;
-      margin-top: -10px;
-      transform: rotate(-9deg);
-      background-image: url('images/zvetok.png');
-    }
-    .n3 {
-      width: 324.89px;
-      height: 395.37px;
-      margin-left: -1190px;
-      margin-top: -15px;
-      transform: matrix(1, 0.03, 0.03, 1, 0, 0);
-      background-image: url('images/head.png');
-    }
-    .n4 {
-      width: 280px;
-      height: 210px;
-      transform: rotate(5deg);
-      margin-left: -670px;
-      margin-top: -390px;
-      background-image: url('images/gzhel.png');
-    }
-    .n5 {
-      width: 180px;
-      height: 110px;
-      transform: rotate(3deg);
-      margin-left: -420px;
-      margin-top: -50px;
-      background-image: url('images/hohloma1.png');
-    }
-    .n6 {
-      position: absolute;
-      width: 191px;
-      height: 191px;
-      left: 36px;
-      top: 1018.5px;
-      background-image: url('images/kruzheva2.png');
-    }
-    .n7 {
-      width: 150.31px;
-      height: 175.14px;
-      margin-left: 400px;
-      margin-top: -230px;
-      background-image: url('images/hohloma2.png');
-    }
-    .n8 {
-      width: 221.78px;
-      height: 449.37px;
-      margin-left: 1300px;
-      margin-top: -160px;
-      transform: rotate(4.01deg);
-      background-image: url('images/kukla.png');
-    }
-    .glav {
-      position: absolute;
-      width: 811px;
-      height: 329.02px;
-      margin-left: -600px;
-      top: 247px;
-      background-image: url('images/BGH1.svg');
-    }
     h1 {
       margin-top: 3vw;
       margin-left: 30px;
@@ -130,137 +84,441 @@ body.lending {
       line-height: 140px;
       font-size: 163px;
     }
-    .aboutpr {
+    .glav {
+      position: absolute;
+      width: 811px;
+      height: 329.02px;
+      margin-left: 100px;
+      top: 247px;
+      background-image: url('images/BGH1.svg');
+    }
+    .n1 {
+      position: absolute;
+      width: 170px;
+      height: 170px;
+      left: 62px;
+      top: 580px;
+      transform: rotate(-11.6deg);
+      background-image: url('images/zvetok.png');
+    }
+    .n2 {
+      position: absolute;
       width: 340px;
-      height: 53px;
-      margin-top: 100px;
-      font-family: 'PP Neue Machina';
-      font-style: normal;
-      font-weight: 800;
-      font-size: 52px;
-      line-height: 53px;
-      margin-left: 1100px;
-      color: --black;
+      height: 220px;
+      left: 160px;
+      top: 650px;
+      transform: rotate(-30deg);
+      background-image: url('images/kruzheva1.png');
     }
-    .len {
-      width: 299px;
-      height: 53px;
-      margin-top: 50px;
-      font-family: 'PP Neue Machina';
-      font-style: normal;
-      font-weight: 800;
-      font-size: 52px;
-      line-height: 53px;
-      margin-left: 1130px;
-      color: --black;
+    .n3 {
+      position: absolute;
+      width: 280px;
+      height: 220px;
+      left: 500px;
+      top: 620px;
+      transform: rotate(5deg);
+      background-image: url('images/gzhel.png');
     }
-    .styleg {
-      width: 400px;
-      height: 30px;
-      margin-top: 50px;
-      font-family: 'PP Neue Machina';
-      font-style: normal;
-      font-weight: 800;
-      font-size: 52px;
-      line-height: 50px;
-      text-align: right;
-      margin-left: 1030px;
+    .n4 {
+      position: absolute;
+      width: 140px;
+      height: 165px;
+      left: 1080px;
+      top: 711px;
+      background-image: url('images/hohloma2.png');
+    }
+    .n5 {
+      position: absolute;
+      width: 280px;
+      height: 565px;
+      left: 1200px;
+      top: 330px;
+      transform: rotate(2.52deg);
+      background-image: url('images/kukla2.png');
     }
     .rec1 {
       width: 1660px;
-      height: 563px;
+      height: 683px;
       left: 0px;
-      margin-top: 20px;
+      margin-top: 760px;
       background: #3b7992;
     }
-    .sub {
-      width: 749px;
-      height: 65px;
-      margin-left: 760px;
-      margin-top: -590px;
-      background: #bca7fa;
-      border-radius: 71px;
+    .text p {
+      position: absolute;
+      width: 681px;
+      height: 24px;
+      left: 190px;
+      top: 880px;
+      font-family: 'PP Neue Montreal';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 23px;
+      line-height: 24px;
+      color: white;
     }
-    h3 {
-      width: 713px;
-      height: 38px;
-      margin-left: 770px;
-      margin-top: -50px;
+    .rec2 {
+      position: absolute;
+      width: 502px;
+      height: 77px;
+      left: 172px;
+      top: 1089px;
+      background: #000000;
+      border-radius: 15px;
+    }
+    .rec2 h2 {
+      position: absolute;
+      width: 470px;
+      height: 68px;
+      left: 20px;
+      top: 10px;
       font-family: 'PP Neue Machina';
       font-style: normal;
       font-weight: 800;
-      font-size: 37px;
-      line-height: 38px;
-      color: white;
+      font-size: 66px;
+      line-height: 68px;
+      color: #ffffff;
     }
-    h2 {
-      width: 833px;
-      height: 45px;
-      left: 419px;
-      margin-top: 200px;
+    .mission {
+      position: absolute;
+      width: 604px;
+      height: 170px;
+      left: 910px;
+      top: 1097px;
+      font-family: 'PP Neue Montreal';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 40px;
+      color: #ffffff;
+    }
+    .n6 {
+      position: absolute;
+      width: 201px;
+      height: 201px;
+      left: 132px;
+      top: 1226px;
+      background-image: url('images/embro.png');
+    }
+    .n7 {
+      position: absolute;
+      width: 801.19px;
+      height: 265px;
+      left: 620px;
+      top: 1400px;
+      transform: matrix(1, -0.08, -0.08, 1, 0, 0);
+      background-image: url('images/carving.png');
+    }
+    .rec3 {
+      position: absolute;
+      width: 1680px;
+      height: 716px;
+      left: 0px;
+      top: 1488px;
+      background: #037b57;
+    }
+    .rec4 {
+      position: absolute;
+      width: 560px;
+      height: 77px;
+      left: 172px;
+      top: 1682px;
+      background: #000000;
+      border-radius: 15px;
+    }
+    .rec4 h2 {
+      position: absolute;
+      width: 470px;
+      height: 68px;
+      left: 20px;
+      top: 10px;
       font-family: 'PP Neue Machina';
       font-style: normal;
       font-weight: 800;
-      font-size: 44px;
-      line-height: 45px;
-      color: white;
+      font-size: 66px;
+      line-height: 68px;
+      color: #ffffff;
+    }
+    .best {
+      position: absolute;
+      width: 646px;
+      height: 294px;
+      left: 868px;
+      top: 1691px;
+      font-family: 'PP Neue Montreal';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 50px;
+      color: #ffffff;
+      list-style-type: disc;
+    }
+    .n8 {
+      position: absolute;
+      width: 180px;
+      height: 140px;
+      left: 66.14px;
+      top: 2000px;
+      transform: rotate(10deg);
+      background-image: url('images/hohloma1.png');
+    }
+    .n9 {
+      position: absolute;
+      width: 190px;
+      height: 190px;
+      left: 352px;
+      top: 1894px;
+      background-image: url('images/kruzheva2.png');
+    }
+    .rec5 {
+      position: absolute;
+      width: 1680px;
+      height: 975px;
+      left: 0px;
+      top: 2204px;
+      background: #ffcfda;
+    }
+    .rec6 {
+      position: absolute;
+      width: 491px;
+      height: 79px;
+      left: 172px;
+      top: 2396px;
+      background: #ffffff;
+      border-radius: 15px;
+    }
+    .rec6 h2 {
+      position: absolute;
+      width: 470px;
+      height: 68px;
+      left: 20px;
+      top: 10px;
+      font-family: 'PP Neue Machina';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 66px;
+      line-height: 68px;
+      color: black;
+    }
+    .n10 {
+      position: absolute;
+      width: 300px;
+      height: 330px;
+      left: 1230px;
+      top: 2270px;
+      transform: rotate(5.13deg);
+      background-image: url('images/head2.png');
+    }
+    .n11 {
+      position: absolute;
+      width: 400px;
+      height: 560px;
+      left: 20px;
+      top: 2543px;
+      transform: matrix(0.99, 0.12, 0.12, 0.99, 0, 0);
+      background-image: url('images/head3.png');
+    }
+    .n12 {
+      position: absolute;
+      width: 270px;
+      height: 321.26px;
+      left: 1300px;
+      top: 2720px;
+      transform: rotate(1.63deg);
+      background-image: url('images/head1.png');
+    }
+    .speak {
+      position: absolute;
+      width: 983.07px;
+      height: 312.79px;
+      left: 380px;
+      top: 2626px;
+      background-image: url('images/speak.png');
+    }
+    .speak p {
+      position: absolute;
+      width: 700px;
+      height: 174px;
+      top: 20px;
+      left: 180px;
+      font-family: 'PP Neue Montreal';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 40px;
+    }
+    .rec7 {
+      position: absolute;
+      width: 1680px;
+      height: 1418px;
+      left: 0px;
+      top: 3179px;
+      background: #037b57;
+    }
+    .bone1 {
+      position: absolute;
+      width: 677px;
+      height: 242px;
+      left: 159px;
+      top: 3620px;
+    }
+    .rec8 {
+      position: absolute;
+      width: 817px;
+      height: 77px;
+      left: 172px;
+      top: 3373px;
+      background: #000000;
+      border-radius: 15px;
+    }
+    .rec8 h2 {
+      position: absolute;
+      width: 785px;
+      height: 68px;
+      top: 10px;
+      left: 20px;
+      font-family: 'PP Neue Machina';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 66px;
+      line-height: 68px;
+      color: #ffffff;
+    }
+    .rec9 {
+      position: absolute;
+      width: 732px;
+      height: 347px;
+      left: 130px;
+      top: 3595px;
+      background: #ffcfda;
+      border-radius: 36px;
+    }
+    .rec9 h3 {
+      position: absolute;
+      top: 290px;
+      left: 25px;
+      width: 462px;
+      height: 33px;
+      font-family: 'PP Neue Machina';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 32px;
+      line-height: 33px;
+      color: #000000;
     }
 
-    #my-form {
-      margin-top: 2.56vw;
-      margin-bottom: 40px;
+    .rec10 {
+      position: absolute;
+      width: 566px;
+      height: 347px;
+      left: 984px;
+      top: 3595px;
+      background: #ffcfda;
+      border-radius: 36px;
     }
-    input {
+    .rec10 h3 {
+      position: absolute;
+      width: 367px;
+      height: 66px;
+      top: 250px;
+      left: 25px;
+      font-family: 'PP Neue Machina';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 32px;
+      line-height: 33px;
+      color: #000000;
+    }
+    .bone2 {
+      position: absolute;
+      width: 514px;
+      height: 209px;
+      left: 1010px;
+      top: 3625px;
+    }
+    .map {
+      position: absolute;
+      width: 1036px;
+      height: 606px;
+      left: 0px;
+      top: 3990px;
+    }
+    .rez {
+      position: absolute;
+      width: 222px;
+      height: 60px;
+      left: 640px;
+      top: 4120px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 4px;
+    }
+    .rez p {
+      position: absolute;
+      width: 220px;
+      height: 50px;
+      top: 5px;
+      font-family: 'PP Neue Machina';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 25px;
+      text-align: center;
+      color: #000000;
+    }
+    .rec11 {
       box-sizing: border-box;
-      width: 505px;
-      height: 58px;
-      padding-left: 1.667vw;
-      border: 3px;
-      border-color: white;
-      border-radius: 30px;
+      position: absolute;
+      width: 694px;
+      height: 555px;
+      left: 984px;
+      top: 4040px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 36px 0px 0px 0px;
+    }
+    .rec11 h3 {
+      position: absolute;
+      width: 477px;
+      height: 33px;
+      left: 40px;
+      top: 60px;
+      font-family: 'PP Neue Machina';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 32px;
+      line-height: 33px;
+      color: #000000;
+    }
+    .rec11 p {
+      position: absolute;
+      width: 600px;
+      height: 306px;
+      top: 150px;
+      left: 30px;
       font-family: 'PP Neue Montreal';
       font-style: normal;
       font-weight: 400;
       font-size: 28px;
       line-height: 34px;
-      letter-spacing: 0.02em;
-      color: white;
-    }
-    #my-form-button {
-      line-height: 34px;
-      font-family: 'PP Neue Montreal';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 28px;
-      line-height: 34px;
-      /* identical to box height */
-      text-align: center;
-      letter-spacing: 0.02em;
-      color: #3b7992;
-    }
-
-    #my-form-button {
-      width: 225px;
-      height: 58px;
-      border-radius: 30px;
-      margin-left: 2.024vw;
-      border-radius: 30px;
-      background: #ffffff;
-      border-radius: 30px;
+      color: #000000;
     }
   }
 
   .footer {
-    display: flex;
-    flex-direction: row;
-    margin-top: 7.5vw;
-    height: 13.571vw;
-    background-color: #3b7992;
-    padding: 2.917vw 13.869vw 2.143vw;
+    position: absolute;
+    width: 1680px;
+    height: 198px;
+    left: 0px;
+    top: 4590px;
+    background: #3b7992;
+    // display: flex;
+    // flex-direction: row;
+    // margin-top: 7.5vw;
+    // height: 13.571vw;
+    // background-color: #3b7992;
+    // padding: 2.917vw 13.869vw 2.143vw;
 
     h4 {
-      margin-top: 5vw;
-      margin-left: -120px;
+      margin-top: 100px;
+      margin-left: 40px;
       width: 200px;
       height: 40px;
       font-family: 'PP Neue Montreal';
@@ -270,14 +528,14 @@ body.lending {
       color: #ffffff;
     }
     h5 {
-      margin-top: 5vw;
-      margin-left: 1300px;
+      margin-top: -35px;
+      margin-left: 1480px;
+      width: 200px;
+      height: 40px;
       font-family: 'PP Neue Montreal';
       font-style: normal;
       font-weight: 400;
       font-size: 26px;
-      line-height: 31px;
-      letter-spacing: 0.02em;
       color: #ffffff;
     }
   }
