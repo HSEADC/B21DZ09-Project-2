@@ -1,0 +1,599 @@
+body.styleguide {
+  background: var(--white);
+  display: flex;
+
+  a {
+    text-decoration: none;
+    color: var(--black);
+  }
+
+  h1 {
+    font-family: 'PP Neue Machina';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 6.607vw;
+  }
+
+  h2 {
+    font-family: 'PP Neue Machina Plain';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3.155vw;
+  }
+
+  h3 {
+    font-family: 'PP Neue Machina Plain';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.5vw;
+    line-height: 2.56vw;
+  }
+
+  h4 {
+    font-family: 'PP Neue Montreal';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.083vw;
+  }
+
+  p,
+  li {
+    font-family: 'PP Neue Montreal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.548vw;
+    line-height: 1.845vw;
+  }
+
+  li {
+    margin-bottom: 0.774vw;
+    background-image: url('images/styleguide/li.svg');
+    padding-left: 1.6vw;
+    padding-bottom: 0.893vw;
+    background-position: 0 0;
+    background-size: 0.298vw 1.19vw;
+    background-repeat: no-repeat;
+  }
+
+  .sidebar {
+    width: 22.619%;
+    height: 100vh;
+
+    .logo {
+      position: absolute;
+      width: 9.345vw;
+      height: 3.791vw;
+      left: 4.167vw;
+      top: 18.333vw;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url('images/styleguide/logo.svg');
+    }
+
+    .menu {
+      position: fixed;
+      margin-left: 4.583vw;
+      margin-top: 25.417vw;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 0.476vw;
+      font-family: 'PP Neue Montreal';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.369vw;
+      color: var(--black);
+    }
+  }
+
+  .content {
+    width: 77.381%;
+
+    .title {
+      height: 55.952vw;
+      width: auto;
+      background-color: var(--blue);
+      display: block;
+      padding-top: 15.655vw;
+
+      .shape {
+        width: 41.667vw;
+        height: 8.39vw;
+        margin-left: 17.857vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url('images/styleguide/title.svg');
+        padding-left: 1.25vw;
+        padding-top: 1.19vw;
+      }
+
+      .marquee {
+        width: 75.573vw;
+        height: 8.479vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url('images/styleguide/marquee.png');
+        margin-top: 13.452vw;
+        margin-left: 0.774vw;
+      }
+    }
+
+    .about {
+      background-color: var(--white);
+      padding-top: 8.929vw;
+
+      .shape {
+        width: 18.036vw;
+        height: 4.702vw;
+        margin-left: 3.869vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url('images/styleguide/about.svg');
+        padding-left: 1.071vw;
+        padding-top: 0.893vw;
+        margin-bottom: 7.738vw;
+
+        h2 {
+          color: white;
+        }
+      }
+
+      .text {
+        margin-left: 4.881vw;
+        margin-bottom: 7.44vw;
+        width: 37.5vw;
+      }
+
+      .vc {
+        display: flex;
+        .values {
+          width: 50%;
+
+          h4 {
+            margin-left: 4.881vw;
+            margin-bottom: 2.083vw;
+          }
+
+          ul {
+            width: 30.952vw;
+            margin-left: 3.4vw;
+          }
+        }
+
+        .character {
+          width: 50%;
+
+          h4 {
+            margin-left: 3.69vw;
+            margin-bottom: 2.083vw;
+          }
+
+          ul {
+            width: 30.952vw;
+            margin-left: 2.3vw;
+          }
+        }
+      }
+      .mission {
+        width: 44.643vw;
+        margin-top: 7.44vw;
+        margin-left: 4.881vw;
+        margin-bottom: 8.631vw;
+      }
+    }
+
+    .logotype {
+      background-color: var(--pink);
+      padding-top: 8.929vw;
+
+      .shape {
+        width: 15.893vw;
+        height: 79px;
+        margin-left: 3.869vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url('images/styleguide/logotype.svg');
+        padding-left: 1.071vw;
+        padding-top: 0.893vw;
+        margin-bottom: 7.738vw;
+      }
+      h2 {
+        color: white;
+      }
+
+      .text {
+        margin-left: 4.881vw;
+        margin-bottom: 7.44vw;
+        width: 30.952vw;
+      }
+      .logo2,
+      .logo3 {
+        width: 67.56vw;
+        margin-bottom: 7.44vw;
+        margin-left: 4.881vw;
+      }
+      .logo4 {
+        width: 67.56vw;
+        margin-bottom: 8.631vw;
+        margin-left: 4.881vw;
+      }
+    }
+
+    .color {
+      background-color: var(--white);
+      padding-top: 8.929vw;
+      .shape {
+        width: 12.381vw;
+        height: 4.702vw;
+        margin-left: 3.869vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url('images/styleguide/color.svg');
+        padding-left: 1.071vw;
+        padding-top: 0.893vw;
+        margin-bottom: 7.738vw;
+
+        h2 {
+          color: white;
+        }
+      }
+      .text {
+        margin-left: 4.881vw;
+        margin-bottom: 7.44vw;
+        width: 30.952vw;
+      }
+
+      .colors {
+        margin-bottom: 7.44vw;
+
+        .c_pink,
+        .c_green,
+        .c_biue {
+          display: flex;
+          img {
+            width: 35.119vw;
+            height: 11.31vw;
+          }
+          .text {
+            width: 23.81vw;
+            margin-left: 2.44vw;
+            margin-top: 2.857vw;
+          }
+        }
+        .c_pink,
+        .c_green {
+          margin-bottom: 1.786vw;
+        }
+      }
+
+      .text2 {
+        margin-left: 4.881vw;
+        margin-bottom: 7.44vw;
+        width: 35.119vw;
+      }
+
+      .all_colors {
+        width: 67.56vw;
+        margin-bottom: 8.631vw;
+        margin-left: 4.881vw;
+      }
+    }
+
+    .typography {
+      background-color: var(--black);
+      padding-top: 8.929vw;
+
+      .shape {
+        width: 24.524vw;
+        height: 4.702vw;
+        margin-left: 3.869vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url('images/styleguide/typography.svg');
+        padding-left: 1.071vw;
+        padding-top: 0.893vw;
+        margin-bottom: 7.738vw;
+
+        h2 {
+          color: black;
+        }
+      }
+
+      .typo1,
+      .typo2,
+      .typo3 {
+        display: flex;
+        margin-bottom: 6.012vw;
+
+        .text {
+          margin-left: 4.881vw;
+          width: 30.952vw;
+          p {
+            color: white;
+          }
+        }
+        .inktrap {
+          margin-left: 5.655vw;
+          width: 30.952vw;
+
+          .n_font {
+            margin-bottom: 0;
+
+            p {
+              font-family: 'PP Neue Machina';
+              font-style: normal;
+              font-weight: 800;
+              font-size: 3.155vw;
+              line-height: 3.214vw;
+              color: white;
+            }
+          }
+
+          .d_font {
+            margin-bottom: 2.321vw;
+
+            p {
+              font-family: 'PP Neue Machina';
+              font-style: normal;
+              font-weight: 800;
+              font-size: 1.31vw;
+              line-height: 1.369vw;
+              color: white;
+            }
+          }
+
+          .g_font {
+            p {
+              font-family: 'PP Neue Machina';
+              font-style: normal;
+              font-weight: 800;
+              font-size: 2.143vw;
+              line-height: 2.202vw;
+              color: white;
+            }
+          }
+        }
+
+        .plain {
+          margin-left: 5.655vw;
+          width: 30.952vw;
+
+          .n_font {
+            p {
+              font-family: 'PP Neue Machina Plain';
+              font-style: normal;
+              font-weight: 800;
+              font-size: 3.155vw;
+              line-height: 3.214vw;
+              margin-bottom: 0;
+              color: white;
+            }
+          }
+
+          .d_font {
+            margin-bottom: 2.321vw;
+            p {
+              font-family: 'PP Neue Machina Plain';
+              font-style: normal;
+              font-weight: 800;
+              font-size: 1.31vw;
+              line-height: 1.369vw;
+              color: white;
+            }
+          }
+
+          .g_font {
+            p {
+              font-family: 'PP Neue Machina Plain';
+              font-style: normal;
+              font-weight: 800;
+              font-size: 2.143vw;
+              line-height: 2.202vw;
+              color: white;
+            }
+          }
+        }
+
+        .montreal {
+          margin-left: 5.655vw;
+          width: 30.952vw;
+
+          .n_font {
+            p {
+              font-family: 'PP Neue Montreal';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 3.155vw;
+              line-height: 3.214vw;
+              margin-bottom: 0;
+              color: white;
+            }
+          }
+
+          .d_font {
+            margin-bottom: 2.321vw;
+            p {
+              font-family: 'PP Neue Montreal';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 1.31vw;
+              line-height: 1.369vw;
+              color: white;
+            }
+          }
+
+          .g_font {
+            p {
+              font-family: 'PP Neue Montreal';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 2.143vw;
+              line-height: 2.202vw;
+              color: white;
+            }
+          }
+        }
+      }
+      .t_big_logo {
+        display: flex;
+        margin-left: 4.881vw;
+        margin-bottom: 5.06vw;
+        .big_logo {
+          width: 42.857vw;
+          p {
+            color: white;
+            margin-top: 1.429vw;
+            font-family: 'PP Neue Machina';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 8.929vw;
+            line-height: 7.619vw;
+          }
+        }
+        .text_d {
+          margin-top: 11.85vw;
+          margin-left: -6.7vw;
+          p {
+            color: white;
+            margin-bottom: 0;
+            font-family: 'PP Neue Montreal';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.548vw;
+            line-height: 1.845vw;
+          }
+        }
+      }
+    }
+
+    .stickers {
+      background-color: var(--white);
+      padding-top: 8.929vw;
+
+      .shape {
+        width: 17.262vw;
+        height: 4.702vw;
+        margin-left: 3.869vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url('images/styleguide/stickers.svg');
+        padding-left: 1.071vw;
+        padding-top: 0.893vw;
+        margin-bottom: 7.738vw;
+
+        h2 {
+          color: white;
+        }
+      }
+      .text {
+        margin-left: 4.881vw;
+        margin-bottom: 5.06vw;
+        width: 39.286vw;
+      }
+
+      img {
+        margin-bottom: 7.143vw;
+        margin-left: 4.881vw;
+        width: 67.56vw;
+      }
+
+      .text2 {
+        width: 35.714vw;
+        margin-left: 4.881vw;
+        p {
+          margin-bottom: 5.06vw;
+        }
+      }
+
+      .text3 {
+        width: 30.952vw;
+        margin-bottom: 5.952vw;
+        margin-left: 4.881vw;
+      }
+
+      h4 {
+        margin-bottom: 5.357vw;
+        margin-left: 4.881vw;
+      }
+
+      .img_e {
+        width: 67.56vw;
+        margin-bottom: 8.631vw;
+        margin-left: 4.881vw;
+      }
+    }
+
+    .grid {
+      background-color: var(--green);
+      padding-top: 8.929vw;
+
+      .shape {
+        width: 12.262vw;
+        height: 4.702vw;
+        margin-left: 3.869vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url('images/styleguide/grid.svg');
+        padding-left: 1.071vw;
+        padding-top: 0.893vw;
+        margin-bottom: 7.738vw;
+
+        h2 {
+          color: black;
+        }
+      }
+
+      .text {
+        width: 30.952vw;
+        margin-left: 4.881vw;
+        margin-bottom: 5.06vw;
+        p {
+          color: white;
+        }
+      }
+
+      img {
+        width: 67.56vw;
+        margin-left: 4.881vw;
+        margin-bottom: 8.631vw;
+      }
+    }
+
+    .merch {
+      background-color: var(--black);
+      padding-top: 8.929vw;
+
+      .shape {
+        width: 29.226vw;
+        height: 4.702vw;
+        margin-left: 3.869vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url('images/styleguide/merch.svg');
+        padding-left: 1.071vw;
+        padding-top: 0.893vw;
+        margin-bottom: 7.738vw;
+
+        h2 {
+          color: black;
+        }
+      }
+
+      .pic {
+        margin-bottom: 5.952vw;
+
+        img {
+          width: 67.56vw;
+          margin-left: 4.881vw;
+          margin-bottom: 8.631vw;
+        }
+      }
+    }
+  }
+
+  .footer {
+    background-color: var(--blue);
+    height: 11.905vw;
+  }
+}
