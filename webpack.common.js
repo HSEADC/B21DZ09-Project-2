@@ -137,6 +137,12 @@ module.exports = {
       filename: './lending.html'
     }),
 
+    //Styleguide
+    new HtmlWebpackPlugin({
+      template: './src/styleguide.html',
+      filename: './styleguide.html'
+    }),
+
     // Partials
     new HtmlWebpackPartialsPlugin([
       {

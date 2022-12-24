@@ -9,6 +9,7 @@
 @import 'stylesheets/index.scss';
 @import 'stylesheets/about.scss';
 @import 'stylesheets/lending.scss';
+@import 'stylesheets/styleguide.scss';
 
 @import 'stylesheets/articles.scss';
 @import 'stylesheets/article.scss';
