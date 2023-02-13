@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <link rel="icon" href="favicon.ico" />
+    <meta charset="utf-8" />
+
+    <!-- Primary Meta Tags -->
+    <title>Ремёсла России</title>
+    <meta name="title" content="Ремёсла России" />
+    <meta
+      name="description"
+      content="Рассказываем о ремёслах страны, об их истории и о том, как они влияют на нашу жизнь сегодня"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://russiancrafts.adc.ac" />
+    <meta property="og:title" content="Ремёсла России" />
+    <meta
+      property="og:description"
+      content="Рассказываем о ремёслах страны, об их истории и о том, как они влияют на нашу жизнь сегодня"
+    />
+    <meta
+      property="og:image"
+      content="https://russiancrafts.adc.ac/share/index.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://russiancrafts.adc.ac" />
+    <meta property="twitter:title" content="Ремёсла России" />
+    <meta
+      property="twitter:description"
+      content="Рассказываем о ремёслах страны, об их истории и о том, как они влияют на нашу жизнь сегодня"
+    />
+    <meta
+      property="twitter:image"
+      content="https://russiancrafts.adc.ac/share/index.png"
+    />
+
+    <analytics></analytics>
+  </head>
+
+  <body class="preview">
+    <div class="header">
+      <a class="vk" href="https://vk.com/crafts_ru" target="_blank"></a>
+      <a class="tg" href="https://t.me/crafts_ru" target="_blank"></a>
+      <a class="dzen" href="https://dzen.ru/crafts_ru" target="_blank"></a>
+    </div>
+
+    <div class="content">
+      <div class="n2"></div>
+      <div class="n1"></div>
+
+      <div class="glav">
+        <h1>Ремёсла России</h1>
+      </div>
+      <a class="aboutpr" href="about.html"> О проекте →</a>
+      <a class="len" href="lending.html"> Лендинг →</a>
+      <a class="styleg" href="styleguide.html"> Стайлгайд →</a>
+      <div class="n3"></div>
+      <div class="n4"></div>
+      <div class="n5"></div>
+      <div class="rec1"></div>
+      <div class="sub"></div>
+      <h3>подписаться на наши обновления ↓</h3>
+      <h2>Узнайте первым о запуске ресурса</h2>
+      <div class="n6"></div>
+
+      <!-- сборщик почт -->
+      <form id="my-form" action="https://formspree.io/f/mgeqleal" method="POST">
+        <input
+          type="email"
+          name="email"
+          value=""
+          placeholder="Ваша эл. почта"
+        />
+
+        <!-- <label></label> -->
+        <button id="my-form-button">подписаться</button>
+        <p id="my-form-status"></p>
+      </form>
+
+      <!-- Place this script at the end of the body tag -->
+      <script>
+        var form = document.getElementById('my-form')
+
+        async function handleSubmit(event) {
+          event.preventDefault()
+          var status = document.getElementById('my-form-status')
+          var data = new FormData(event.target)
+          fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+              Accept: 'application/json'
+            }
+          })
+            .then((response) => {
+              if (response.ok) {
+                status.innerHTML = 'Спасибо за подписку!'
+                form.reset()
+              } else {
+                response.json().then((data) => {
+                  if (Object.hasOwn(data, 'errors')) {
+                    status.innerHTML = data['errors']
+                      .map((error) => error['message'])
+                      .join(', ')
+                  } else {
+                    status.innerHTML = 'Ууупс! Что-то пошло не так'
+                  }
+                })
+              }
+            })
+            .catch((error) => {
+              status.innerHTML = 'Ууупс! Что-то пошло не так'
+            })
+        }
+        form.addEventListener('submit', handleSubmit)
+      </script>
+    </div>
+
+    <div class="footer">
+      <h4>HSE&nbspADC</h4>
+      <h5>2022</h5>
+    </div>
+
+    <!-- <p>hello Arseniy</p>
+    <p>hello Lena</p>
+    <p>hello Aiya</p>
+    <p>new test 12.02.2023</p> -->
+  </body>
+</html>
