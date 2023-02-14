@@ -84,11 +84,11 @@
 
   transition: 0.5s;
 
-  &.A_TagButton:hover {
+  &:hover {
     background-color: #6a6a6a;
   }
 
-  &.A_TagButton:active {
+  &:active {
     color: var(--black);
     background-color: var(--white);
   }
