@@ -83,15 +83,15 @@
   color: var(--white);
 
   transition: 0.5s;
-}
 
-.A_TagButton:hover {
-  background-color: #6a6a6a;
-}
+  &.A_TagButton:hover {
+    background-color: #6a6a6a;
+  }
 
-.A_TagButton:active {
-  color: var(--black);
-  background-color: var(--white);
+  &.A_TagButton:active {
+    color: var(--black);
+    background-color: var(--white);
+  }
 }
 
 .A_TagOptionsText {
