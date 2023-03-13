@@ -1,0 +1,140 @@
+.A_Logo {
+  width: 123px;
+  height: 47px;
+
+  font-family: 'PP Neue Machina';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 23px;
+
+  display: flex;
+  align-items: center;
+
+  color: var(--white);
+}
+
+.A_HeaderSections,
+.A_FooterSections {
+  font-family: 'PP Neue Montreal';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: var(--white);
+}
+
+.A_FooterIconSocialNetwork {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+
+  .VK {
+    background-image: url('images/IconsSocialNetworks/Q_VK-White.png');
+  }
+
+  .TG {
+    background-image: url('images/IconsSocialNetworks/Q_TG-White.png');
+  }
+
+  .Dzen {
+    background-image: url('images/IconsSocialNetworks/Q_Dzen-White.png');
+  }
+}
+
+.A_SectionTitles {
+  font-family: 'PP Neue Machina';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 61px;
+  line-height: 63px;
+
+  color: var(--white);
+}
+
+.A_TagButton {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 6px 14px 8px;
+
+  height: 36px;
+
+  border: 1.5px solid;
+  border-radius: 14px;
+  border-color: var(--white);
+
+  font-family: 'PP Neue Machina Plain Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 22px;
+
+  text-align: center;
+
+  color: var(--white);
+
+  transition: 0.5s;
+
+  &:hover {
+    background-color: #6a6a6a;
+  }
+
+  &:active {
+    color: var(--black);
+    background-color: var(--white);
+  }
+}
+
+.A_TagOptionsText {
+  font-family: 'PP Neue Machina Plain Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  text-decoration-line: underline;
+
+  color: rgba(255, 255, 255, 0.5);
+
+  transition: 0.5s;
+}
+
+.A_TagOptionsText:hover {
+  color: var(--white);
+}
+
+.A_CraftsCardPic {
+  img {
+    height: 279px;
+    width: 279px;
+
+    border: 3px solid;
+    border-radius: 26px;
+    border-color: var(--white);
+  }
+}
+
+.A_CraftsCardTitle {
+  display: flex;
+
+  position: relative;
+  width: 239px;
+  height: 44px;
+
+  font-family: 'PP Neue Machina';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 21px;
+  line-height: 22px;
+
+  color: var(--white);
+}

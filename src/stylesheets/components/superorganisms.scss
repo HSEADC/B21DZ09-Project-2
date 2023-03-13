@@ -1,0 +1,11 @@
+.S_CraftsBody,
+.S_ArticlesBody {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 0px 130px;
+  gap: 80px;
+
+  position: relative;
+
+  align-items: center;
+}
