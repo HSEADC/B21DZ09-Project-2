@@ -18,7 +18,7 @@
 .A_FooterSections {
   font-family: 'PP Neue Montreal';
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 20px;
   line-height: 24px;
 
@@ -33,16 +33,17 @@
   width: 40px;
   height: 40px;
   background-repeat: no-repeat;
+  background-size: contain;
 
-  .VK {
+  &.-VK {
     background-image: url('images/IconsSocialNetworks/Q_VK-White.png');
   }
 
-  .TG {
+  &.-TG {
     background-image: url('images/IconsSocialNetworks/Q_TG-White.png');
   }
 
-  .Dzen {
+  &.-Dzen {
     background-image: url('images/IconsSocialNetworks/Q_Dzen-White.png');
   }
 }
@@ -106,10 +107,10 @@
   color: rgba(255, 255, 255, 0.5);
 
   transition: 0.5s;
-}
 
-.A_TagOptionsText:hover {
-  color: var(--white);
+  &:hover {
+    color: var(--white);
+  }
 }
 
 .A_CraftsCardPic {
@@ -128,13 +129,199 @@
 
   position: relative;
   width: 239px;
-  height: 44px;
+  max-height: 44px;
 
   font-family: 'PP Neue Machina';
   font-style: normal;
   font-weight: 800;
   font-size: 21px;
   line-height: 22px;
+
+  color: var(--white);
+}
+
+.A_CraftLeadTitle {
+  background-repeat: no-repeat;
+
+  &.-Uelen-bone-carving {
+    width: 610px;
+    height: 152px;
+    background-image: url('./images/craft/uelen-bone-carving/lead_shape.svg');
+    padding-left: 19px;
+    padding-top: 15px;
+  }
+}
+
+.A_CraftLeadDescriptionLocation {
+  font-family: 'PP Neue Montreal';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 27px;
+
+  color: var(--white);
+}
+
+.A_TagButtonArticle {
+  font-family: 'PP Neue Machina Plain Light';
+  font-size: 21px;
+  line-height: 22px;
+
+  text-align: center;
+
+  color: var(--white);
+
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 7px 14px 5px;
+
+  border: 1px solid;
+  border-radius: 14px;
+  border-color: var(--white);
+
+  opacity: 0.5;
+  transition: 0.2s;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.A_CraftAboutText {
+  display: flex;
+
+  font-family: 'PP Neue Montreal';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 27px;
+
+  color: var(--white);
+
+  &.-w580 {
+    width: 580px;
+  }
+}
+
+.A_CraftBodySubtitle {
+  font-family: 'PP Neue Machina';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 33px;
+
+  color: var(--white);
+
+  padding: 0px 0px 16px;
+
+  &.-Left100 {
+    padding: 0px 0px 40px 100px;
+  }
+
+  &.-Padd0 {
+    padding: 0;
+  }
+}
+
+.A_CraftBodyText {
+  font-family: 'PP Neue Montreal';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 27px;
+
+  color: var(--white);
+
+  &.-w580 {
+    width: 580px;
+  }
+}
+
+.A_CraftBodyMapLocation {
+  font-family: 'PP Neue Montreal';
+  font-style: normal;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 22px;
+
+  text-decoration: underline;
+
+  color: var(--white);
+}
+
+.A_CraftSliderArrows {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.A_CraftBodyNoteTitle {
+  font-family: 'PP Neue Machina Plain Ultrabold Italic';
+  font-size: 24px;
+  line-height: 25px;
+
+  color: var(--white);
+
+  padding: 0px 0px 12px;
+}
+
+.A_CraftBodyListItems {
+  font-family: 'PP Neue Montreal';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 36px;
+
+  color: var(--white);
+
+  padding: 0 0 0 10px;
+}
+
+.A_TeaserCardTitle {
+  position: absolute;
+
+  font-family: 'PP Neue Machina';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 21px;
+  line-height: 22px;
+
+  color: var(--white);
+
+  max-width: 256px;
+}
+
+.A_CraftEndTagsSearch {
+  font-family: 'PP Neue Machina Plain Regular';
+  font-size: 18px;
+  line-height: 18px;
+
+  color: var(--white);
+
+  .span {
+    text-decoration: underline;
+  }
+}
+
+.A_CraftSourceTitle {
+  font-family: 'PP Neue Montreal';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: var(--white);
+}
+
+.A_CraftSourceLink {
+  font-family: 'PP Neue Montreal';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 27px;
 
   color: var(--white);
 }

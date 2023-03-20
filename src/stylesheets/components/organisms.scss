@@ -6,13 +6,18 @@
   align-items: center;
   justify-content: center;
 
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 93px;
 
-  border-bottom: 3px solid;
-  border-color: var(--white);
+  // border-bottom: 3px solid;
+  // border-color: var(--white);
 
   background-color: var(--black);
+
+  z-index: 100;
 }
 
 .O_Footer {
@@ -23,9 +28,9 @@
   justify-content: center;
 
   position: relative;
-  height: 120px;
+  height: 210px;
 
-  border-top: 3px solid;
+  border-top: 2px solid;
   border-color: var(--white);
 
   background-color: var(--black);
@@ -46,4 +51,105 @@
   position: relative;
 
   width: 1250px;
+}
+
+//
+//
+// Crafr — страницы отдельных ремёсел
+
+.O_CraftLead {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 120px;
+
+  position: relative;
+  width: 1180px;
+  // height: 308px;
+  margin: 0 auto;
+
+  .W_CraftLeadTitleDescription {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0px;
+
+    width: 1180px;
+  }
+}
+
+.O_CraftBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+
+  width: 1180px;
+
+  .C_CraftBodyImages {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .C_CraftBodyImagesRow {
+      // тут специально используется не флекс бокс
+
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+  }
+}
+
+.O_CraftBlockHistory {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.O_CraftBlockTechnique {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  .W_CraftSliderNote {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px 0px 0px 52px;
+    gap: 72px;
+  }
+}
+
+.O_CraftBlockGallery {
+  display: flex;
+  flex-direction: column;
+
+  .C_CraftBodyGallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1180px;
+    gap: 20px;
+  }
+}
+
+.O_Teasers {
+  display: flex;
+  flex-direction: column;
+
+  .C_TeaserCards {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1180px;
+    gap: 20px;
+  }
 }

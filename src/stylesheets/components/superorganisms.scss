@@ -2,10 +2,71 @@
 .S_ArticlesBody {
   display: flex;
   flex-direction: column;
-  padding: 100px 0px 130px;
+  padding: 193px 0px 130px;
   gap: 80px;
 
   position: relative;
 
   align-items: center;
+
+  .C_CraftsCards {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: top;
+
+    max-width: 1251px;
+
+    grid-column-gap: 37px;
+    grid-row-gap: 37px;
+  }
+}
+
+.S_CraftPage {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  width: 1180px;
+
+  .W_CraftContent {
+    gap: 140px;
+
+    &.-Center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0px;
+    }
+
+    &.-Left {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 140px 0px 240px;
+    }
+
+    .W_CraftHistorySticker {
+      display: flex;
+      flex-direction: column;
+      gap: 80px;
+
+      width: 1180px;
+    }
+
+    .W_CraftSeeAlso {
+      display: flex;
+      flex-direction: column;
+      gap: 90px;
+
+      .W_CraftPageEnd {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 0px 0px 100px;
+        gap: 50px;
+      }
+    }
+  }
 }
