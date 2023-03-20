@@ -6,6 +6,17 @@
 
   position: relative;
   width: 1254px;
+
+  .C_HeaderNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 80px;
+
+    position: relative;
+  }
 }
 
 .M_Footer {
@@ -16,6 +27,16 @@
 
   position: relative;
   width: 1254px;
+
+  .C_FooterIconsSocialNetwork {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 18px;
+
+    position: relative;
+  }
 }
 
 .M_CraftsTagButtons {
@@ -52,4 +73,128 @@
   align-items: center;
   padding: 0px;
   gap: 16px;
+}
+
+.M_CraftLeadDescription {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 0px 0px 21px;
+  gap: 14px;
+
+  .W_CraftLeadDescriptionMap {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 0px 0px 4px;
+
+    opacity: 0.5;
+    transition: 0.2s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .C_CraftLeadDescriptionTags {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+.M_CraftAbout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 90px 0px 0px;
+  gap: 20px;
+}
+
+.M_CraftBodyTexts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &.-Left100 {
+    padding: 0px 0px 0px 100px;
+  }
+
+  &.-Left200 {
+    padding: 0px 0px 0px 200px;
+  }
+}
+
+.M_CraftBodyMap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.M_CraftSlider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+
+  .C_IconsSliderPoint {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+  }
+}
+
+.M_CraftBodyNote {
+  display: flex;
+  flex-direction: column;
+
+  &.-w280 {
+    width: 280px;
+  }
+}
+
+.M_CraftBodyList {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px 0px 100px;
+}
+
+.M_TeaserCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 0px 12px 8px;
+
+  width: 280px;
+  height: 160px;
+
+  background-color: grey;
+  border-radius: 23px;
+}
+
+.M_CraftEndTags {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.M_CraftSource {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .C_CraftSourceLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+
+    max-width: 580px;
+  }
 }
