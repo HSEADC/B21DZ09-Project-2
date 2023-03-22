@@ -85,11 +85,13 @@
 
   transition: 0.5s;
 
+  cursor: pointer;
+
   &:hover {
     background-color: #6a6a6a;
   }
 
-  &:active {
+  &.active {
     color: var(--black);
     background-color: var(--white);
   }
@@ -139,6 +141,11 @@
 
   color: var(--white);
 }
+
+//
+//
+//
+// Страницы ремёсел
 
 .A_CraftLeadTitle {
   background-repeat: no-repeat;
@@ -214,14 +221,14 @@
 
   color: var(--white);
 
-  padding: 0px 0px 16px;
+  margin-bottom: 16px;
 
   &.-Left100 {
-    padding: 0px 0px 40px 100px;
+    margin: 0px 0px 40px 100px;
   }
 
   &.-Padd0 {
-    padding: 0;
+    margin-bottom: 0px;
   }
 }
 
@@ -250,6 +257,11 @@
   text-decoration-thickness: 0.5px;
 
   color: var(--white);
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .A_CraftSliderArrows {
@@ -325,4 +337,8 @@
   line-height: 27px;
 
   color: var(--white);
+
+  &:hover {
+    text-decoration: underline;
+  }
 }

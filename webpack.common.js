@@ -83,7 +83,8 @@ module.exports = {
     // Index
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      filename: './index.html'
+      filename: './index.html',
+      chunks: ['index']
     }),
 
     // // Internal pages
@@ -98,55 +99,64 @@ module.exports = {
     // About
     new HtmlWebpackPlugin({
       template: './src/about.html',
-      filename: './about.html'
+      filename: './about.html',
+      chunks: ['index']
     }),
 
     // Crafts — страница со всеми материалами о ремёслах
     new HtmlWebpackPlugin({
       template: './src/crafts.html',
-      filename: './crafts.html'
+      filename: './crafts.html',
+      chunks: ['index']
     }),
 
     // Article — страница со всеми подборками и мини-статьями
     new HtmlWebpackPlugin({
       template: './src/articles.html',
-      filename: './articles.html'
+      filename: './articles.html',
+      chunks: ['index']
     }),
 
     // Craft, уэленская резьба по кости — страница отдельного ремесла
     new HtmlWebpackPlugin({
       template: './src/crafts/uelen-bone-carving.html',
-      filename: './crafts/uelen-bone-carving.html'
+      filename: './crafts/uelen-bone-carving.html',
+      chunks: ['index']
     }),
 
     // Articles, У каких народов есть резьба по кости — отдельная страница подборки/мини-статьи
     new HtmlWebpackPlugin({
       template: './src/articles/bone-carving.html',
-      filename: './articles/bone-carving.html'
+      filename: './articles/bone-carving.html',
+      chunks: ['index']
     }),
 
     // Map
     new HtmlWebpackPlugin({
       template: './src/map.html',
-      filename: './map.html'
+      filename: './map.html',
+      chunks: ['index']
     }),
 
     //Lending
     new HtmlWebpackPlugin({
       template: './src/lending.html',
-      filename: './lending.html'
+      filename: './lending.html',
+      chunks: ['index']
     }),
 
     //Preview
     new HtmlWebpackPlugin({
       template: './src/preview.html',
-      filename: './preview.html'
+      filename: './preview.html',
+      chunks: ['index']
     }),
 
     //Styleguide
     new HtmlWebpackPlugin({
       template: './src/styleguide.html',
-      filename: './styleguide.html'
+      filename: './styleguide.html',
+      chunks: ['index']
     }),
 
     // Partials
