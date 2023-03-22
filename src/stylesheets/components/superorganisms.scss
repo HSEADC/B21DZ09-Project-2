@@ -1,8 +1,11 @@
+//
+// Страница со всеми ремёслами/Статьями
+
 .S_CraftsBody,
 .S_ArticlesBody {
   display: flex;
   flex-direction: column;
-  padding: 193px 0px 130px;
+  margin: 193px 0px 200px;
   gap: 80px;
 
   position: relative;
@@ -17,12 +20,17 @@
     flex-direction: row;
     align-items: top;
 
-    max-width: 1251px;
+    width: 1252px;
 
     grid-column-gap: 37px;
     grid-row-gap: 37px;
   }
 }
+
+//
+//
+//
+// Страницы ремёсел
 
 .S_CraftPage {
   margin: 0 auto;
@@ -38,14 +46,13 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 0px;
     }
 
     &.-Left {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      padding: 140px 0px 240px;
+      margin: 140px 0px 240px 0px;
     }
 
     .W_CraftHistorySticker {
@@ -64,7 +71,7 @@
       .W_CraftPageEnd {
         display: flex;
         flex-direction: column;
-        padding: 0px 0px 0px 100px;
+        margin-left: 100px;
         gap: 50px;
       }
     }
