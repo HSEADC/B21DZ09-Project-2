@@ -29,6 +29,7 @@
 
   position: relative;
   height: 210px;
+  width: auto;
 
   border-top: 2px solid;
   border-color: var(--white);
@@ -152,4 +153,94 @@
     max-width: 1180px;
     gap: 20px;
   }
+}
+
+//
+//
+//
+//
+//
+//Start- стартовый экран
+.O_MainPageStart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+.O_MainPageCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+
+  .C_CraftsCards {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: top;
+
+    max-width: 1350px;
+
+    grid-column-gap: 37px;
+    grid-row-gap: 37px;
+  }
+}
+
+.O_MainPageSearch,
+.O_MainPageSubscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+//
+.O_SearchInputField {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 5px 0px 30px;
+  // gap: 105px;
+
+  position: relative;
+  width: 940px;
+  height: 74px;
+
+  background-color: var(--white);
+  border-radius: 65px;
+}
+
+.O_PostInputField {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 898px;
+  height: 73px;
+}
+
+//
+
+.O_MainPageTeaser {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px 0px 0px 50px;
+  gap: 39px;
+
+  width: 1320px;
+  height: 630px;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-size: cover;
+
+  background-image: url('images/Start/teaser.jpg');
 }

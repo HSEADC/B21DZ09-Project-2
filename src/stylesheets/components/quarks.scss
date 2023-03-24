@@ -112,3 +112,27 @@
     text-decoration: underline;
   }
 }
+
+//
+//
+//
+//Start- стартовый экран
+.Q_MainPageLogoText {
+  font-family: 'PP Neue Machina';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 110px;
+  line-height: 100px;
+
+  color: var(--black);
+}
+
+.Q_MainPageTeaserTitleText {
+  font-family: 'PP Neue Machina';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 82px;
+
+  color: var(--black);
+}

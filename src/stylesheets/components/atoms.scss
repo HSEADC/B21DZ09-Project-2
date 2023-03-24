@@ -259,6 +259,8 @@
   color: var(--white);
   opacity: 0.5;
 
+  transition: 0.1s;
+
   &:hover {
     opacity: 1;
   }
@@ -338,7 +340,233 @@
 
   color: var(--white);
 
+  transition: 0.1s;
+
   &:hover {
     text-decoration: underline;
+  }
+}
+
+//
+//
+//Start- стартовый экран
+.A_MainPageLogo {
+  background-repeat: no-repeat;
+
+  width: 552px;
+  height: auto;
+  background-image: url('./images/Start/StartLogo.svg');
+  padding-left: 21px;
+  padding-top: 24px;
+}
+
+.A_MainPageBodyText {
+  font-family: 'PP Neue Montreal';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+
+  max-width: 490px;
+
+  color: var(--white);
+}
+
+.A_StickerDoll {
+  position: absolute;
+  left: 22px;
+  top: 10px;
+  width: 237px;
+  height: 482px;
+  transform: rotate(-6deg);
+
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-image: url('images/Start/StickerDoll.png');
+}
+
+.A_StickerHohloma2 {
+  position: absolute;
+  left: 290px;
+  top: 82px;
+  width: 315px;
+  height: 273px;
+  transform: rotate(18deg);
+
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-image: url('images/Start/StickerHohloma2.png');
+}
+
+.A_StickerHohloma {
+  position: absolute;
+  left: 300px;
+  top: 390px;
+  width: 170px;
+  height: 105px;
+  transform: rotate(10deg);
+
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-image: url('images/Start/StickerHohloma.png');
+}
+
+.A_StickerPrint {
+  position: absolute;
+  left: 558px;
+  top: 348px;
+  width: 200px;
+  height: 132px;
+  transform: rotate(-28deg);
+
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-image: url('images/Start/StickerPrint.png');
+}
+
+.A_StickerGzhel {
+  position: absolute;
+  left: 652px;
+  top: 112px;
+  width: 210px;
+  height: 166px;
+  transform: rotate(5deg);
+
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-image: url('images/Start/StickerGzhel.png');
+}
+
+.A_StickerMatreshka {
+  position: absolute;
+  left: 840px;
+  top: 260px;
+  width: 151px;
+  height: 254px;
+  transform: rotate(10deg);
+
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-image: url('images/Start/StickerMatreshka.png');
+}
+
+.A_StickerFlower {
+  position: absolute;
+  left: 870px;
+  top: 30px;
+  width: 124px;
+  height: 128px;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-image: url('images/Start/StickerFlower.png');
+}
+
+.A_StickerPrint2 {
+  position: absolute;
+  left: 982px;
+  top: 180px;
+  width: 101px;
+  height: 101px;
+  transform: rotate(-142deg);
+
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-image: url('images/Start/StickerPrint2.png');
+}
+
+.A_StickerHohloma3 {
+  position: absolute;
+  left: 1020px;
+  top: 346px;
+  width: 126px;
+  height: 109px;
+  transform: rotate(74deg);
+
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-image: url('images/Start/StickerHohloma3.png');
+}
+
+.A_StickerHead {
+  position: absolute;
+  left: 1140px;
+  top: 82px;
+  width: 216px;
+  height: 348px;
+  transform: rotate(7deg);
+
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-image: url('images/Start/StickerHead.png');
+}
+
+.A_MainPageSectionTitle {
+  font-family: 'PP Neue Machina Plain Regular';
+  font-size: 64px;
+  line-height: 66px;
+  text-align: center;
+
+  color: var(--white);
+
+  max-width: 850px;
+}
+
+.A_MainPageDescription {
+  font-family: 'PP Neue Montreal';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+
+  color: var(--grey);
+
+  max-width: 530px;
+}
+
+.A_MainPageTeaserTitle {
+  background-repeat: no-repeat;
+
+  width: 267px;
+  height: auto;
+  background-image: url('./images/Start/ArticleName.svg');
+  padding-left: 8px;
+  padding-top: 7px;
+}
+
+.A_MainPageTeaserButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 42px 15px 41px;
+
+  border: 3px solid var(--white);
+  border-radius: 65px;
+
+  font-family: 'PP Neue Montreal';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 43px;
+
+  color: var(--white);
+
+  transition: 0.5s;
+
+  &:hover {
+    color: var(--black);
+    background-color: var(--white);
   }
 }

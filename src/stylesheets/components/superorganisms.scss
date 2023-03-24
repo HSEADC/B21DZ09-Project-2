@@ -77,3 +77,25 @@
     }
   }
 }
+
+//
+//
+//
+//start- стартовый экран
+.S_MainPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 220px;
+
+  width: 1350px;
+
+  margin: 280px auto 250px auto;
+
+  .W_MainPageTeaserName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+}

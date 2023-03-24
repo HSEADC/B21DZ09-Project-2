@@ -7,6 +7,10 @@
   position: relative;
   width: 1254px;
 
+  &.-StartScreen {
+    justify-content: flex-end;
+  }
+
   .C_HeaderNav {
     display: flex;
     flex-direction: row;
@@ -201,4 +205,41 @@
 
     max-width: 580px;
   }
+}
+
+//
+//
+//
+//Start- стартовый экран
+.M_MainPageStartTexts {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 106px;
+}
+
+.M_MainPageStartStickers {
+  width: 1350px;
+  height: 528px;
+
+  position: relative;
+}
+
+.M_MainPageSectionTexts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+//
+.M_GetKnow {
+}
+//
+
+.M_MainPageTeaserTexts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
 }
