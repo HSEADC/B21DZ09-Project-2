@@ -136,12 +136,12 @@
   flex-direction: column;
   gap: 40px;
 
-  .W_CraftSliderNote {
+  .W_SliderWithDescription {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     margin-left: 52px;
-    gap: 72px;
+    gap: 26px;
   }
 }
 

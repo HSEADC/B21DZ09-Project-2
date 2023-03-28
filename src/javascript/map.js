@@ -21,4 +21,6 @@ function initModal() {
   })
 }
 
-document.addEventListener('DOMContentLoaded', initModal())
+document.addEventListener('DOMContentLoaded', () => {
+  initModal()
+})

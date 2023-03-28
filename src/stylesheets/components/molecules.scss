@@ -148,13 +148,26 @@
   }
 }
 
-.M_CraftBodyNote {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+.M_SliderDescription {
+  width: 910px;
+  height: 81px;
+  overflow: hidden;
 
-  &.-w280 {
-    width: 280px;
+  .W_SliderDescriptionRails {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+
+    position: relative;
+  }
+
+  .W_SliderDescriptionTexts {
+    width: 910px;
+    height: 81px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
   }
 }
 
