@@ -22,7 +22,7 @@
     />
     <meta
       property="og:image"
-      content="https://russiancrafts.adc.ac/share/index.png"
+      content="https://russiancrafts.adc.ac/share/share.png"
     />
 
     <!-- Twitter -->
@@ -35,7 +35,7 @@
     />
     <meta
       property="twitter:image"
-      content="https://russiancrafts.adc.ac/share/index.png"
+      content="https://russiancrafts.adc.ac/share/share.png"
     />
 
     <analytics></analytics>
@@ -43,12 +43,12 @@
 
   <body>
     <div class="O_Header">
-      <div class="M_Header -StartScreen">
+      <div class="M_HeaderNav -StartScreen">
         <!-- <a class="A_Logo" href="/">Ремёсла России</a> -->
-        <div class="C_HeaderNav">
-          <a class="A_HeaderSections" href="./crafts.html">Библиотека</a>
-          <a class="A_HeaderSections" href="./map.html">Карта</a>
-          <a class="A_HeaderSections" href="./articles.html"
+        <div class="C_HeaderNavSections">
+          <a class="A_HeaderSection" href="./crafts.html">Библиотека</a>
+          <a class="A_HeaderSection" href="./map.html">Карта</a>
+          <a class="A_HeaderSection" href="./articles.html"
             >Статьи и подборки</a
           >
         </div>
@@ -58,9 +58,7 @@
     <div class="S_MainPage">
       <section class="O_MainPageStart">
         <div class="M_MainPageStartTexts">
-          <div class="A_MainPageLogo">
-            <h1 class="Q_MainPageLogoText">Ремёсла России</h1>
-          </div>
+          <h1 class="A_MainPageLogo">Ремёсла России</h1>
           <p class="A_MainPageBodyText">
             Проект создан для сохранения и&nbsp;популяризации народных ремёсел
             и&nbsp;искусств. Мы&nbsp;собираем информацию о&nbsp;художественных
@@ -70,16 +68,16 @@
         </div>
 
         <div class="M_MainPageStartStickers">
-          <div class="A_StickerDoll"></div>
-          <div class="A_StickerHohloma2"></div>
-          <div class="A_StickerHohloma"></div>
-          <div class="A_StickerPrint"></div>
-          <div class="A_StickerGzhel"></div>
-          <div class="A_StickerMatreshka"></div>
-          <div class="A_StickerFlower"></div>
-          <div class="A_StickerPrint2"></div>
-          <div class="A_StickerHohloma3"></div>
-          <div class="A_StickerHead"></div>
+          <div class="A_Sticker -Doll"></div>
+          <div class="A_Sticker -Hohloma2"></div>
+          <div class="A_Sticker -Hohloma"></div>
+          <div class="A_Sticker -Print"></div>
+          <div class="A_Sticker -Gzhel"></div>
+          <div class="A_Sticker -Matreshka"></div>
+          <div class="A_Sticker -Flower"></div>
+          <div class="A_Sticker -Print2"></div>
+          <div class="A_Sticker -Hohloma3"></div>
+          <div class="A_Sticker -Head"></div>
         </div>
       </section>
 
@@ -87,52 +85,31 @@
         <h2 class="A_MainPageSectionTitle">Популярные статьи</h2>
 
         <div class="C_CraftsCards">
-          <a
-            class="M_CraftsCard"
-            data-tags="Кость, Резьба"
-            href="./crafts/uelen-bone-carving.html"
-          >
-            <div class="A_CraftsCardPic">
-              <img
-                class="Q_CardImages"
-                src="images/crafts/Uelen-bone-carving.png"
-                alt="Уэленская резьба по кости"
-              />
-            </div>
-            <p class="A_CraftsCardTitle">Уэленская резьба по&nbsp;кости</p>
-          </a>
-
           <a class="M_CraftsCard" data-tags="Роспись" href="#">
-            <div class="A_CraftsCardPic">
-              <img
-                class="Q_CardImages"
-                src="images/crafts/Gorodets-painting.png"
-                alt="Городецкая роспись"
-              />
-            </div>
-            <p class="A_CraftsCardTitle">Городецкая роспись</p>
-          </a>
-
-          <a class="M_CraftsCard" data-tags="Роспись" href="#">
-            <div class="A_CraftsCardPic">
-              <img
-                class="Q_CardImages"
-                src="images/crafts/Mezen-painting.png"
-                alt="Мезенская роспись"
-              />
-            </div>
-            <p class="A_CraftsCardTitle">Мезенская роспись по&nbsp;дереву</p>
+            <img
+              class="A_CraftsCardPic"
+              src="images/crafts/Volkhov-painting.jpg"
+              alt="Волховская роспись"
+            />
+            <p class="A_CraftsCardTitle">Волховская роспись</p>
           </a>
 
           <a class="M_CraftsCard" data-tags="Глина (керамика)" href="#">
-            <div class="A_CraftsCardPic">
-              <img
-                class="Q_CardImages"
-                src="images/crafts/Petrovsky-toy.png"
-                alt="Петровская игрушка"
-              />
-            </div>
-            <p class="A_CraftsCardTitle">Петровская игрушка</p>
+            <img
+              class="A_CraftsCardPic"
+              src="images/crafts/Skopinsk-ceramics.jpg"
+              alt="Cкопинская керамика"
+            />
+            <p class="A_CraftsCardTitle">Cкопинская керамика</p>
+          </a>
+
+          <a class="M_CraftsCard" data-tags="Текстиль" href="#">
+            <img
+              class="A_CraftsCardPic"
+              src="images/crafts/Tabasaran-carpet.jpg"
+              alt="Табасаранские ковры"
+            />
+            <p class="A_CraftsCardTitle">Табасаранские ковры</p>
           </a>
         </div>
       </section>
@@ -146,19 +123,20 @@
           </p>
         </div>
 
-        <div class="O_SearchInputField">
-          <div class="M_GetKnow">
-            <form class="FindArticle">
-              <input
-                type="text"
-                class="search"
-                placeholder="Введите запрос и воспользуйтесь фильтрами для поиска"
-              />
-            </form>
-            <!-- <div class="M_SearchButtonIcon">
-              <div class="A_Button"><h3>Найти</h3></div>
-            </div> -->
+        <div class="O_Select">
+          <div class="M_SelectField">
+            <input
+              class="A_SelectInput"
+              type="text"
+              placeholder="Поиск ремесла..."
+            />
+            <div class="W_SelectButtons">
+              <div class="Q_Icon -Filter -size48x48"></div>
+              <div class="A_MainPageButton">Найти</div>
+            </div>
           </div>
+
+          <div class="C_SelectOptionList"></div>
         </div>
       </section>
 
@@ -167,59 +145,40 @@
 
         <div class="C_CraftsCards">
           <a class="M_CraftsCard" data-tags="Текстиль" href="#">
-            <div class="A_CraftsCardPic">
-              <img
-                class="Q_CardImages"
-                src="images/crafts/Vologda-lace.png"
-                alt="Вологодское кружево"
-              />
-            </div>
+            <img
+              class="A_CraftsCardPic"
+              src="images/crafts/Vologda-lace.jpg"
+              alt="Вологодское кружево"
+            />
             <p class="A_CraftsCardTitle">Вологодское кружево</p>
           </a>
 
           <a class="M_CraftsCard" data-tags="Роспись" href="#">
-            <div class="A_CraftsCardPic">
-              <img
-                class="Q_CardImages"
-                src="images/crafts/Vologda-khokhloma.png"
-                alt="Вологодская хохлома"
-              />
-            </div>
+            <img
+              class="A_CraftsCardPic"
+              src="images/crafts/Vologda-khokhloma.jpg"
+              alt="Вологодская хохлома"
+            />
             <p class="A_CraftsCardTitle">Вологодская хохлома</p>
           </a>
 
           <a class="M_CraftsCard" data-tags="Роспись" href="#">
-            <div class="A_CraftsCardPic">
-              <img
-                class="Q_CardImages"
-                src="images/crafts/Rakul-painting.png"
-                alt="Ракульская роспись"
-              />
-            </div>
+            <img
+              class="A_CraftsCardPic"
+              src="images/crafts/Rakul-painting.jpg"
+              alt="Ракульская роспись"
+            />
             <p class="A_CraftsCardTitle">Ракульская роспись</p>
-          </a>
-
-          <a class="M_CraftsCard" data-tags="Роспись" href="#">
-            <div class="A_CraftsCardPic">
-              <img
-                class="Q_CardImages"
-                src="images/crafts/Volkhov-painting.png"
-                alt="Волховская роспись"
-              />
-            </div>
-            <p class="A_CraftsCardTitle">Волховская роспись</p>
           </a>
         </div>
       </section>
 
       <section class="W_MainPageTeaserName">
-        <h2 class="A_MainPageSectionTitle">Популярные статьи</h2>
+        <h2 class="A_MainPageSectionTitle">Подборки по&nbsp;материалам</h2>
 
         <div class="O_MainPageTeaser">
           <div class="M_MainPageTeaserTexts">
-            <div class="A_MainPageTeaserTitle">
-              <h3 class="Q_MainPageTeaserTitleText">Глина</h3>
-            </div>
+            <h3 class="A_MainPageTeaserTitle">Глина</h3>
             <p class="A_MainPageBodyText">
               Гончарное ремесло на&nbsp;Руси зародилось ещё
               в&nbsp;доисторическую эпоху и&nbsp;при раскопках археологи
@@ -249,9 +208,11 @@
       </section>
     </div>
 
+    <!-- <a href="/" id="random-link">случайная ссылка</a> -->
+
     <div class="O_Footer">
-      <div class="M_Footer">
-        <div class="A_FooterSections">
+      <div class="M_FooterNav">
+        <div class="A_FooterSection">
           <a href="#">О проекте</a>
         </div>
         <div class="C_FooterIconsSocialNetwork">

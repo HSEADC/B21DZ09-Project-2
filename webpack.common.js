@@ -9,7 +9,10 @@ const path = require('path')
 
 module.exports = {
   entry: {
-    index: './src/index.js'
+    index: './src/index.js',
+    map: './src/javascript/map.js',
+    crafts_articles: './src/javascript/crafts_articles.js',
+    craft_article: './src/javascript/craft_article.js'
     // page: './src/page.jsx'
   },
   output: {
@@ -107,21 +110,21 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/crafts.html',
       filename: './crafts.html',
-      chunks: ['index']
+      chunks: ['crafts_articles']
     }),
 
     // Article — страница со всеми подборками и мини-статьями
     new HtmlWebpackPlugin({
       template: './src/articles.html',
       filename: './articles.html',
-      chunks: ['index']
+      chunks: ['crafts_articles']
     }),
 
     // Craft, уэленская резьба по кости — страница отдельного ремесла
     new HtmlWebpackPlugin({
       template: './src/crafts/uelen-bone-carving.html',
       filename: './crafts/uelen-bone-carving.html',
-      chunks: ['index']
+      chunks: ['craft_article']
     }),
 
     // Articles, У каких народов есть резьба по кости — отдельная страница подборки/мини-статьи
@@ -135,7 +138,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/map.html',
       filename: './map.html',
-      chunks: ['index']
+      chunks: ['map']
     }),
 
     //Lending

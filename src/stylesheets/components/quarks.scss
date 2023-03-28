@@ -1,4 +1,7 @@
 .Q_Icon {
+  cursor: pointer;
+  background-repeat: no-repeat;
+
   &.-size48x48 {
     width: 48px;
     height: 48px;
@@ -9,8 +12,35 @@
     height: 6px;
   }
 
-  &.-Map {
+  &.-Filter {
+    background-image: url('images/Icons/Q_IconFilter.svg');
+  }
+
+  &.-MapPoint {
     background-image: url('images/Icons/Q_IconMap.svg');
+  }
+
+  &.-Cross {
+    background-image: url('images/Icons/Q_IconCross.svg');
+
+    &.-MapModal {
+      position: absolute;
+      right: 30px;
+      top: 30px;
+    }
+  }
+
+  &.-MapPagePoint {
+    background-image: url('images/Icons/Q_IconMapPage.svg');
+
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    opacity: 0.7;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   &.-ArrowLeft {
@@ -36,14 +66,6 @@
   height: auto;
 
   margin-bottom: -90px;
-}
-
-.Q_CraftLeadTitleText {
-  font-family: 'PP Neue Machina';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 67px;
-  line-height: 61px;
 }
 
 .Q_CraftAboutImage {
@@ -91,48 +113,14 @@
   }
 }
 
+.Q_BackgroundBlur {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 .Q_CraftBodyMapImage {
   width: 380px;
   height: auto;
-}
-
-.Q_CraftBodyListItem {
-  font-family: 'PP Neue Montreal';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 21px;
-  line-height: 36px;
-
-  list-style-type: disc;
-  list-style-position: inside;
-
-  color: var(--white);
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-//
-//
-//
-//Start- стартовый экран
-.Q_MainPageLogoText {
-  font-family: 'PP Neue Machina';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 110px;
-  line-height: 100px;
-
-  color: var(--black);
-}
-
-.Q_MainPageTeaserTitleText {
-  font-family: 'PP Neue Machina';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 80px;
-  line-height: 82px;
-
-  color: var(--black);
 }

@@ -9,7 +9,7 @@
     <meta name="title" content="Карта • Ремёсла России" />
     <meta
       name="description"
-      content="Карта с местами зарождения народных промыслов. Рассказываем о ремёслах страны, об их истории и о том, как они влияют на нашу жизнь сегодня"
+      content="Карта с местами зарождения народных промыслов и ремесленными центрами. Рассказываем о ремёслах страны, об их истории и о том, как они влияют на нашу жизнь сегодня"
     />
 
     <!-- Open Graph / Facebook -->
@@ -18,11 +18,11 @@
     <meta property="og:title" content="Карта • Ремёсла России" />
     <meta
       property="og:description"
-      content="Карта с местами зарождения народных промыслов. Рассказываем о ремёслах страны, об их истории и о том, как они влияют на нашу жизнь сегодня."
+      content="Карта с местами зарождения народных промыслов и ремесленными центрами. Рассказываем о ремёслах страны, об их истории и о том, как они влияют на нашу жизнь сегодня."
     />
     <meta
       property="og:image"
-      content="https://russiancrafts.adc.ac/share/map.png"
+      content="https://russiancrafts.adc.ac/share/share.png"
     />
 
     <!-- Twitter -->
@@ -31,11 +31,11 @@
     <meta property="twitter:title" content="Карта • Ремёсла России" />
     <meta
       property="twitter:description"
-      content="Карта с местами зарождения народных промыслов. Рассказываем о ремёслах страны, об их истории и о том, как они влияют на нашу жизнь сегодня."
+      content="Карта с местами зарождения народных промыслов и ремесленными центрами. Рассказываем о ремёслах страны, об их истории и о том, как они влияют на нашу жизнь сегодня."
     />
     <meta
       property="twitter:image"
-      content="https://russiancrafts.adc.ac/share/map.png"
+      content="https://russiancrafts.adc.ac/share/share.png"
     />
 
     <analytics></analytics>
@@ -43,21 +43,60 @@
 
   <body>
     <div class="O_Header">
-      <div class="M_Header">
+      <div class="M_HeaderNav">
         <a class="A_Logo" href="/">Ремёсла России</a>
-        <div class="C_HeaderNav">
-          <a class="A_HeaderSections" href="./crafts.html">Библиотека</a>
-          <a class="A_HeaderSections" href="./map.html">Карта</a>
-          <a class="A_HeaderSections" href="./articles.html"
+        <div class="C_HeaderNavSections">
+          <a class="A_HeaderSection" href="./crafts.html">Библиотека</a>
+          <a class="A_HeaderSection" href="./map.html">Карта</a>
+          <a class="A_HeaderSection" href="./articles.html"
             >Статьи и подборки</a
           >
         </div>
       </div>
     </div>
 
-    <div class="O_Footer">
-      <div class="M_Footer">
-        <div class="A_FooterSections">
+    <div class="S_MapPage">
+      <div class="Q_Icon -MapPagePoint -size48x48"></div>
+
+      <section class="S_Modal">
+        <div class="Q_BackgroundBlur"></div>
+        <div class="O_MapModal">
+          <div class="Q_Icon -Cross -MapModal -size48x48"></div>
+
+          <div class="M_MapModalContent">
+            <div class="W_MapModalTexts">
+              <div class="M_CraftBodyTexts">
+                <h3 class="A_CraftBodySubtitle">
+                  Уэленская резьба по&nbsp;кости
+                </h3>
+                <p class="A_CraftBodyText -w480">
+                  Уэленская резьба по&nbsp;кости&nbsp;&mdash; традиционный
+                  промысел чукчей и&nbsp;эскимосов, возникший более трех тысяч
+                  лет назад. Жители Чукотки не&nbsp;только прекрасные оленеводы
+                  и&nbsp;охотники, но&nbsp;и&nbsp;талантливые мастера, которые
+                  из&nbsp;моржовых клыков, используя нож и&nbsp;бормашину,
+                  вырезают различные фигуры.
+                </p>
+              </div>
+              <a
+                class="A_MapModalToCraft"
+                href="./crafts/uelen-bone-carving.html"
+                >на&nbsp;страницу ремесла &rarr;</a
+              >
+            </div>
+            <img
+              class="A_StickerMap -UelenBear"
+              src="./images/map/UelenBear.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- <div class="O_Footer">
+      <div class="M_FooterNav">
+        <div class="A_FooterSection">
           <a href="#">О проекте</a>
         </div>
         <div class="C_FooterIconsSocialNetwork">
@@ -78,7 +117,7 @@
           ></a>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- тут будет карта с мэпбокс
     <a href="./">На главную</a> -->
   </body>

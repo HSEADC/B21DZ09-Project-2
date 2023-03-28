@@ -22,7 +22,7 @@
     />
     <meta
       property="og:image"
-      content="https://russiancrafts.adc.ac/share/articles.png"
+      content="https://russiancrafts.adc.ac/share/share.png"
     />
 
     <!-- Twitter -->
@@ -41,7 +41,7 @@
     />
     <meta
       property="twitter:image"
-      content="https://russiancrafts.adc.ac/share/articles.png"
+      content="https://russiancrafts.adc.ac/share/share.png"
     />
 
     <analytics></analytics>
@@ -49,12 +49,12 @@
 
   <body>
     <div class="O_Header">
-      <div class="M_Header">
+      <div class="M_HeaderNav">
         <a class="A_Logo" href="/">Ремёсла России</a>
-        <div class="C_HeaderNav">
-          <a class="A_HeaderSections" href="./crafts.html">Библиотека</a>
-          <a class="A_HeaderSections" href="./map.html">Карта</a>
-          <a class="A_HeaderSections" href="./articles.html"
+        <div class="C_HeaderNavSections">
+          <a class="A_HeaderSection" href="./crafts.html">Библиотека</a>
+          <a class="A_HeaderSection" href="./map.html">Карта</a>
+          <a class="A_HeaderSection" href="./articles.html"
             >Статьи и подборки</a
           >
         </div>
@@ -63,214 +63,137 @@
 
     <section class="S_ArticlesBody">
       <div class="O_ArticlesTitleFilter">
-        <div class="A_SectionTitles">
-          <h1>Статьи и подборки</h1>
-        </div>
-        <div class="M_ArticlesTagButtons">
-          <a href="#"
-            ><div class="A_TagButton">
-              общество
-            </div></a
-          >
-          <a href="#"
-            ><div class="A_TagButton">
-              кинематографе
-            </div></a
-          >
-          <a href="#"
-            ><div class="A_TagButton">
-              в моде
-            </div></a
-          >
-          <a href="#"
-            ><div class="A_TagButton">
-              в дизайне
-            </div></a
-          >
-          <a href="#"
-            ><div class="A_TagButton">
-              в литературе
-            </div></a
-          >
-          <a href="#"
-            ><div class="A_TagButton">
-              история
-            </div></a
-          >
-          <a href="#"
-            ><div class="A_TagButton">
-              в изобразительных искусствах
-            </div></a
-          >
-          <a href="#"
-            ><div class="A_TagButton">
-              музеи и выставки
-            </div></a
-          >
+        <h1 class="A_SectionTitle -Articles">Статьи и подборки</h1>
+        <div class="C_ArticlesTagButtons">
+          <div class="A_TagButton" data-tags="Цифра">в цифровом мире</div>
+          <div class="A_TagButton" data-tags="Мода">в моде</div>
+          <div class="A_TagButton" data-tags="Дизайн">в дизайне</div>
+          <div class="A_TagButton" data-tags="Другие искусства">
+            в других видах искусств
+          </div>
+          <div class="A_TagButton" data-tags="Общество">общество</div>
+          <div class="A_TagButton" data-tags="История">история</div>
+          <div class="A_TagButton" data-tags="Выставки">музеи и выставки</div>
+          <div class="A_TagButton" data-tags="Место">место на карте</div>
         </div>
       </div>
+
       <div class="C_CraftsCards">
-        <div class="M_CraftsCard">
-          <div class="A_CraftsCardPic">
-            <a href="#">
-              <img
-                src="images/articles/Targaryen-and-kokoshnik.jpeg"
-                alt="У каких народов есть резьба по кости"
-            /></a>
-          </div>
-          <div class="A_CraftsCardTitle">
-            <a href="#">У&nbsp;каких народов есть резьба по&nbsp;кости</a>
-          </div>
-        </div>
+        <a class="M_CraftsCard" data-tags="Общество" href="#">
+          <img
+            class="A_CraftsCardPic"
+            src="images/articles/Targaryen-and-kokoshnik.jpeg"
+            alt="У каких народов есть резьба по кости"
+          />
+          <p class="A_CraftsCardTitle">
+            У&nbsp;каких народов есть резьба по&nbsp;кости
+          </p>
+        </a>
 
-        <div class="M_CraftsCard">
-          <div class="A_CraftsCardPic">
-            <a href="#">
-              <img
-                src="images/articles/Targaryen-and-kokoshnik.jpeg"
-                alt="5 малоизвестных ремёсел Дагестана"
-            /></a>
-          </div>
-          <div class="A_CraftsCardTitle">
-            <a href="#">5 малоизвестных ремёсел Дагестана</a>
-          </div>
-        </div>
+        <a class="M_CraftsCard" data-tags="Общество" href="#">
+          <img
+            class="A_CraftsCardPic"
+            src="images/articles/Targaryen-and-kokoshnik.jpeg"
+            alt="5 малоизвестных ремёсел Дагестана"
+          />
+          <p class="A_CraftsCardTitle">5 малоизвестных ремёсел Дагестана</p>
+        </a>
 
-        <div class="M_CraftsCard">
-          <div class="A_CraftsCardPic">
-            <a href="#">
-              <img
-                src="images/articles/Targaryen-and-kokoshnik.jpeg"
-                alt="Лагерфельд и кокошники"
-            /></a>
-          </div>
-          <div class="A_CraftsCardTitle">
-            <a href="#">Лагерфельд и&nbsp;кокошники</a>
-          </div>
-        </div>
+        <a class="M_CraftsCard" data-tags="Мода,Дизайн" href="#">
+          <img
+            class="A_CraftsCardPic"
+            src="images/articles/Targaryen-and-kokoshnik.jpeg"
+            alt="Лагерфельд и кокошники"
+          />
+          <p class="A_CraftsCardTitle">Лагерфельд и&nbsp;кокошники</p>
+        </a>
 
-        <div class="M_CraftsCard">
-          <div class="A_CraftsCardPic">
-            <a href="#">
-              <img
-                src="images/articles/Targaryen-and-kokoshnik.jpeg"
-                alt="Выбираем сервиз с историей"
-            /></a>
-          </div>
-          <div class="A_CraftsCardTitle">
-            <a href="#">Выбираем сервиз с&nbsp;историей</a>
-          </div>
-        </div>
+        <a class="M_CraftsCard" data-tags="История,Дизайн" href="#">
+          <img
+            class="A_CraftsCardPic"
+            src="images/articles/Targaryen-and-kokoshnik.jpeg"
+            alt="Выбираем сервиз с историей"
+          />
+          <p class="A_CraftsCardTitle">Выбираем сервиз с&nbsp;историей</p>
+        </a>
 
-        <div class="M_CraftsCard">
-          <div class="A_CraftsCardPic">
-            <a href="#">
-              <img
-                src="images/articles/Targaryen-and-kokoshnik.jpeg"
-                alt="Традиционные детские игрушки"
-            /></a>
-          </div>
-          <div class="A_CraftsCardTitle">
-            <a href="#">Традиционные детские игрушки</a>
-          </div>
-        </div>
+        <a class="M_CraftsCard" data-tags="История" href="#">
+          <img
+            class="A_CraftsCardPic"
+            src="images/articles/Targaryen-and-kokoshnik.jpeg"
+            alt="Традиционные детские игрушки"
+          />
+          <p class="A_CraftsCardTitle">Традиционные детские игрушки</p>
+        </a>
 
-        <div class="M_CraftsCard">
-          <div class="A_CraftsCardPic">
-            <a href="#">
-              <img
-                src="images/articles/Targaryen-and-kokoshnik.jpeg"
-                alt="Русская вышивка и пиксель-арт?"
-            /></a>
-          </div>
-          <div class="A_CraftsCardTitle">
-            <a href="#">Русская вышивка и&nbsp;пиксель-арт?</a>
-          </div>
-        </div>
+        <a class="M_CraftsCard" data-tags="История,Дизайн" href="#">
+          <img
+            class="A_CraftsCardPic"
+            src="images/articles/Targaryen-and-kokoshnik.jpeg"
+            alt="Русская вышивка и пиксель-арт?"
+          />
+          <p class="A_CraftsCardTitle">Русская вышивка и&nbsp;пиксель-арт?</p>
+        </a>
 
-        <div class="M_CraftsCard">
-          <div class="A_CraftsCardPic">
-            <a href="#">
-              <img
-                src="images/articles/Targaryen-and-kokoshnik.jpeg"
-                alt="Переосмысление самовара "
-            /></a>
-          </div>
-          <div class="A_CraftsCardTitle">
-            <a href="#">Переосмысление самовара </a>
-          </div>
-        </div>
+        <a class="M_CraftsCard" data-tags="История,Дизайн" href="#">
+          <img
+            class="A_CraftsCardPic"
+            src="images/articles/Targaryen-and-kokoshnik.jpeg"
+            alt="Переосмысление самовара"
+          />
+          <p class="A_CraftsCardTitle">Переосмысление самовара</p>
+        </a>
 
-        <div class="M_CraftsCard">
-          <div class="A_CraftsCardPic">
-            <a href="#">
-              <img
-                src="images/articles/Targaryen-and-kokoshnik.jpeg"
-                alt="Ремесленные центры Урала"
-            /></a>
-          </div>
-          <div class="A_CraftsCardTitle">
-            <a href="#">Ремесленные центры Урала</a>
-          </div>
-        </div>
+        <a class="M_CraftsCard" data-tags="История,Место" href="#">
+          <img
+            class="A_CraftsCardPic"
+            src="images/articles/Targaryen-and-kokoshnik.jpeg"
+            alt="Ремесленные центры Урала"
+          />
+          <p class="A_CraftsCardTitle">Ремесленные центры Урала</p>
+        </a>
 
-        <div class="M_CraftsCard">
-          <div class="A_CraftsCardPic">
-            <a href="#">
-              <img
-                src="images/articles/Targaryen-and-kokoshnik.jpeg"
-                alt="Как матрёшка стала символом России"
-            /></a>
-          </div>
-          <div class="A_CraftsCardTitle">
-            <a href="#">Как матрёшка стала символом России</a>
-          </div>
-        </div>
+        <a class="M_CraftsCard" data-tags="История,Дизайн,Общество" href="#">
+          <img
+            class="A_CraftsCardPic"
+            src="images/articles/Targaryen-and-kokoshnik.jpeg"
+            alt="Как матрёшка стала символом России"
+          />
+          <p class="A_CraftsCardTitle">Как матрёшка стала символом России</p>
+        </a>
 
-        <div class="M_CraftsCard">
-          <div class="A_CraftsCardPic">
-            <a href="#">
-              <img
-                src="images/articles/Targaryen-and-kokoshnik.jpeg"
-                alt="Орнамент в интерьере"
-            /></a>
-          </div>
-          <div class="A_CraftsCardTitle">
-            <a href="#">Орнамент вnbsp;интерьере</a>
-          </div>
-        </div>
+        <a class="M_CraftsCard" data-tags="Дизайн" href="#">
+          <img
+            class="A_CraftsCardPic"
+            src="images/articles/Targaryen-and-kokoshnik.jpeg"
+            alt="Орнамент в интерьере"
+          />
+          <p class="A_CraftsCardTitle">Орнамент в&nbsp;интерьере</p>
+        </a>
 
-        <div class="M_CraftsCard">
-          <div class="A_CraftsCardPic">
-            <a href="#">
-              <img
-                src="images/articles/Targaryen-and-kokoshnik.jpeg"
-                alt="Где вnbsp;Москве увидеть ремёсла"
-            /></a>
-          </div>
-          <div class="A_CraftsCardTitle">
-            <a href="#">Где в&nbsp;Москве увидеть ремёсла</a>
-          </div>
-        </div>
+        <a class="M_CraftsCard" data-tags="Выставки,Место" href="#">
+          <img
+            class="A_CraftsCardPic"
+            src="images/articles/Targaryen-and-kokoshnik.jpeg"
+            alt="Где в Москве увидеть ремёсла"
+          />
+          <p class="A_CraftsCardTitle">Где в&nbsp;Москве увидеть ремёсла</p>
+        </a>
 
-        <div class="M_CraftsCard">
-          <div class="A_CraftsCardPic">
-            <a href="#">
-              <img
-                src="images/articles/Targaryen-and-kokoshnik.jpeg"
-                alt="Искусство за полярным кругом"
-            /></a>
-          </div>
-          <div class="A_CraftsCardTitle">
-            <a href="#">Искусство за&nbsp;полярным кругом</a>
-          </div>
-        </div>
+        <a class="M_CraftsCard" data-tags="История,Общество" href="#">
+          <img
+            class="A_CraftsCardPic"
+            src="images/articles/Targaryen-and-kokoshnik.jpeg"
+            alt="Искусство за полярным кругом"
+          />
+          <p class="A_CraftsCardTitle">Искусство за&nbsp;полярным кругом</p>
+        </a>
       </div>
     </section>
 
     <div class="O_Footer">
-      <div class="M_Footer">
-        <div class="A_FooterSections">
+      <div class="M_FooterNav">
+        <div class="A_FooterSection">
           <a href="#">О проекте</a>
         </div>
         <div class="C_FooterIconsSocialNetwork">

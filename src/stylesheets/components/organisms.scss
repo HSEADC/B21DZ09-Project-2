@@ -27,7 +27,6 @@
   align-items: center;
   justify-content: center;
 
-  position: relative;
   height: 210px;
   width: auto;
 
@@ -49,9 +48,35 @@
   padding: 0px;
   gap: 40px;
 
-  position: relative;
-
   width: 1250px;
+
+  .C_CraftsTagButtonsShort {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+
+    max-width: 700px;
+
+    grid-column-gap: 18px;
+    grid-row-gap: 18px;
+  }
+
+  .C_ArticlesTagButtons {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+
+    max-width: 860px;
+
+    grid-column-gap: 18px;
+    grid-row-gap: 18px;
+  }
 }
 
 //
@@ -61,20 +86,17 @@
 .O_CraftLead {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding-top: 120px;
-
   position: relative;
+
   width: 1180px;
   // height: 308px;
-  margin: 0 auto;
+  margin: 120px auto 0;
 
   .W_CraftLeadTitleDescription {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 0px;
 
     width: 1180px;
   }
@@ -126,6 +148,7 @@
 .O_CraftBlockGallery {
   display: flex;
   flex-direction: column;
+  gap: 40px;
 
   .C_CraftBodyGallery {
     display: flex;
@@ -142,6 +165,7 @@
 .O_Teasers {
   display: flex;
   flex-direction: column;
+  gap: 40px;
 
   .C_TeaserCards {
     display: flex;
@@ -153,6 +177,27 @@
     max-width: 1180px;
     gap: 20px;
   }
+}
+
+//
+//
+//
+// Map
+
+.O_MapModal {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+
+  width: 980px;
+  height: 430px;
+
+  background-color: var(--darkgrey);
+
+  border-radius: 25px 0px 0px 0px;
 }
 
 //
@@ -198,30 +243,25 @@
 }
 
 //
-.O_SearchInputField {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 5px 0px 30px;
-  // gap: 105px;
-
-  position: relative;
+.O_Select {
   width: 940px;
-  height: 74px;
 
-  background-color: var(--white);
-  border-radius: 65px;
-}
+  .C_SelectOptionList {
+    display: none;
+    max-height: 200px;
+    overflow-y: scroll;
 
-.O_PostInputField {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+    position: absolute;
+    z-index: 10;
 
-  width: 898px;
-  height: 73px;
+    // background-color: var(--lightgrey);
+  }
+
+  &.focus {
+    .C_SelectOptionList {
+      display: block;
+    }
+  }
 }
 
 //
@@ -238,7 +278,6 @@
   height: 630px;
 
   background-repeat: no-repeat;
-  background-size: contain;
   background-position: center center;
   background-size: cover;
 
