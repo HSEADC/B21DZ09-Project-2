@@ -22,7 +22,7 @@
     />
     <meta
       property="og:image"
-      content="https://russiancrafts.adc.ac/share/index.png"
+      content="https://russiancrafts.adc.ac/share/share.png"
     />
 
     <!-- Twitter -->
@@ -35,7 +35,7 @@
     />
     <meta
       property="twitter:image"
-      content="https://russiancrafts.adc.ac/share/index.png"
+      content="https://russiancrafts.adc.ac/share/share.png"
     />
 
     <analytics></analytics>
@@ -43,24 +43,176 @@
 
   <body>
     <div class="O_Header">
-      <div class="M_Header">
-        <a class="A_Logo" href="/">Ремёсла России</a>
-        <div class="C_HeaderNav">
-          <a class="A_HeaderSections" href="./crafts.html">Библиотека</a>
-          <a class="A_HeaderSections" href="./map.html">Карта</a>
-          <a class="A_HeaderSections" href="./articles.html"
+      <div class="M_HeaderNav -StartScreen">
+        <!-- <a class="A_Logo" href="/">Ремёсла России</a> -->
+        <div class="C_HeaderNavSections">
+          <a class="A_HeaderSection" href="./crafts.html">Библиотека</a>
+          <a class="A_HeaderSection" href="./map.html">Карта</a>
+          <a class="A_HeaderSection" href="./articles.html"
             >Статьи и подборки</a
           >
         </div>
       </div>
     </div>
 
-    здесь будет новая главная страница
-    <!-- test new computer -->
+    <div class="S_MainPage">
+      <section class="O_MainPageStart">
+        <div class="M_MainPageStartTexts">
+          <h1 class="A_MainPageLogo">Ремёсла России</h1>
+          <p class="A_MainPageBodyText">
+            Проект создан для сохранения и&nbsp;популяризации народных ремёсел
+            и&nbsp;искусств. Мы&nbsp;собираем информацию о&nbsp;художественных
+            промыслах из&nbsp;разных регионов страны и&nbsp;рассказываем
+            о&nbsp;них&nbsp;&mdash; наглядно, доступно, интересно.
+          </p>
+        </div>
+
+        <div class="M_MainPageStartStickers">
+          <div class="A_Sticker -Doll"></div>
+          <div class="A_Sticker -Hohloma2"></div>
+          <div class="A_Sticker -Hohloma"></div>
+          <div class="A_Sticker -Print"></div>
+          <div class="A_Sticker -Gzhel"></div>
+          <div class="A_Sticker -Matreshka"></div>
+          <div class="A_Sticker -Flower"></div>
+          <div class="A_Sticker -Print2"></div>
+          <div class="A_Sticker -Hohloma3"></div>
+          <div class="A_Sticker -Head"></div>
+        </div>
+      </section>
+
+      <section class="O_MainPageCards">
+        <h2 class="A_MainPageSectionTitle">Популярные статьи</h2>
+
+        <div class="C_CraftsCards">
+          <a class="M_CraftsCard" data-tags="Роспись" href="#">
+            <img
+              class="A_CraftsCardPic"
+              src="images/crafts/Volkhov-painting.jpg"
+              alt="Волховская роспись"
+            />
+            <p class="A_CraftsCardTitle">Волховская роспись</p>
+          </a>
+
+          <a class="M_CraftsCard" data-tags="Глина (керамика)" href="./crafts/skopinsk-ceramic.html">
+            <img
+              class="A_CraftsCardPic"
+              src="images/crafts/Skopinsk-ceramics.jpg"
+              alt="Cкопинская керамика"
+            />
+            <p class="A_CraftsCardTitle">Cкопинская керамика</p>
+          </a>
+
+          <a class="M_CraftsCard" data-tags="Текстиль" href="#">
+            <img
+              class="A_CraftsCardPic"
+              src="images/crafts/Tabasaran-carpet.jpg"
+              alt="Табасаранские ковры"
+            />
+            <p class="A_CraftsCardTitle">Табасаранские ковры</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="O_MainPageSearch">
+        <div class="M_MainPageSectionTexts">
+          <h2 class="A_MainPageSectionTitle">Найди ремесло по&nbsp;вкусу</h2>
+          <p class="A_MainPageDescription">
+            Воспользуйтесь нашим удобный поиском и&nbsp;найдите ремесло
+            по&nbsp;тегу, материалам и&nbsp;технике!
+          </p>
+        </div>
+
+        <div class="O_Select">
+          <div class="M_SelectField">
+            <input
+              class="A_SelectInput"
+              type="text"
+              placeholder="Поиск ремесла..."
+            />
+            <div class="W_SelectButtons">
+              <div class="Q_Icon -Filter -size48x48"></div>
+              <div class="A_MainPageButton">Найти</div>
+            </div>
+          </div>
+
+          <div class="C_SelectOptionList"></div>
+        </div>
+      </section>
+
+      <section class="O_MainPageCards">
+        <h2 class="A_MainPageSectionTitle">Может быть инетересно</h2>
+
+        <div class="C_CraftsCards">
+          <a class="M_CraftsCard" data-tags="Текстиль" href="./crafts/vologodskoe-lace.html">
+            <img
+              class="A_CraftsCardPic"
+              src="images/crafts/Vologda-lace.jpg"
+              alt="Вологодское кружево"
+            />
+            <p class="A_CraftsCardTitle">Вологодское кружево</p>
+          </a>
+
+          <a class="M_CraftsCard" data-tags="Роспись" href="#">
+            <img
+              class="A_CraftsCardPic"
+              src="images/crafts/Vologda-khokhloma.jpg"
+              alt="Вологодская хохлома"
+            />
+            <p class="A_CraftsCardTitle">Вологодская хохлома</p>
+          </a>
+
+          <a class="M_CraftsCard" data-tags="Роспись" href="./crafts/Rakul-painting.html">
+            <img
+              class="A_CraftsCardPic"
+              src="images/crafts/Rakul-painting.jpg"
+              alt="Ракульская роспись"
+            />
+            <p class="A_CraftsCardTitle">Ракульская роспись</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="W_MainPageTeaserName">
+        <h2 class="A_MainPageSectionTitle">Подборки по&nbsp;материалам</h2>
+
+        <div class="O_MainPageTeaser">
+          <div class="M_MainPageTeaserTexts">
+            <h3 class="A_MainPageTeaserTitle">Глина</h3>
+            <p class="A_MainPageBodyText">
+              Гончарное ремесло на&nbsp;Руси зародилось ещё
+              в&nbsp;доисторическую эпоху и&nbsp;при раскопках археологи
+              до&nbsp;сих пор находят различные горшки, кувшины, сковороды,
+              корчаги и&nbsp;другую утварь, слепленную вручную. Позже,
+              с&nbsp;появлением гончарного круга, ремесло превратилось
+              в&nbsp;промысел и&nbsp;глиняную посуду стали использовать
+              повсеместно.
+            </p>
+          </div>
+          <a class="A_MainPageTeaserButton" href="#">Читать</a>
+        </div>
+      </section>
+
+      <section class="O_MainPageSubscribe">
+        <div class="M_MainPageSectionTexts">
+          <h2 class="A_MainPageSectionTitle">Узнай больше о&nbsp;ремёслах</h2>
+          <p class="A_MainPageDescription">
+            Подпишись на&nbsp;нашу рассылку и&nbsp;не&nbsp;пропусти новый
+            уникальный контент!
+          </p>
+        </div>
+
+        <div class="O_PostInputField">
+          <div class="A_PostInputText"></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- <a href="/" id="random-link">случайная ссылка</a> -->
 
     <div class="O_Footer">
-      <div class="M_Footer">
-        <div class="A_FooterSections">
+      <div class="M_FooterNav">
+        <div class="A_FooterSection">
           <a href="#">О проекте</a>
         </div>
         <div class="C_FooterIconsSocialNetwork">

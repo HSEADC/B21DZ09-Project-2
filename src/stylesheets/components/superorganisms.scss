@@ -5,12 +5,10 @@
 .S_ArticlesBody {
   display: flex;
   flex-direction: column;
-  margin: 193px 0px 200px;
+  margin: 190px auto 200px;
   gap: 80px;
 
-  position: relative;
-
-  align-items: center;
+  width: 1180px;
 
   .C_CraftsCards {
     display: flex;
@@ -20,10 +18,10 @@
     flex-direction: row;
     align-items: top;
 
-    width: 1252px;
+    max-width: 1180px;
 
-    grid-column-gap: 37px;
-    grid-row-gap: 37px;
+    grid-column-gap: 36px;
+    grid-row-gap: 36px;
   }
 }
 
@@ -33,7 +31,7 @@
 // Страницы ремёсел
 
 .S_CraftPage {
-  margin: 0 auto;
+  margin: 90px auto 240px;
   display: flex;
   flex-direction: column;
 
@@ -52,7 +50,7 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      margin: 140px 0px 240px 0px;
+      margin-top: 140px;
     }
 
     .W_CraftHistorySticker {
@@ -77,3 +75,65 @@
     }
   }
 }
+
+//
+//
+//
+//Модальные окна
+.S_Modal {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+
+  &.visible {
+    display: block;
+  }
+
+  .W_ModalFader {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+//
+//
+//
+//start- стартовый экран
+.S_MainPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 220px;
+
+  width: 1350px;
+
+  margin: 280px auto 250px auto;
+
+  .W_MainPageTeaserName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+//
+//
+//
+//
+.S_MapPage {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('images/map/map.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+//

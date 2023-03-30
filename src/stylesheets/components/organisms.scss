@@ -27,8 +27,8 @@
   align-items: center;
   justify-content: center;
 
-  position: relative;
   height: 210px;
+  width: auto;
 
   border-top: 2px solid;
   border-color: var(--white);
@@ -48,9 +48,35 @@
   padding: 0px;
   gap: 40px;
 
-  position: relative;
-
   width: 1250px;
+
+  .C_CraftsTagButtonsShort {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+
+    max-width: 700px;
+
+    grid-column-gap: 18px;
+    grid-row-gap: 18px;
+  }
+
+  .C_ArticlesTagButtons {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+
+    max-width: 860px;
+
+    grid-column-gap: 18px;
+    grid-row-gap: 18px;
+  }
 }
 
 //
@@ -60,20 +86,17 @@
 .O_CraftLead {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding-top: 120px;
-
   position: relative;
+
   width: 1180px;
   // height: 308px;
-  margin: 0 auto;
+  margin: 120px auto 0;
 
   .W_CraftLeadTitleDescription {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 0px;
 
     width: 1180px;
   }
@@ -113,18 +136,19 @@
   flex-direction: column;
   gap: 40px;
 
-  .W_CraftSliderNote {
+  .W_SliderWithDescription {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     margin-left: 52px;
-    gap: 72px;
+    gap: 26px;
   }
 }
 
 .O_CraftBlockGallery {
   display: flex;
   flex-direction: column;
+  gap: 40px;
 
   .C_CraftBodyGallery {
     display: flex;
@@ -141,6 +165,7 @@
 .O_Teasers {
   display: flex;
   flex-direction: column;
+  gap: 40px;
 
   .C_TeaserCards {
     display: flex;
@@ -152,4 +177,113 @@
     max-width: 1180px;
     gap: 20px;
   }
+}
+
+//
+//
+//
+// Map
+
+.O_MapModal {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+
+  width: 980px;
+  height: 430px;
+
+  background-color: var(--darkgrey);
+
+  border-radius: 25px 0px 0px 0px;
+}
+
+//
+//
+//
+//
+//
+//Start- стартовый экран
+.O_MainPageStart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+.O_MainPageCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+
+  .C_CraftsCards {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: top;
+
+    max-width: 1350px;
+
+    grid-column-gap: 37px;
+    grid-row-gap: 37px;
+  }
+}
+
+.O_MainPageSearch,
+.O_MainPageSubscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+//
+.O_Select {
+  width: 940px;
+
+  .C_SelectOptionList {
+    display: none;
+    max-height: 200px;
+    overflow-y: scroll;
+
+    position: absolute;
+    z-index: 10;
+
+    border: 5px solid var(--black);
+    border-radius: 32px;
+    box-sizing: border-box;
+
+    // background-color: var(--lightgrey);
+  }
+
+  &.focus {
+    .C_SelectOptionList {
+      display: block;
+    }
+  }
+}
+
+//
+
+.O_MainPageTeaser {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px 0px 0px 50px;
+  gap: 39px;
+
+  width: 1320px;
+  height: 630px;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  background-image: url('images/Start/teaser.jpg');
 }

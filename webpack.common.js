@@ -9,7 +9,10 @@ const path = require('path')
 
 module.exports = {
   entry: {
-    index: './src/index.js'
+    index: './src/index.js',
+    map: './src/javascript/map.js',
+    crafts_articles: './src/javascript/crafts_articles.js',
+    craft_article: './src/javascript/craft_article.js'
     // page: './src/page.jsx'
   },
   output: {
@@ -107,21 +110,77 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/crafts.html',
       filename: './crafts.html',
-      chunks: ['index']
+      chunks: ['crafts_articles']
     }),
 
     // Article — страница со всеми подборками и мини-статьями
     new HtmlWebpackPlugin({
       template: './src/articles.html',
       filename: './articles.html',
-      chunks: ['index']
+      chunks: ['crafts_articles']
     }),
 
     // Craft, уэленская резьба по кости — страница отдельного ремесла
     new HtmlWebpackPlugin({
       template: './src/crafts/uelen-bone-carving.html',
       filename: './crafts/uelen-bone-carving.html',
-      chunks: ['index']
+      chunks: ['craft_article']
+    }),
+
+    // Craft, сопинская керамика по кости — страница отдельного ремесла
+    new HtmlWebpackPlugin({
+      template: './src/crafts/skopinsk-ceramic.html',
+      filename: './crafts/skopinsk-ceramic.html',
+      chunks: ['craft_article']
+    }),
+
+    // Craft, вологодское кружево по кости — страница отдельного ремесла
+    new HtmlWebpackPlugin({
+      template: './src/crafts/vologodskoe-lace.html',
+      filename: './crafts/vologodskoe-lace.html',
+      chunks: ['craft_article']
+    }),
+
+    // Craft, городецская роспись по кости — страница отдельного ремесла
+    new HtmlWebpackPlugin({
+      template: './src/crafts/gorodets-painting.html',
+      filename: './crafts/gorodets-painting.html',
+      chunks: ['craft_article']
+    }),
+
+    // Craft, ракульская роспись по кости — страница отдельного ремесла
+    new HtmlWebpackPlugin({
+      template: './src/crafts/rakul-painting.html',
+      filename: './crafts/rakul-painting.html',
+      chunks: ['craft_article']
+    }),
+
+    // Craft,  дымская игрушка по кости — страница отдельного ремесла
+    new HtmlWebpackPlugin({
+      template: './src/crafts/dimskaya-toy.html',
+      filename: './crafts/dimskaya-toy.html',
+      chunks: ['craft_article']
+    }),
+
+    // Craft,  абашевская по кости — страница отдельного ремесла
+    new HtmlWebpackPlugin({
+      template: './src/crafts/abashevskaya-toy.html',
+      filename: './crafts/abashevskaya-toy.html',
+      chunks: ['craft_article']
+    }),
+
+    // Craft,  тверская вышивка — страница отдельного ремесла
+    new HtmlWebpackPlugin({
+      template: './src/crafts/tverskaya-lace.html',
+      filename: './crafts/tverskaya-lace.html',
+      chunks: ['craft_article']
+    }),
+
+    // Craft,  тульская сталь — страница отдельного ремесла
+    new HtmlWebpackPlugin({
+      template: './src/crafts/tulskaya-stal.html',
+      filename: './crafts/tulskaya-stal.html',
+      chunks: ['craft_article']
     }),
 
     // Articles, У каких народов есть резьба по кости — отдельная страница подборки/мини-статьи
@@ -135,7 +194,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/map.html',
       filename: './map.html',
-      chunks: ['index']
+      chunks: ['map']
     }),
 
     //Lending
