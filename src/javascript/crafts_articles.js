@@ -1,23 +1,23 @@
 import '../index.css'
-
-console.log('Test crafts and articles')
-
-const tagsShower = document.querySelector('.A_TagOptionsTextShow')
-const tagsHidder = document.querySelector('.A_TagOptionsTextHide')
-const tagsShown = document.querySelector('.M_TagAllButtonsFull')
-const tagsHidden = document.querySelector('.C_CraftsTagButtonsShort')
-
-const filterChip = document.getElementsByClassName('A_TagButton')
-const container = document.querySelector('.S_Content')
-let allCards = document.querySelector('.M_Card')
-
+//
+// console.log('Test crafts and articles')
+//
+// const tagsButtonShower = document.querySelector('.A_TagOptionsTextShow')
+// const tagsButtonHidder = document.querySelector('.A_TagOptionsTextHide')
+// const tagsShown = document.querySelector('.M_TagAllButtonsFull')
+// const tagsHidden = document.querySelector('.C_CraftsTagButtonsShort')
+//
+// const filterChip = document.getElementsByClassName('A_TagButton')
+// const container = document.querySelector('.S_Content')
+// let allCards = document.querySelector('.M_Card')
+//
 // function initFilter() {
-//   tagsShower.addEventListener('click', () => {
+//   tagsButtonShower.addEventListener('click', () => {
 //     tagsShown.classList.remove('-hidden')
 //     tagsHidden.classList.add('-hidden')
 //   })
 //
-//   tagsHidder.addEventListener('click', () => {
+//   tagsButtonHidder.addEventListener('click', () => {
 //     tagsShown.classList.add('-hidden')
 //     tagsHidden.classList.remove('-hidden')
 //   })
@@ -47,7 +47,7 @@ let allCards = document.querySelector('.M_Card')
 //     }
 //   }
 // }
-
-document.addEventListener('DOMContentLoaded', () => {
-  // initFilter()
-})
+//
+// document.addEventListener('DOMContentLoaded', () => {
+//   // initFilter()
+// })
