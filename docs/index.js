@@ -2,16 +2,6 @@
 /******/ 	"use strict";
 var __webpack_exports__ = {};
 
-;// CONCATENATED MODULE: ./src/javascript/random-link.js
-
-var buttonRandom = document.getElementById('random-link');
-var pageLinks = ['./map.html', './crafts.html', './articles.html', './crafts/uelen-bone-carving.html'];
-buttonRandom.addEventListener('click', function () {
-  var randomLink = pageLinks[Math.floor(Math.random() * pageLinks.length)];
-  buttonRandom.href = randomLink;
-});
-;// CONCATENATED MODULE: ./src/index.js
-
 
  // console.log('Test')
 //

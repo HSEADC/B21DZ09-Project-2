@@ -1,21 +1,25 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 var __webpack_exports__ = {};
-
-console.log('Test crafts and articles');
-var tagsShower = document.querySelector('.A_TagOptionsTextShow');
-var tagsHidder = document.querySelector('.A_TagOptionsTextHide');
-var tagsShown = document.querySelector('.M_TagAllButtonsFull');
-var tagsHidden = document.querySelector('.C_CraftsTagButtonsShort');
-var filterChip = document.getElementsByClassName('A_TagButton');
-var container = document.querySelector('.S_Content');
-var allCards = document.querySelector('.M_Card'); // function initFilter() {
-//   tagsShower.addEventListener('click', () => {
+ //
+// console.log('Test crafts and articles')
+//
+// const tagsButtonShower = document.querySelector('.A_TagOptionsTextShow')
+// const tagsButtonHidder = document.querySelector('.A_TagOptionsTextHide')
+// const tagsShown = document.querySelector('.M_TagAllButtonsFull')
+// const tagsHidden = document.querySelector('.C_CraftsTagButtonsShort')
+//
+// const filterChip = document.getElementsByClassName('A_TagButton')
+// const container = document.querySelector('.S_Content')
+// let allCards = document.querySelector('.M_Card')
+//
+// function initFilter() {
+//   tagsButtonShower.addEventListener('click', () => {
 //     tagsShown.classList.remove('-hidden')
 //     tagsHidden.classList.add('-hidden')
 //   })
 //
-//   tagsHidder.addEventListener('click', () => {
+//   tagsButtonHidder.addEventListener('click', () => {
 //     tagsShown.classList.add('-hidden')
 //     tagsHidden.classList.remove('-hidden')
 //   })
@@ -45,8 +49,9 @@ var allCards = document.querySelector('.M_Card'); // function initFilter() {
 //     }
 //   }
 // }
-
-document.addEventListener('DOMContentLoaded', function () {// initFilter()
-});
+//
+// document.addEventListener('DOMContentLoaded', () => {
+//   // initFilter()
+// })
 /******/ })()
 ;
