@@ -196,6 +196,23 @@
 
   background-color: grey;
   border-radius: 23px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  cursor: pointer;
+
+  &.-bones {
+    background-image: url('./images/teaser/bones.png');
+  }
+
+  &.-nord {
+    background-image: url('./images/teaser/nord.png');
+  }
+
+  &.-toys {
+    background-image: url('./images/teaser/toys.png');
+  }
 }
 
 .M_CraftEndTags {
