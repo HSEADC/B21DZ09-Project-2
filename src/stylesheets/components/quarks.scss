@@ -33,9 +33,9 @@
   &.-MapPagePoint {
     background-image: url('images/Icons/Q_IconMapPage.svg');
 
-    position: absolute;
-    top: 40%;
-    left: 60%;
+    position: fixed;
+    top: 38%;
+    left: 64%;
     opacity: 0.7;
 
     &:hover {

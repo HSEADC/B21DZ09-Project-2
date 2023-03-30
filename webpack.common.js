@@ -127,6 +127,62 @@ module.exports = {
       chunks: ['craft_article']
     }),
 
+    // Craft, сопинская керамика по кости — страница отдельного ремесла
+    new HtmlWebpackPlugin({
+      template: './src/crafts/skopinsk-ceramic.html',
+      filename: './crafts/skopinsk-ceramic.html',
+      chunks: ['craft_article']
+    }),
+
+    // Craft, вологодское кружево по кости — страница отдельного ремесла
+    new HtmlWebpackPlugin({
+      template: './src/crafts/vologodskoe-lace.html',
+      filename: './crafts/vologodskoe-lace.html',
+      chunks: ['craft_article']
+    }),
+
+    // Craft, городецская роспись по кости — страница отдельного ремесла
+    new HtmlWebpackPlugin({
+      template: './src/crafts/gorodets-painting.html',
+      filename: './crafts/gorodets-painting.html',
+      chunks: ['craft_article']
+    }),
+
+    // Craft, ракульская роспись по кости — страница отдельного ремесла
+    new HtmlWebpackPlugin({
+      template: './src/crafts/rakul-painting.html',
+      filename: './crafts/rakul-painting.html',
+      chunks: ['craft_article']
+    }),
+
+    // Craft,  дымская игрушка по кости — страница отдельного ремесла
+    new HtmlWebpackPlugin({
+      template: './src/crafts/dimskaya-toy.html',
+      filename: './crafts/dimskaya-toy.html',
+      chunks: ['craft_article']
+    }),
+
+    // Craft,  абашевская по кости — страница отдельного ремесла
+    new HtmlWebpackPlugin({
+      template: './src/crafts/abashevskaya-toy.html',
+      filename: './crafts/abashevskaya-toy.html',
+      chunks: ['craft_article']
+    }),
+
+    // Craft,  тверская вышивка — страница отдельного ремесла
+    new HtmlWebpackPlugin({
+      template: './src/crafts/tverskaya-lace.html',
+      filename: './crafts/tverskaya-lace.html',
+      chunks: ['craft_article']
+    }),
+
+    // Craft,  тульская сталь — страница отдельного ремесла
+    new HtmlWebpackPlugin({
+      template: './src/crafts/tulskaya-stal.html',
+      filename: './crafts/tulskaya-stal.html',
+      chunks: ['craft_article']
+    }),
+
     // Articles, У каких народов есть резьба по кости — отдельная страница подборки/мини-статьи
     new HtmlWebpackPlugin({
       template: './src/articles/bone-carving.html',

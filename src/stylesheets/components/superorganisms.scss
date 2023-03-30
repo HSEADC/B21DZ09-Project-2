@@ -125,6 +125,15 @@
 //
 //
 .S_MapPage {
-  width: 100vw;
   height: 100vh;
+  width: 100vw;
+  background-image: url('images/map/map.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  left: 0;
+  top: 0;
+  position: absolute;
 }
+
+//
