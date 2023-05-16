@@ -12,6 +12,10 @@
   align-items: center;
 
   color: var(--white);
+
+  &.-black {
+    color: var(--black);
+  }
 }
 
 .A_HeaderSection,
@@ -27,6 +31,10 @@
   text-align: center;
 
   color: var(--white);
+
+  &.-black {
+    color: var(--black);
+  }
 }
 
 .A_FooterIconSocialNetwork {
@@ -828,4 +836,118 @@
     width: 320px;
     height: 272px;
   }
+}
+
+//
+//
+//
+//
+
+.A_SearchTitle {
+  font-family: 'PP Neue Machina';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 71px;
+  line-height: 67px;
+
+  color: var(--white);
+
+  background-repeat: no-repeat;
+
+  width: 605px;
+  height: 87px;
+  background-image: url('./images/search/shape_title.svg');
+  padding-left: 5px;
+  padding-top: 12px;
+}
+
+.A_SearchInput {
+  border: 4px solid black;
+  border-radius: 14px;
+  width: 470px;
+  height: 2px;
+  background-color: transparent;
+  padding: 22px;
+
+  font-family: 'PP Neue Montreal';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+
+  &:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+  }
+}
+
+.A_SearchButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 134px;
+  height: 54px;
+
+  font-family: 'PP Neue Montreal';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: var(--white);
+
+  background: var(--black);
+  border-radius: 14px;
+  cursor: pointer;
+  user-select: none;
+
+  &:hover:not(.-disabled) {
+    background: lighten(black, 20%);
+  }
+
+  &.-disabled {
+    background: lightgrey;
+    color: grey;
+    cursor: default;
+  }
+}
+
+.A_ContentItemCover {
+  width: 368px;
+  height: 280px;
+  box-sizing: border-box;
+
+  border: 4px solid;
+  border-radius: 26px;
+  border-color: var(--black);
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  object-fit: cover;
+}
+
+.A_ContentItemTitle {
+  max-width: 368px;
+
+  font-family: 'PP Neue Machina Plain';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 27px;
+
+  color: var(--black);
+}
+
+.A_ContentItemDescription {
+  max-width: 368px;
+
+  font-family: 'PP Neue Montreal';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: var(--black);
 }

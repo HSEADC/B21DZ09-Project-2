@@ -137,3 +137,28 @@
 }
 
 //
+//
+//
+//
+
+.S_SearchBody {
+  display: flex;
+  flex-direction: column;
+  margin: 232px auto 150px;
+
+  width: 1176px;
+
+  .C_Content {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: top;
+
+    max-width: 1180px;
+
+    grid-column-gap: 36px;
+    grid-row-gap: 36px;
+  }
+}

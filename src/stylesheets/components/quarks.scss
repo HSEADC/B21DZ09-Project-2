@@ -7,9 +7,18 @@
     height: 48px;
   }
 
+  &.-size28x28 {
+    width: 28px;
+    height: 28px;
+  }
+
   &.-size6x6 {
     width: 6px;
     height: 6px;
+  }
+
+  &.-Search {
+    background-image: url('images/Icons/Q_IconSearch.svg');
   }
 
   &.-Filter {

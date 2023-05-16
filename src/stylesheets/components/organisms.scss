@@ -6,16 +6,19 @@
   align-items: center;
   justify-content: center;
 
-  position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: 93px;
+  height: 92px;
 
   // border-bottom: 3px solid;
   // border-color: var(--white);
 
   background-color: var(--black);
+
+  &.-white {
+    background-color: var(--white);
+  }
 
   z-index: 100;
 }
@@ -286,4 +289,23 @@
   background-size: cover;
 
   background-image: url('images/Start/teaser.jpg');
+}
+
+//
+//
+//
+//
+.O_Search {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 62px;
+}
+
+.O_ContentItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
