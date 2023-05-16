@@ -844,7 +844,13 @@
 
   color: var(--white);
 
-  -webkit-text-stroke: 9px var(--black);
+  background-repeat: no-repeat;
+
+  width: 605px;
+  height: 87px;
+  background-image: url('./images/search/shape_title.svg');
+  padding-left: 5px;
+  padding-top: 12px;
 }
 
 .A_SearchInput {
