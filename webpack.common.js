@@ -10,6 +10,7 @@ const path = require('path')
 module.exports = {
   entry: {
     index: './src/index.js',
+    search: './src/javascript/search.js',
     map: './src/javascript/map.js',
     crafts_articles: './src/javascript/crafts_articles.js',
     craft_article: './src/javascript/craft_article.js'
@@ -88,6 +89,13 @@ module.exports = {
       template: './src/index.html',
       filename: './index.html',
       chunks: ['index']
+    }),
+
+    // Search
+    new HtmlWebpackPlugin({
+      template: './src/search.html',
+      filename: './search.html',
+      chunks: ['search']
     }),
 
     // // Internal pages
