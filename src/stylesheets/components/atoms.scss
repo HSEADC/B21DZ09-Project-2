@@ -11,7 +11,11 @@
   display: flex;
   align-items: center;
 
-  color: var(--black);
+  color: var(--white);
+
+  &.-black {
+    color: var(--black);
+  }
 }
 
 .A_HeaderSection,
@@ -26,7 +30,11 @@
   align-items: center;
   text-align: center;
 
-  color: var(--black);
+  color: var(--white);
+
+  &.-black {
+    color: var(--black);
+  }
 }
 
 .A_FooterIconSocialNetwork {
