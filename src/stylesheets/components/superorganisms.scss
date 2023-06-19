@@ -31,49 +31,9 @@
 // Страницы ремёсел
 
 .S_CraftPage {
-  margin: 90px auto 240px;
   display: flex;
   flex-direction: column;
-
-  width: 1180px;
-
-  .W_CraftContent {
-    gap: 140px;
-
-    &.-Center {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    &.-Left {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      margin-top: 140px;
-    }
-
-    .W_CraftHistorySticker {
-      display: flex;
-      flex-direction: column;
-      gap: 80px;
-
-      width: 1180px;
-    }
-
-    .W_CraftSeeAlso {
-      display: flex;
-      flex-direction: column;
-      gap: 90px;
-
-      .W_CraftPageEnd {
-        display: flex;
-        flex-direction: column;
-        margin-left: 100px;
-        gap: 50px;
-      }
-    }
-  }
+  align-items: center;
 }
 
 //

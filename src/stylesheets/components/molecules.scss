@@ -104,26 +104,65 @@
   }
 }
 
+//
+//
+
+.M_CraftAboutTexts {
+  //new
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .W_CraftTitleGeo {
+    gap: 0;
+  }
+}
+
+.M_CraftBodyTexts {
+  //new
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.M_ImageWithDescription {
+  //new
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  &.v2 {
+    margin-left: 756px;
+  }
+
+  &.v3 {
+    margin-left: 175px;
+  }
+
+  .W_ImageDescription {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+
+.M_CraftBodyImages {
+  position: relative;
+  width: 782px;
+  height: 586px;
+}
+
+//
+//
+
 .M_CraftAbout {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 20px;
-}
-
-.M_CraftBodyTexts {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
-
-  &.-Left100 {
-    margin-left: 100px;
-  }
-
-  &.-Left200 {
-    margin-left: 200px;
-  }
 }
 
 .M_CraftBodyMap {
@@ -188,7 +227,6 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  padding: 0px 12px 8px;
 
   width: 280px;
   height: 160px;

@@ -2,7 +2,7 @@
   cursor: pointer;
   background-repeat: no-repeat;
 
-  &.-size48x48 {
+  &.size48x48 {
     width: 48px;
     height: 48px;
   }
@@ -25,8 +25,8 @@
     background-image: url('images/Icons/Q_IconFilter.svg');
   }
 
-  &.-MapPoint {
-    background-image: url('images/Icons/Q_IconMap.svg');
+  &.MapPointBlack {
+    background-image: url('images/Icons/Q_IconMapBlack.svg');
   }
 
   &.-Cross {
@@ -70,13 +70,6 @@
   }
 }
 
-.Q_CraftLeadImage {
-  width: 1180px;
-  height: auto;
-
-  margin-bottom: -90px;
-}
-
 .Q_CraftAboutImage {
   &.-w380 {
     width: 380px;
@@ -93,46 +86,64 @@
 .Q_CraftBodyImage {
   object-fit: cover;
 
-  &.-Gallery1 {
-    width: 280px;
-    height: 220px;
-  }
-
-  &.-Gallery2 {
-    width: 380px;
-    height: 220px;
-  }
-
-  &.-w480 {
-    width: 480px;
-    height: auto;
-  }
-
-  &.-w580 {
+  &.w580 {
     width: 580px;
     height: auto;
   }
 
-  &.-w680 {
-    width: 680px;
+  &.w654 {
+    width: 654px;
     height: auto;
   }
 
-  &.-w1180 {
-    width: 1180px;
+  &.w830 {
+    width: 830px;
     height: auto;
   }
 
-  &.-Left100 {
-    margin: 0 0 0 100px;
+  &.pecul1 {
+    position: absolute;
+    width: 366px;
+    height: auto;
+
+    left: 0;
+    top: 0;
   }
 
-  &.-Left200 {
-    margin: 0 0 0 200px;
+  &.pecul2 {
+    position: absolute;
+    width: 366px;
+    height: auto;
+
+    left: 416px;
+    top: 57px;
   }
 
-  &.-Left600 {
-    margin: 0 0 0 600px;
+  &.pecul3 {
+    position: absolute;
+    width: 292px;
+    height: auto;
+
+    left: 169px;
+    top: 307px;
+  }
+
+  &.gal {
+    width: 870px;
+    height: auto;
+  }
+}
+
+.Q_CraftHistoryImage {
+  object-fit: cover;
+  position: absolute;
+
+  &.Uelen-bone-carving {
+    width: 692px;
+    height: auto;
+
+    top: 60px;
+    right: 770px;
   }
 }
 
@@ -146,4 +157,26 @@
 .Q_CraftBodyMapImage {
   width: 380px;
   height: auto;
+}
+
+//
+//
+
+.Q_CraftLeadImage {
+  position: absolute;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  z-index: 10;
+
+  &.Uelen-bone-carving {
+    left: 69px;
+    top: 265px;
+    width: 1468px;
+    height: 338px;
+    transform: rotate(-13deg);
+
+    background-image: url('./images/craft/uelen-bone-carving/lead.png');
+  }
 }

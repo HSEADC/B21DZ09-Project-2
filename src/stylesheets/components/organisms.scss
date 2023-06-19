@@ -11,13 +11,14 @@
   right: 0;
   height: 92px;
 
-  // border-bottom: 3px solid;
-  // border-color: var(--white);
-
   background-color: var(--black);
 
-  &.-white {
+  &.white {
     background-color: var(--white);
+  }
+
+  &.yellow {
+    background-color: var(--yellow);
   }
 
   z-index: 100;
@@ -87,23 +88,116 @@
 // Crafr — страницы отдельных ремёсел
 
 .O_CraftLead {
-  display: flex;
-  flex-direction: column;
+  //new
   position: relative;
+  width: 100vw;
+  height: 816px;
 
-  width: 1180px;
-  // height: 308px;
-  margin: 120px auto 0;
+  overflow: hidden;
 
-  .W_CraftLeadTitleDescription {
+  .C_LeadStrings {
+    position: absolute;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
+    flex-direction: column;
+    gap: 70px;
 
-    width: 1180px;
+    bottom: 126px;
+
+    .C_LeadStringsTitle {
+      display: flex;
+      flex-direction: row;
+      gap: 52px;
+    }
+  }
+
+  // .W_LeadImage {
+  //   position: relative;
+  //   width: 1700px;
+  //   height: 816px;
+  // }
+
+  &.yellow {
+    background-color: var(--yellow);
   }
 }
+
+.O_CraftAbout {
+  //new
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px 0px 150px;
+  gap: 90px;
+
+  .C_CraftAboutImages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.O_CraftPeculiarities {
+  //new
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 88px 0px;
+
+  width: 100vw;
+
+  background: var(--yellow);
+}
+
+.O_CraftTechique {
+  //new
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 80px;
+
+  .W_CraftTechiqueFirst {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 110px;
+
+    margin-left: 66px;
+  }
+}
+
+.O_CraftGallery {
+  //new
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 160px 0px 170px;
+  gap: 40px;
+}
+
+.W_CraftPeculiaritiesContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 1440px;
+}
+
+.O_CraftHistory {
+  //new
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 170px 0px 220px;
+
+  position: relative;
+  width: 1440px;
+}
+
+//
+//
 
 .O_CraftBlock {
   display: flex;
@@ -169,6 +263,7 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+  margin: 100px 0px 180px;
 
   .C_TeaserCards {
     display: flex;
