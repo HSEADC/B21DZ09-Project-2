@@ -123,7 +123,7 @@
 
   border: 1.5px solid;
   border-radius: 14px;
-  border-color: var(--white);
+  border-color: var(--black);
 
   font-family: 'PP Neue Machina Plain Regular';
   font-style: normal;
@@ -133,7 +133,7 @@
 
   text-align: center;
 
-  color: var(--white);
+  color: var(--black);
 
   transition: 0.5s;
 
@@ -296,7 +296,7 @@
   font-size: 21px;
   line-height: 27px;
 
-  color: var(--white);
+  color: #080808;
 }
 
 .A_TagButtonArticle {
@@ -949,5 +949,159 @@
   font-size: 16px;
   line-height: 19px;
 
+  color: var(--black);
+}
+
+//поиск
+
+.A_Input {
+  align-items: center;
+  display: inline-block;
+  width: 24px;
+  height: 20px;
+  padding: 14px 10px;
+  font-size: 0px;
+  font-family: 'Inter';
+  color: var(gray);
+  border: none;
+  outline: none;
+  background-color: transparent;
+  transition: width 0.5s ease-in-out;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.A_Input:focus:hover {
+  font-size: 14px;
+  border: 3px solid var(--white);
+  border-radius: 50px;
+}
+
+.A_Input:focus {
+  width: 230px;
+  font-size: 14px;
+  border: 3px solid var(--white);
+  border-radius: 50px;
+  cursor: text;
+}
+
+.A_Input:focus ~ .A_Button {
+  z-index: 2;
+}
+
+.A_Button {
+  position: absolute;
+  width: 33px;
+  height: 32px;
+  background-image: url('images/b_search_icon.png');
+  background-position: 2px 3px;
+  background-size: 33px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  z-index: 1;
+  
+    &.-black{
+      background-image: url('images/w_search_icon.png');
+    }
+}
+
+
+//Crafts
+.A_TitleStroke{
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  left: 0%;
+  right: 0.02%;
+  top: 20%;
+  bottom: 0%;
+
+  font-family: 'PP Neue Machina';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 95px;
+  line-height: 97px;
+  color: var(--black);
+  &.-s{
+    top: 60%;
+  }
+}
+.A_TitleName{
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  left: 0%;
+  right: 0.35%;
+  top: 20%;
+  bottom: 0%;
+
+  font-family: 'PP Neue Machina';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 95px;
+  line-height: 97px;
+  color: var(--white);
+  animation: move 8s linear infinite ;
+}
+@keyframes move{
+  from{
+    transform: translateX(20%);
+  }
+  to{
+    transform: translateX(-6%);
+  }
+}
+.A_MainText{
+  width: 610px;
+  height: 66px;
+
+  font-family: 'PP Neue Machina';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 66px;
+  color: var(--black);
+}
+.A_BodyText{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+
+  width: 863px;
+  height: 135px;
+
+  font-family: 'PP Neue Montreal';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  
+  color: var(--black);
+  &.-w662{
+    width: 662px;
+  }
+
+}
+.A_TechniqueCounterText{
+  width: 59px;
+  height: 25px;
+
+  font-family: 'PP Neue Machina';
+  font-style: italic;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 25px;
+  color: var(--black)
+}
+.A_TechniqueCounterCount{
+  width: 15px;
+  height: 25px;
+
+  font-family: 'PP Neue Machina';
+  font-style: italic;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 25px;
   color: var(--black);
 }

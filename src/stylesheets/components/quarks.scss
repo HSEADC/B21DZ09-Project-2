@@ -27,6 +27,8 @@
 
   &.-MapPoint {
     background-image: url('images/Icons/Q_IconMap.svg');
+    width: 48px;
+    height: 48px;
   }
 
   &.-Cross {
@@ -103,6 +105,21 @@
     height: 220px;
   }
 
+  &.-w290 {
+    width: 290px;
+    height: auto;
+  }
+
+  &.-w365 {
+    width: 365px;
+    height: auto;
+  }
+
+  &.-w654{
+    width: 654px;
+    height: auto;
+  }
+
   &.-w480 {
     width: 480px;
     height: auto;
@@ -112,10 +129,19 @@
     width: 580px;
     height: auto;
   }
-
+  &.-w830 {
+    width: 830px;
+    height: auto;
+  }
   &.-w680 {
     width: 680px;
     height: auto;
+  }
+
+  &.-w886 {
+    width: 886px;
+    height: auto;
+    overflow: hidden;
   }
 
   &.-w1180 {
@@ -126,6 +152,9 @@
   &.-Left100 {
     margin: 0 0 0 100px;
   }
+  &.-Left130 {
+    margin: 0 0 0 130px;
+  }
 
   &.-Left200 {
     margin: 0 0 0 200px;
@@ -133,6 +162,29 @@
 
   &.-Left600 {
     margin: 0 0 0 600px;
+  }
+  &.-Left974{
+    margin: 0 0 0 974px;
+  }
+
+  &.-t930{
+    margin: -80px 0 0 0;
+  }
+  &.-t920{
+    margin: -60px 0 0 0;
+  }
+  &.-t331{
+    margin: 331px 0 0 0;
+  }
+  &.-im1{
+    margin: 331px 0 0 340px;
+  }
+  &.-im2{
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+  &.-m30 {
+    margin-left: -30px;
   }
 }
 
@@ -146,4 +198,34 @@
 .Q_CraftBodyMapImage {
   width: 380px;
   height: auto;
+}
+
+//Crafts
+.Q_CraftLead{
+  position: absolute;
+  background-image: url("images/craft/uelen-bone-carving/lead.png");
+  background-repeat: no-repeat;
+  left: 4.88%;
+  right: 5%;
+  top: 0%;
+  bottom: -8.53%;
+  transform: rotate(3deg);
+}
+.Q_CraftImages{
+  height: auto;
+  margin-left: 4px;
+  width: 70vw;
+}
+.Q_ImageLead{
+  object-fit: cover;
+  position: absolute;
+  width: 692px;
+  height: 311px;
+  margin-top: -629px;
+  margin-left: 38px;
+}
+.Q_CraftSliderImage{
+  width: 886px;
+  height: 632px;
+  overflow: hidden;
 }
