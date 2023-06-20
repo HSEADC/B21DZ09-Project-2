@@ -73,57 +73,96 @@
 //
 // Страницы ремёсел
 
-// .M_CraftLeadDescription {
-//   display: flex;
-//   flex-direction: row;
-//   align-items: flex-end;
-//   padding: 0px 0px 21px;
-//   gap: 14px;
+.M_CraftLeadDescription {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 0px 0px 21px;
+  gap: 14px;
 
-//   .W_CraftLeadDescriptionMap {
-//     display: flex;
-//     flex-direction: row;
-//     align-items: flex-end;
-//     padding: 0px 0px 4px;
+  .W_CraftLeadDescriptionMap {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 0px 0px 4px;
 
-//     opacity: 0.5;
-//     transition: 0.2s;
+    opacity: 0.5;
+    transition: 0.2s;
 
-//     cursor: pointer;
+    cursor: pointer;
 
-//     &:hover {
-//       opacity: 1;
-//     }
-//   }
+    &:hover {
+      opacity: 1;
+    }
+  }
 
-//   .C_CraftLeadDescriptionTags {
-//     display: flex;
-//     flex-direction: row;
-//     align-items: flex-start;
-//     gap: 10px;
-//   }
-// }
+  .C_CraftLeadDescriptionTags {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+//
+//
+
+.M_CraftAboutTexts {
+  //new
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .W_CraftTitleGeo {
+    gap: 0;
+  }
+}
+
+.M_CraftBodyTexts {
+  //new
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.M_ImageWithDescription {
+  //new
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  &.v2 {
+    margin-left: 756px;
+  }
+
+  &.v3 {
+    margin-left: 175px;
+  }
+
+  .W_ImageDescription {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+
+.M_CraftBodyImages {
+  position: relative;
+  width: 782px;
+  height: 586px;
+}
+
+//
+//
 
 .M_CraftAbout {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 20px;
-}
-
-.M_CraftBodyTexts {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
-
-  &.-Left100 {
-    margin-left: 100px;
-  }
-
-  &.-Left200 {
-    margin-left: 200px;
-  }
 }
 
 .M_CraftBodyMap {
@@ -188,7 +227,6 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  padding: 0px 12px 8px;
 
   width: 280px;
   height: 160px;
@@ -290,91 +328,4 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 30px;
-}
-
-//crafts
-.M_CraftLeadDescription{
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  padding: 0px 0px 21px;
-  gap: 14px;
-
-  .W_CraftLeadDescriptionMap {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    padding: 0px 0px 4px;
-
-    opacity: 0.5;
-    transition: 0.2s;
-
-    cursor: pointer;
-
-    &:hover {
-      opacity: 1;
-    }
-  }
-
-  .C_CraftLeadDescriptionTags {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 10px;
-  }
-}
-
-.M_MainImage{
-  display: flex;
-  flex-direction:row;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 0px;
-}
-
-.M_AboutText{
-  display: flex;
-  flex-direction: column;
-  padding: 0px;
-  width: 662px;
-  height: 273px;
-  gap: 45px;
-  margin-left: 118px;
-  
-  &.-lm{
-    margin-left: 640px;
-    margin-top: 88px;
-  }
-  &.-tec{
-    margin-left: 0px;
-  }
-}
-.M_TechniqueDescriptionText{
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 10px;
-
-  width: 680px;
-  height: 54px;
-
-  
-  .W_TechniqueCounter{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 2px 0px 0px;
-    gap: 6px;
-    margin-top: 5px;
-  }
-
-}
-.M_PhotoSlider{
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 80px;
-  overflow: hidden;
 }

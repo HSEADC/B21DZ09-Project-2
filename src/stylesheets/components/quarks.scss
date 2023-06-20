@@ -2,7 +2,7 @@
   cursor: pointer;
   background-repeat: no-repeat;
 
-  &.-size48x48 {
+  &.size48x48 {
     width: 48px;
     height: 48px;
   }
@@ -25,10 +25,8 @@
     background-image: url('images/Icons/Q_IconFilter.svg');
   }
 
-  &.-MapPoint {
-    background-image: url('images/Icons/Q_IconMap.svg');
-    width: 48px;
-    height: 48px;
+  &.MapPointBlack {
+    background-image: url('images/Icons/Q_IconMapBlack.svg');
   }
 
   &.-Cross {
@@ -72,13 +70,6 @@
   }
 }
 
-.Q_CraftLeadImage {
-  width: 1180px;
-  height: auto;
-
-  margin-bottom: -90px;
-}
-
 .Q_CraftAboutImage {
   &.-w380 {
     width: 380px;
@@ -95,96 +86,133 @@
 .Q_CraftBodyImage {
   object-fit: cover;
 
-  &.-Gallery1 {
-    width: 280px;
-    height: 220px;
-  }
-
-  &.-Gallery2 {
-    width: 380px;
-    height: 220px;
-  }
-
-  &.-w290 {
-    width: 290px;
+  &.w580 {
+    width: 580px;
     height: auto;
   }
 
-  &.-w365 {
-    width: 365px;
-    height: auto;
-  }
-
-  &.-w654{
+  &.w654 {
     width: 654px;
     height: auto;
   }
 
-  &.-w480 {
-    width: 480px;
-    height: auto;
-  }
-
-  &.-w580 {
-    width: 580px;
-    height: auto;
-  }
-  &.-w830 {
+  &.w830 {
     width: 830px;
     height: auto;
   }
-  &.-w680 {
-    width: 680px;
+
+  &.pecul1 {
+    position: absolute;
+    width: 366px;
+    height: auto;
+
+    left: 0;
+    top: 0;
+  }
+
+  &.pecul2 {
+    position: absolute;
+    width: 366px;
+    height: auto;
+
+    left: 416px;
+    top: 57px;
+  }
+
+  &.pecul3 {
+    position: absolute;
+    width: 292px;
+    height: auto;
+
+    left: 169px;
+    top: 307px;
+  }
+
+  &.gal {
+    width: 870px;
     height: auto;
   }
+}
 
-  &.-w886 {
-    width: 886px;
+.Q_CraftHistoryImage {
+  object-fit: cover;
+  position: absolute;
+
+  &.Uelen-bone-carving {
+    width: 692px;
     height: auto;
-    overflow: hidden;
+
+    top: 60px;
+    right: 770px;
   }
 
-  &.-w1180 {
-    width: 1180px;
+  &.Dim-toy {
+    width: 434px;
     height: auto;
+
+    top: -42px;
+    right: 861px;
+  }
+  &.Gorodets-paint {
+    width: 965px;
+    height: auto;
+
+    top: 78px;
+    right: 548px;
+  }
+  &.Rakul-paint{
+    width: 899px;
+    height: auto;
+
+    top: 60px;
+    right: 638px;
   }
 
-  &.-Left100 {
-    margin: 0 0 0 100px;
-  }
-  &.-Left130 {
-    margin: 0 0 0 130px;
+  &.Skopinsk-cer{
+    width: 1063px;
+    height: auto;
+
+    top: 60px;
+    right: 560px;
   }
 
-  &.-Left200 {
-    margin: 0 0 0 200px;
+  &.Tver-lace{
+    width: 1423px;
+    height: auto;
+
+    top: 116px;
+    right: 515px;
   }
 
-  &.-Left600 {
-    margin: 0 0 0 600px;
-  }
-  &.-Left974{
-    margin: 0 0 0 974px;
+  &.Vol-lace{
+    width: 1118px;
+    height: auto;
+
+    top: 53px;
+    right:606px;
   }
 
-  &.-t930{
-    margin: -80px 0 0 0;
+  &.Veliko-rospis {
+    width: 590px;
+    height: auto;
+
+    top: -189px;
+    right: 797px;
   }
-  &.-t920{
-    margin: -60px 0 0 0;
+
+  &.Vologod-hohloma {
+    width: 692px;
+    height: auto;
+
+    top: -188px;
+    right: 770px;
   }
-  &.-t331{
-    margin: 331px 0 0 0;
-  }
-  &.-im1{
-    margin: 331px 0 0 340px;
-  }
-  &.-im2{
-    margin-top: 20px;
-    margin-left: 30px;
-  }
-  &.-m30 {
-    margin-left: -30px;
+  &.Paleh-min {
+    width: 577px;
+    height: auto;
+
+    top: 95px;
+    right: 801px;
   }
 }
 
@@ -200,32 +228,120 @@
   height: auto;
 }
 
-//Crafts
-.Q_CraftLead{
+//
+//
+
+.Q_CraftLeadImage {
   position: absolute;
-  background-image: url("images/craft/uelen-bone-carving/lead.png");
+
   background-repeat: no-repeat;
-  left: 4.88%;
-  right: 5%;
-  top: 0%;
-  bottom: -8.53%;
-  transform: rotate(3deg);
-}
-.Q_CraftImages{
-  height: auto;
-  margin-left: 4px;
-  width: 70vw;
-}
-.Q_ImageLead{
-  object-fit: cover;
-  position: absolute;
-  width: 692px;
-  height: 311px;
-  margin-top: -629px;
-  margin-left: 38px;
-}
-.Q_CraftSliderImage{
-  width: 886px;
-  height: 632px;
-  overflow: hidden;
+  background-size: contain;
+
+  z-index: 10;
+
+  &.Uelen-bone-carving {
+    left: 69px;
+    top: 265px;
+    width: 1468px;
+    height: 338px;
+    transform: rotate(-13deg);
+
+    background-image: url('./images/craft/uelen-bone-carving/lead.png');
+  }
+
+  &.Abash-toy {
+    left: 630px;
+    top: 130px;
+    width: 380px;
+    height: 7474px;
+
+    background-image: url('./images/craft/abashevskaya-toy/lead.png');
+  }
+
+  &.Dim-toy {
+    left: 442px;
+    top: 95px;
+    width: 738px;
+    height: 738px;
+
+    background-image: url('./images/craft/dimskaya-toy/lead.png');
+  }
+  &.Gorodets-paint{
+    left: 129px;
+    top: 263px;
+    width: 1317px;
+    height: 738px;
+
+    background-image: url('./images/craft/gorodets-painting/lead.png');
+    transform: rotate(20deg);
+  }
+  &.Rakul-paint{
+    left: 142px;
+    top: 299px;
+    width: 1317px;
+    height: 738px;
+
+    background-image: url('./images/craft/rakul-painting/lead.png');
+    transform: rotate(20deg);
+  }
+
+  &.Skopinsk-cer{
+    left: -515px;
+    top: 127px;
+    width: 2120px;
+    height: 738px;
+
+    background-image: url('./images/craft/skopinsk-ceramic/lead.png');
+  }
+  &.Tul-stal{
+    left: -1018px;
+    top: 127px;
+    width: 2894px;
+    height: 738px;
+
+    background-image: url('./images/craft/tulskaya-stal/lead.png');
+  }
+  &.Tver-lace{
+    left: -323px;
+    top: 192px;
+    width: 2020px;
+    height: 738px;
+
+    background-image: url('./images/craft/tverskaya-lace/lead.png');
+    transform: rotate(20deg);
+  }
+  &.Vol-lace{
+    left: -645px;
+    top: 192px;
+    width: 2509px;
+    height: 738px;
+
+    background-image: url('./images/craft/vologodskoe-lace/lead.png');
+  }
+  &.Veliko-rospis{
+    left: -18px;
+    top: 58px;
+    width: 2509px;
+    height: 738px;
+
+    background-image: url('./images/craft/veliko/lead.png');
+  }
+
+  &.Volog-hohloma{
+    left: 432px;
+    top: 58px;
+    width: 2509px;
+    height: 738px;
+
+    background-image: url('./images/craft/vologodskaya-hohloma/lead.png');
+  }
+
+  &.Paleh-min{
+    left: 593px;
+    top: 58px;
+    width: 2509px;
+    height: 738px;
+
+    background-image: url('./images/craft/palehsk-min/lead.png');
+  }
 }

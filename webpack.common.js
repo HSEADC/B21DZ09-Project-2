@@ -191,6 +191,28 @@ module.exports = {
       chunks: ['craft_article']
     }),
 
+    //Craft, великоустюгская роспись — страница отдельного ремесла
+    new HtmlWebpackPlugin({
+      template: './src/crafts/velikoustugskaya-rospis.html',
+      filename: './crafts/velikoustugskaya-rospis.html',
+      chunks: ['craft_article']
+    }),
+
+
+    //Craft, вологодская хохлома — страница отдельного ремесла
+    new HtmlWebpackPlugin({
+      template: './src/crafts/vologodskaya-hohloma.html',
+      filename: './crafts/vologodskaya-hohloma.html',
+      chunks: ['craft_article']
+    }),
+
+    //Craft, палехская миниатюра  — страница отдельного ремесла
+    new HtmlWebpackPlugin({
+      template: './src/crafts/palehskaya-min.html',
+      filename: './crafts/palehskaya-min.html',
+      chunks: ['craft_article']
+    }),
+
     // Articles, У каких народов есть резьба по кости — отдельная страница подборки/мини-статьи
     new HtmlWebpackPlugin({
       template: './src/articles/bone-carving.html',

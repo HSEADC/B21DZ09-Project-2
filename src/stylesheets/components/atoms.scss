@@ -13,7 +13,7 @@
 
   color: var(--white);
 
-  &.-black {
+  &.black {
     color: var(--black);
   }
 }
@@ -30,10 +30,10 @@
   align-items: center;
   text-align: center;
 
-  color: var(--white);
+  color: var(--black);
 
-  &.-black {
-    color: var(--black);
+  &.white {
+    color: var(--white);
   }
 }
 
@@ -123,7 +123,7 @@
 
   border: 1.5px solid;
   border-radius: 14px;
-  border-color: var(--black);
+  border-color: var(--white);
 
   font-family: 'PP Neue Machina Plain Regular';
   font-style: normal;
@@ -133,7 +133,7 @@
 
   text-align: center;
 
-  color: var(--black);
+  color: var(--white);
 
   transition: 0.5s;
 
@@ -206,6 +206,130 @@
 //
 //
 // Страницы ремёсел
+
+.A_LeadString {
+  font-family: 'PP Neue Machina';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 95px;
+  line-height: 97px;
+
+  color: var(--black);
+}
+
+.A_LeadStringTitle {
+  font-family: 'PP Neue Machina';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 95px;
+  line-height: 97px;
+
+  background-repeat: no-repeat;
+  z-index: 20;
+
+  color: var(--white);
+
+  animation: ticker 5s infinite linear ;
+
+  &.Uelen-bone-carving {
+    width: 1394px;
+    height: 118px;
+    background-image: url('./images/craft/uelen-bone-carving/lead_shape.svg');
+    padding-left: 17px;
+    padding-top: 14px;
+  }
+
+  &.Abash-toy{
+    width: 1094px;
+    height: 118px;
+    background-image: url('./images/craft/abashevskaya-toy/lead_shape.svg');
+    padding-left: 17px;
+    padding-top: 14px;
+  }
+
+  &.Dim-toy{
+    width: 1186px;
+    height: 111px;
+    background-image: url('./images/craft/dimskaya-toy/lead_shape.svg');
+    padding-left: 12px;
+    padding-top: 6px;
+  }
+
+  &.Gorodets-paint{
+    width: 1110px;
+    height: 111px;
+    background-image: url('./images/craft/gorodets-painting/lead_shape.svg');
+    padding-left: 10px;
+    padding-top: 6px;
+  }
+  &.Rakul-paint{
+    width: 1110px;
+    height: 111px;
+    background-image: url('./images/craft/rakul-painting/lead_shape.svg');
+    padding-left: 7px;
+    padding-top: 6px;
+  }
+
+  &.Skopin-cer{
+    width: 1157px;
+    height: 111px;
+    background-image: url('./images/craft/skopinsk-ceramic/lead_shape.svg');
+    padding-left: 9px;
+    padding-top: 8px;
+  }
+  &.Tul-stal{
+    width: 1157px;
+    height: 111px;
+    background-image: url('./images/craft/tulskaya-stal/lead_shape.svg');
+    padding-left: 9px;
+    padding-top: 8px;
+  }
+  &.Tver-lace{
+    width: 1157px;
+    height: 111px;
+    background-image: url('./images/craft/tverskaya-lace/lead_shape.svg');
+    padding-left: 8px;
+    padding-top: 7px;
+  }
+  &.Vol-lace{
+    width: 1157px;
+    height: 111px;
+    background-image: url('./images/craft/vologodskoe-lace/lead_shape.svg');
+    padding-left: 8px;
+    padding-top: 7px;
+  }
+  &.Velik-rospis{
+    width: 1348px;
+    height: 111px;
+    background-image: url('./images/craft/veliko/lead_shape.svg');
+    padding-left: 8px;
+    padding-top: 7px;
+  }
+  &.Volog-hohloma{
+    width: 1348px;
+    height: 111px;
+    background-image: url('./images/craft/vologodskaya-hohloma/lead_shape.svg');
+    padding-left: 8px;
+    padding-top: 7px;
+  }
+  &.Paleh-min{
+    width: 1348px;
+    height: 111px;
+    background-image: url('./images/craft/palehsk-min/lead_shape.svg');
+    padding-left: 8px;
+    padding-top: 7px;
+  }
+}
+@keyframes ticker {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
+//выше новое
+//ниже старое
 
 .A_CraftLeadTitle {
   font-family: 'PP Neue Machina';
@@ -296,7 +420,7 @@
   font-size: 21px;
   line-height: 27px;
 
-  color: #080808;
+  color: var(--black);
 }
 
 .A_TagButtonArticle {
@@ -306,14 +430,14 @@
 
   text-align: center;
 
-  color: var(--white);
+  color: var(--black);
 
   box-sizing: border-box;
   padding: 7px 14px 5px;
 
   border: 1px solid;
   border-radius: 14px;
-  border-color: var(--white);
+  border-color: var(--black);
 
   opacity: 0.5;
   transition: 0.2s;
@@ -345,18 +469,55 @@
   }
 }
 
-.A_CraftBodySubtitle {
+.A_CraftBodySubtitle,
+.A_CraftTitle {
+  //new
   font-family: 'PP Neue Machina';
   font-style: normal;
   font-weight: 800;
-  font-size: 32px;
-  line-height: 33px;
+  font-size: 64px;
+  line-height: 66px;
 
-  color: var(--white);
+  color: var(--black);
 
-  &.-Left100 {
-    margin-left: 100px;
+  &.final {
+    font-size: 32px;
+    line-height: 33px;
+
+    &.also {
+      margin-left: 219px;
+    }
+
+    &.see {
+      margin-left: 69px;
+    }
   }
+}
+
+.A_ImageDescriptionStep {
+  //new
+  width: 80px;
+
+  font-family: 'PP Neue Machina';
+  font-style: italic;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 25px;
+
+  color: var(--black);
+}
+
+.A_ImageDescriptionText {
+  //new
+  font-family: 'PP Neue Montreal';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 27px;
+
+  color: var(--black);
+
+  width: 553px;
 }
 
 .A_CraftBodyText {
@@ -364,23 +525,23 @@
   font-style: normal;
   font-weight: 400;
   font-size: 21px;
-  line-height: 27px;
+  line-height: 28px;
 
-  color: var(--white);
+  color: var(--black);
 
-  &.-w580 {
+  &.w580 {
     width: 580px;
   }
 
-  &.-w480 {
+  &.w480 {
     width: 480px;
   }
 
-  &.-w780 {
+  &.w780 {
     width: 780px;
   }
 
-  &.-w680 {
+  &.w680 {
     width: 680px;
   }
 }
@@ -462,7 +623,7 @@
   list-style-type: disc;
   list-style-position: inside;
 
-  color: var(--white);
+  color: var(--black);
 
   &:hover {
     text-decoration: underline;
@@ -481,6 +642,7 @@
   color: var(--white);
 
   max-width: 256px;
+  margin: 0px 12px 8px;
 }
 
 .A_CraftEndTagsSearch {
@@ -949,159 +1111,5 @@
   font-size: 16px;
   line-height: 19px;
 
-  color: var(--black);
-}
-
-//поиск
-
-.A_Input {
-  align-items: center;
-  display: inline-block;
-  width: 24px;
-  height: 20px;
-  padding: 14px 10px;
-  font-size: 0px;
-  font-family: 'Inter';
-  color: var(gray);
-  border: none;
-  outline: none;
-  background-color: transparent;
-  transition: width 0.5s ease-in-out;
-  cursor: pointer;
-  z-index: 2;
-}
-
-.A_Input:focus:hover {
-  font-size: 14px;
-  border: 3px solid var(--white);
-  border-radius: 50px;
-}
-
-.A_Input:focus {
-  width: 230px;
-  font-size: 14px;
-  border: 3px solid var(--white);
-  border-radius: 50px;
-  cursor: text;
-}
-
-.A_Input:focus ~ .A_Button {
-  z-index: 2;
-}
-
-.A_Button {
-  position: absolute;
-  width: 33px;
-  height: 32px;
-  background-image: url('images/b_search_icon.png');
-  background-position: 2px 3px;
-  background-size: 33px;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  z-index: 1;
-  
-    &.-black{
-      background-image: url('images/w_search_icon.png');
-    }
-}
-
-
-//Crafts
-.A_TitleStroke{
-  position: relative;
-  overflow: hidden;
-  white-space: nowrap;
-  left: 0%;
-  right: 0.02%;
-  top: 20%;
-  bottom: 0%;
-
-  font-family: 'PP Neue Machina';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 95px;
-  line-height: 97px;
-  color: var(--black);
-  &.-s{
-    top: 60%;
-  }
-}
-.A_TitleName{
-  position: relative;
-  overflow: hidden;
-  white-space: nowrap;
-  left: 0%;
-  right: 0.35%;
-  top: 20%;
-  bottom: 0%;
-
-  font-family: 'PP Neue Machina';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 95px;
-  line-height: 97px;
-  color: var(--white);
-  animation: move 8s linear infinite ;
-}
-@keyframes move{
-  from{
-    transform: translateX(20%);
-  }
-  to{
-    transform: translateX(-6%);
-  }
-}
-.A_MainText{
-  width: 610px;
-  height: 66px;
-
-  font-family: 'PP Neue Machina';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 64px;
-  line-height: 66px;
-  color: var(--black);
-}
-.A_BodyText{
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 10px;
-
-  width: 863px;
-  height: 135px;
-
-  font-family: 'PP Neue Montreal';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 36px;
-  
-  color: var(--black);
-  &.-w662{
-    width: 662px;
-  }
-
-}
-.A_TechniqueCounterText{
-  width: 59px;
-  height: 25px;
-
-  font-family: 'PP Neue Machina';
-  font-style: italic;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 25px;
-  color: var(--black)
-}
-.A_TechniqueCounterCount{
-  width: 15px;
-  height: 25px;
-
-  font-family: 'PP Neue Machina';
-  font-style: italic;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 25px;
   color: var(--black);
 }
