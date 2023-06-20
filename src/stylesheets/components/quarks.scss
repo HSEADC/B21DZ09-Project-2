@@ -163,16 +163,14 @@
 //
 
 .Q_CraftLeadImage {
-  position: absolute;
-
   background-repeat: no-repeat;
   background-size: contain;
 
   z-index: 10;
 
   &.Uelen-bone-carving {
-    left: 69px;
-    top: 265px;
+    margin-left: -10px;
+    margin-top: 265px;
     width: 1468px;
     height: 338px;
     transform: rotate(-13deg);

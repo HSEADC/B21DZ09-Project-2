@@ -207,7 +207,8 @@
 //
 // Страницы ремёсел
 
-.A_LeadString {
+.A_LeadStringCraftPageLineTop,
+.A_LeadStringCraftPageLineBottom {
   font-family: 'PP Neue Machina';
   font-style: normal;
   font-weight: 800;
@@ -215,6 +216,26 @@
   line-height: 97px;
 
   color: var(--black);
+
+  white-space: nowrap;
+  animation: marquee 40s infinite linear;
+}
+
+.A_LeadStringCraftPageLineTop::after {
+  content: 'Визуальная культура\00a0\00a0\00a0Традиции и современность\00a0\00a0\00a0Самобытность стиля\00a0\00a0\00a0Народное творчесвто\00a0\00a0\00a0';
+}
+
+.A_LeadStringCraftPageLineBottom::after {
+  content: 'Самобытность стиля\00a0\00a0\00a0Народное творчесвто\00a0\00a0\00a0Визуальная культура\00a0\00a0\00a0Традиции и современность\00a0\00a0\00a0';
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .A_LeadStringTitle {
@@ -225,9 +246,13 @@
   line-height: 97px;
 
   background-repeat: no-repeat;
-  z-index: 20;
 
   color: var(--white);
+
+  z-index: 50;
+
+  white-space: nowrap;
+  animation: marquee2 10s infinite linear;
 
   &.Uelen-bone-carving {
     width: 1394px;
@@ -235,6 +260,26 @@
     background-image: url('./images/craft/uelen-bone-carving/lead_shape.svg');
     padding-left: 17px;
     padding-top: 14px;
+
+    // &::after {
+    //   content: 'Уэленская резьба по кости\00a0\00a0\00a0';
+    //
+    //   background-repeat: no-repeat;
+    //   width: 1394px;
+    //   height: 118px;
+    //   background-image: url('./images/craft/uelen-bone-carving/lead_shape.svg');
+    //   padding-left: 19px;
+    //   padding-top: 16px;
+    // }
+  }
+}
+
+@keyframes marquee2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%) translateX(-52px);
   }
 }
 

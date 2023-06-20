@@ -103,6 +103,8 @@
 
     bottom: 126px;
 
+    overflow: hidden;
+
     .C_LeadStringsTitle {
       display: flex;
       flex-direction: row;
@@ -110,11 +112,14 @@
     }
   }
 
-  // .W_LeadImage {
-  //   position: relative;
-  //   width: 1700px;
-  //   height: 816px;
-  // }
+  .W_LeadImage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+  }
 
   &.yellow {
     background-color: var(--yellow);
