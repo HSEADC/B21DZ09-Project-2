@@ -19,6 +19,7 @@ body.styleguide {
     font-style: normal;
     font-weight: 800;
     font-size: 3.155vw;
+    line-height: 2.1525vw;
   }
 
   h3 {
@@ -43,6 +44,9 @@ body.styleguide {
     font-weight: 400;
     font-size: 1.548vw;
     line-height: 1.845vw;
+    &.-sticker{
+      margin-left: -5vw;
+    }
   }
 
   li {
@@ -78,11 +82,11 @@ body.styleguide {
       flex-direction: column;
       align-items: flex-start;
       padding: 0px;
-      gap: 0.476vw;
+      gap: 1vw;
       font-family: 'PP Neue Montreal';
       font-style: normal;
       font-weight: 500;
-      font-size: 1.369vw;
+      font-size: 1.6vw;
       color: var(--black);
     }
   }
@@ -91,9 +95,9 @@ body.styleguide {
     width: 77.381%;
 
     .title {
-      height: 55.952vw;
+      height: 29.9vw;
       width: auto;
-      background-color: var(--blue);
+      background-color: black;
       display: block;
       padding-top: 15.655vw;
 
@@ -108,14 +112,15 @@ body.styleguide {
         padding-top: 1.19vw;
       }
 
-      .marquee {
-        width: 75.573vw;
-        height: 8.479vw;
+      .titleim {
+        width: 60.5vw;
+        height: 35.479vw;
         background-size: contain;
-        background-repeat: no-repeat;
-        background-image: url('images/styleguide/marquee.png');
-        margin-top: 13.452vw;
-        margin-left: 0.774vw;
+        // background-repeat: no-repeat;
+        // background-image: url('images/styleguide/title.png');
+        justify-content: center;
+        margin-top: -20.5vw;
+        margin-left: 8.7vw;
       }
     }
 
@@ -126,21 +131,20 @@ body.styleguide {
       .shape {
         width: 18.036vw;
         height: 4.702vw;
-        margin-left: 3.869vw;
         background-size: contain;
         background-repeat: no-repeat;
-        background-image: url('images/styleguide/about.svg');
+        background-image: url('./images/styleguide/about.svg');
         padding-left: 1.071vw;
-        padding-top: 0.893vw;
-        margin-bottom: 7.738vw;
+        padding-top: 1.3vw;
+        margin-bottom: 3.73vw;
 
         h2 {
-          color: white;
+          color: black;
         }
       }
 
       .text {
-        margin-left: 4.881vw;
+        margin-left: 1.071vw;
         margin-bottom: 7.44vw;
         width: 37.5vw;
       }
@@ -161,17 +165,25 @@ body.styleguide {
           }
         }
 
+        img{
+          position: absolute;
+          width: 532px;
+          height: auto;
+          margin-left:40.25vw;
+          margin-top: -28.29vw;
+        }
+
         .character {
           width: 50%;
 
           h4 {
             margin-left: 3.69vw;
-            margin-bottom: 2.083vw;
+            margin-bottom: 0.774vw;
           }
 
           ul {
             width: 30.952vw;
-            margin-left: 2.3vw;
+            margin-left: 0.774vw;
           }
         }
       }
@@ -184,26 +196,49 @@ body.styleguide {
     }
 
     .logotype {
-      background-color: var(--pink);
-      padding-top: 8.929vw;
+      background-color: #A5CFF5;
+      border-radius: 1vw;
 
       .shape {
-        width: 15.893vw;
+        width: 35.893vw;
         height: 79px;
-        margin-left: 3.869vw;
+        margin-left: -0.13vw;
         background-size: contain;
         background-repeat: no-repeat;
         background-image: url('images/styleguide/logotype.svg');
-        padding-left: 1.071vw;
-        padding-top: 0.893vw;
-        margin-bottom: 7.738vw;
+        padding-left: 1.9vw;
+        padding-top: 1.5vw;
+        margin-bottom: 2.738vw;
       }
+      .shape2{
+          width: 41.893vw;
+          height: 79px;
+          margin-left: -0.13vw;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url('images/styleguide/logotype.svg');
+          padding-left: 1.9vw;
+          padding-top: 2vw;
+          margin-bottom: 2.738vw;
+      }
+      .shape3{
+        width: 52.893vw;
+        height: 79px;
+        margin-left: -0.13vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url('images/styleguide/logotype.svg');
+        padding-left: 1.9vw;
+        padding-top: 2.7vw;
+        margin-bottom: 2.738vw;
+    }
       h2 {
-        color: white;
+        color: black;
+        width: 55.7vw;
       }
 
       .text {
-        margin-left: 4.881vw;
+        margin-left: 1.9vw;
         margin-bottom: 7.44vw;
         width: 30.952vw;
       }
@@ -221,8 +256,8 @@ body.styleguide {
     }
 
     .color {
-      background-color: var(--white);
-      padding-top: 8.929vw;
+      background-color: black;
+      padding-top: 3.929vw;
       .shape {
         width: 12.381vw;
         height: 4.702vw;
@@ -230,69 +265,46 @@ body.styleguide {
         background-size: contain;
         background-repeat: no-repeat;
         background-image: url('images/styleguide/color.svg');
-        padding-left: 1.071vw;
-        padding-top: 0.893vw;
-        margin-bottom: 7.738vw;
+        padding-left: 2.07vw;
+        padding-top: 1.892vw;
+        margin-bottom: 2.73vw;
 
         h2 {
-          color: white;
+          color: black;
         }
       }
       .text {
         margin-left: 4.881vw;
         margin-bottom: 7.44vw;
         width: 30.952vw;
+        color: white;
       }
 
-      .colors {
-        margin-bottom: 7.44vw;
-
-        .c_pink,
-        .c_green,
-        .c_biue {
-          display: flex;
-          img {
-            width: 35.119vw;
-            height: 11.31vw;
-          }
-          .text {
-            width: 23.81vw;
-            margin-left: 2.44vw;
-            margin-top: 2.857vw;
-          }
-        }
-        .c_pink,
-        .c_green {
-          margin-bottom: 1.786vw;
-        }
-      }
-
-      .text2 {
-        margin-left: 4.881vw;
-        margin-bottom: 7.44vw;
-        width: 35.119vw;
-      }
-
-      .all_colors {
-        width: 67.56vw;
-        margin-bottom: 8.631vw;
-        margin-left: 4.881vw;
+      .colorim{
+        width: 60.5vw;
+        height: 35.479vw;
+        background-size: contain;
+        // background-repeat: no-repeat;
+        // background-image: url('./images/styleguide/color1.png');
+        margin-top: -6.5vw;
+        margin-left: 1.7vw;
       }
     }
 
     .typography {
-      background-color: var(--black);
-      padding-top: 8.929vw;
+      background-color: var(--green);
+      padding-top: 2vw;
+      border-radius: 1vw;
 
       .shape {
         width: 24.524vw;
         height: 4.702vw;
-        margin-left: 3.869vw;
+        margin-left: 1.87vw;
         background-size: contain;
         background-repeat: no-repeat;
         background-image: url('images/styleguide/typography.svg');
         padding-left: 1.071vw;
-        padding-top: 0.893vw;
+        padding-top: 1.3vw;
         margin-bottom: 7.738vw;
 
         h2 {
@@ -304,13 +316,14 @@ body.styleguide {
       .typo2,
       .typo3 {
         display: flex;
-        margin-bottom: 6.012vw;
+        margin-bottom: 8.012vw;
+        margin-left: -1.13vw;
 
         .text {
           margin-left: 4.881vw;
           width: 30.952vw;
           p {
-            color: white;
+            color: black;
           }
         }
         .inktrap {
@@ -326,7 +339,7 @@ body.styleguide {
               font-weight: 800;
               font-size: 3.155vw;
               line-height: 3.214vw;
-              color: white;
+              color: black;
             }
           }
 
@@ -339,7 +352,7 @@ body.styleguide {
               font-weight: 800;
               font-size: 1.31vw;
               line-height: 1.369vw;
-              color: white;
+              color: black;
             }
           }
 
@@ -350,7 +363,7 @@ body.styleguide {
               font-weight: 800;
               font-size: 2.143vw;
               line-height: 2.202vw;
-              color: white;
+              color: black;
             }
           }
         }
@@ -367,7 +380,7 @@ body.styleguide {
               font-size: 3.155vw;
               line-height: 3.214vw;
               margin-bottom: 0;
-              color: white;
+              color: black;
             }
           }
 
@@ -379,7 +392,7 @@ body.styleguide {
               font-weight: 800;
               font-size: 1.31vw;
               line-height: 1.369vw;
-              color: white;
+              color: black;
             }
           }
 
@@ -390,7 +403,7 @@ body.styleguide {
               font-weight: 800;
               font-size: 2.143vw;
               line-height: 2.202vw;
-              color: white;
+              color: black;
             }
           }
         }
@@ -407,7 +420,7 @@ body.styleguide {
               font-size: 3.155vw;
               line-height: 3.214vw;
               margin-bottom: 0;
-              color: white;
+              color: black;
             }
           }
 
@@ -419,7 +432,7 @@ body.styleguide {
               font-weight: 400;
               font-size: 1.31vw;
               line-height: 1.369vw;
-              color: white;
+              color: black;
             }
           }
 
@@ -430,7 +443,7 @@ body.styleguide {
               font-weight: 400;
               font-size: 2.143vw;
               line-height: 2.202vw;
-              color: white;
+              color: black;
             }
           }
         }
@@ -442,7 +455,7 @@ body.styleguide {
         .big_logo {
           width: 42.857vw;
           p {
-            color: white;
+            color: black;
             margin-top: 1.429vw;
             font-family: 'PP Neue Machina';
             font-style: normal;
@@ -455,7 +468,7 @@ body.styleguide {
           margin-top: 11.85vw;
           margin-left: -6.7vw;
           p {
-            color: white;
+            color: black;
             margin-bottom: 0;
             font-family: 'PP Neue Montreal';
             font-style: normal;
@@ -474,16 +487,23 @@ body.styleguide {
       .shape {
         width: 17.262vw;
         height: 4.702vw;
-        margin-left: 3.869vw;
+        margin-left: -0.13vw;
         background-size: contain;
         background-repeat: no-repeat;
         background-image: url('images/styleguide/stickers.svg');
         padding-left: 1.071vw;
-        padding-top: 0.893vw;
-        margin-bottom: 7.738vw;
+        padding-top: 1.4vw;
+        margin-bottom: 3.74vw;
+
+        &.no{
+          width: 53.262vw;
+          height: 4.702vw;
+          background-image: url('images/styleguide/no.svg');
+        }
 
         h2 {
           color: white;
+          width: 52vw;
         }
       }
       .text {
@@ -494,13 +514,14 @@ body.styleguide {
 
       img {
         margin-bottom: 7.143vw;
-        margin-left: 4.881vw;
+        margin-left: -0.19vw;
         width: 67.56vw;
       }
 
       .text2 {
         width: 35.714vw;
         margin-left: 4.881vw;
+        margin-left: 0.8vw;
         p {
           margin-bottom: 5.06vw;
         }
@@ -524,55 +545,19 @@ body.styleguide {
       }
     }
 
-    .grid {
-      background-color: var(--green);
-      padding-top: 8.929vw;
-
-      .shape {
-        width: 12.262vw;
-        height: 4.702vw;
-        margin-left: 3.869vw;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-image: url('images/styleguide/grid.svg');
-        padding-left: 1.071vw;
-        padding-top: 0.893vw;
-        margin-bottom: 7.738vw;
-
-        h2 {
-          color: black;
-        }
-      }
-
-      .text {
-        width: 30.952vw;
-        margin-left: 4.881vw;
-        margin-bottom: 5.06vw;
-        p {
-          color: white;
-        }
-      }
-
-      img {
-        width: 67.56vw;
-        margin-left: 4.881vw;
-        margin-bottom: 8.631vw;
-      }
-    }
-
     .merch {
       background-color: var(--black);
       padding-top: 8.929vw;
 
       .shape {
-        width: 29.226vw;
+        width: 28.7vw;
         height: 4.702vw;
         margin-left: 3.869vw;
         background-size: contain;
         background-repeat: no-repeat;
         background-image: url('images/styleguide/merch.svg');
         padding-left: 1.071vw;
-        padding-top: 0.893vw;
+        padding-top: 1.2vw;
         margin-bottom: 7.738vw;
 
         h2 {
