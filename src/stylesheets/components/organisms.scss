@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0px 70px;
 
   top: 0;
   left: 0;
@@ -21,6 +22,42 @@
     background-color: var(--yellow);
   }
 
+  &.Uelen {
+    background-color: var(--uelen);
+  }
+
+  &.green {
+    background-color: var(--green);
+  }
+
+  &.abash {
+    background-color: var(--abash);
+  }
+
+  &.blue {
+    background-color: var(--blue);
+  }
+
+  &.red {
+    background-color: var(--red);
+  }
+
+  &.orange {
+    background-color: var(--orange);
+  }
+
+  &.lime {
+    background-color: var(--lime);
+  }
+
+  &.pink {
+    background-color: var(--pink);
+  }
+
+  &.lila {
+    background-color: var(--lila);
+  }
+
   z-index: 100;
 }
 
@@ -28,16 +65,58 @@
   box-sizing: border-box;
 
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding: 0px 130px;
 
-  height: 210px;
+  height: 240px;
   width: auto;
 
-  border-top: 2px solid;
-  border-color: var(--white);
+  // border-top: 2px solid;
+  // border-color: var(--white);
 
   background-color: var(--black);
+
+  &.yellow {
+    background-color: var(--yellow);
+  }
+
+  &.Uelen {
+    background-color: var(--uelen);
+  }
+
+  &.green {
+    background-color: var(--green);
+  }
+
+  &.abash {
+    background-color: var(--abash);
+  }
+
+  &.blue {
+    background-color: var(--blue);
+  }
+
+  &.red {
+    background-color: var(--red);
+  }
+
+  &.orange {
+    background-color: var(--orange);
+  }
+
+  &.lime {
+    background-color: var(--lime);
+  }
+
+  &.pink {
+    background-color: var(--pink);
+  }
+
+  &.lila {
+    background-color: var(--lila);
+  }
 }
 
 //
@@ -48,19 +127,18 @@
 .O_ArticlesTitleFilter {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding: 0px;
-  gap: 40px;
+  gap: 34px;
 
-  width: 1250px;
+  // width: 1250px;
 
   .C_CraftsTagButtonsShort {
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
-    justify-content: flex-start;
+    align-content: center;
+    justify-content: center;
     flex-direction: row;
-    align-items: center;
 
     max-width: 700px;
 
@@ -71,8 +149,8 @@
   .C_ArticlesTagButtons {
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
-    justify-content: flex-start;
+    align-content: center;
+    justify-content: center;
     flex-direction: row;
     align-items: center;
 
@@ -119,10 +197,55 @@
     align-items: center;
 
     position: relative;
+
+    &.main {
+      width: 850px;
+      margin: auto;
+    }
+  }
+
+  &.black {
+    background-color: var(--black);
+  }
+
+  &.Uelen {
+    background-color: var(--uelen);
+  }
+
+  &.abash {
+    background-color: var(--abash);
+  }
+
+  &.green {
+    background-color: var(--green);
   }
 
   &.yellow {
     background-color: var(--yellow);
+  }
+
+  &.blue {
+    background-color: var(--blue);
+  }
+
+  &.red {
+    background-color: var(--red);
+  }
+
+  &.pink {
+    background-color: var(--pink);
+  }
+
+  &.orange {
+    background-color: var(--orange);
+  }
+
+  &.lime {
+    background-color: var(--lime);
+  }
+
+  &.lila {
+    background-color: var(--lila);
   }
 }
 
@@ -151,7 +274,45 @@
 
   width: 100vw;
 
-  background: var(--yellow);
+  &.Uelen {
+    background-color: var(--uelen);
+  }
+
+  &.abash {
+    background-color: var(--abash);
+  }
+
+  &.green {
+    background-color: var(--green);
+  }
+
+  &.yellow {
+    background-color: var(--yellow);
+  }
+
+  &.blue {
+    background-color: var(--blue);
+  }
+
+  &.red {
+    background-color: var(--red);
+  }
+
+  &.pink {
+    background-color: var(--pink);
+  }
+
+  &.orange {
+    background-color: var(--orange);
+  }
+
+  &.lime {
+    background-color: var(--lime);
+  }
+
+  &.lila {
+    background-color: var(--lila);
+  }
 }
 
 .O_CraftTechique {
@@ -287,6 +448,18 @@
 //
 // Map
 
+.O_Map {
+  position: fixed;
+  top: 92px;
+  width: 100vw;
+  height: calc(100vh - 92px);
+}
+
+.mapboxgl-popup {
+  max-width: 400px;
+  font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
 .O_MapModal {
   display: flex;
   flex-direction: row;
@@ -400,12 +573,13 @@
   flex-direction: row;
   align-items: flex-start;
   gap: 12px;
-  margin-top: 62px;
+  margin-top: 60px;
+  margin-bottom: 100px;
 }
 
 .O_ContentItem {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }

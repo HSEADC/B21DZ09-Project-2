@@ -27,11 +27,10 @@ let offsetImageRails = 0
 let offsetTextRails = 0
 
 function initSlider() {
-  const imageRails = document.querySelector('.W_SliderRails')
-  const textRails = document.querySelector('.W_SliderDescriptionRails')
+  const imageRails = document.querySelector('.M_CraftSliderImage')
   const sliderButtonLeft = document.querySelector('.Q_Icon.-ArrowLeft')
   const sliderButtonRight = document.querySelector('.Q_Icon.-ArrowRight')
-  const itemCounter = document.getElementsByClassName('Q_SliderPic')
+  const itemCounter = document.getElementsByClassName('Q_CraftBodyImage')
 
   sliderButtonRight.addEventListener('click', () => {
     offsetImageRails += 900
@@ -70,3 +69,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initGoBack()
   initSlider()
 })
+//
+//

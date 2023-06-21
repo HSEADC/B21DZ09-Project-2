@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
 
-  width: 1460px;
+  width: 100%;
 
   &.-StartScreen {
     justify-content: flex-end;
@@ -15,7 +15,7 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-start;
-    gap: 80px;
+    gap: 70px;
   }
 }
 
@@ -25,14 +25,30 @@
   justify-content: space-between;
   align-items: center;
 
-  width: 1254px;
+  width: 100%;
+
+  .C_FooterNavSections {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .W_FooterIcons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    height: 100%;
+  }
 
   .C_FooterIconsSocialNetwork {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-start;
-    gap: 18px;
+    gap: 40px;
   }
 }
 
@@ -66,6 +82,13 @@
   flex-direction: column;
   align-items: center;
   gap: 14px;
+
+  .W_CraftsCardTexts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+  }
 }
 
 //

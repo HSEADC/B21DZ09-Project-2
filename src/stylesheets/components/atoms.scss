@@ -37,6 +37,16 @@
   }
 }
 
+.A_FooterInfo {
+  font-family: 'PP Neue Machina Plain Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+
+  color: var(--grey);
+}
+
 .A_FooterIconSocialNetwork {
   width: 40px;
   height: 40px;
@@ -44,14 +54,26 @@
   background-size: contain;
 
   &.-VK {
-    background-image: url('images/IconsSocialNetworks/Q_VK-White.png');
+    background-image: url('images/IconsSocialNetworks/Q_VK-Black.png');
   }
 
   &.-TG {
-    background-image: url('images/IconsSocialNetworks/Q_TG-White.png');
+    background-image: url('images/IconsSocialNetworks/Q_TG-Black.png');
   }
 
   &.-Dzen {
+    background-image: url('images/IconsSocialNetworks/Q_Dzen-Black.png');
+  }
+
+  &.-VK-White {
+    background-image: url('images/IconsSocialNetworks/Q_VK-White.png');
+  }
+
+  &.-TG-White {
+    background-image: url('images/IconsSocialNetworks/Q_TG-White.png');
+  }
+
+  &.-Dzen-White {
     background-image: url('images/IconsSocialNetworks/Q_Dzen-White.png');
   }
 }
@@ -83,27 +105,27 @@
   font-family: 'PP Neue Machina';
   font-style: normal;
   font-weight: 800;
-  font-size: 61px;
-  line-height: 63px;
+  font-size: 95px;
+  line-height: 97px;
 
   color: var(--black);
 
   background-repeat: no-repeat;
 
   &.-Crafts {
-    width: 700px;
-    height: 82px;
+    width: 1080px;
+    height: 118px;
     background-image: url('./images/crafts/shape_title.svg');
-    padding-left: 8px;
-    padding-top: 12px;
+    padding-left: 7px;
+    padding-top: 14px;
   }
 
   &.-Articles {
-    width: 648px;
-    height: 82px;
+    width: 1000px;
+    height: 118px;
     background-image: url('./images/articles/shape_title.svg');
-    padding-left: 9px;
-    padding-top: 11px;
+    padding-left: 10px;
+    padding-top: 15px;
   }
 
   &.-Map {
@@ -119,11 +141,12 @@
   box-sizing: border-box;
   height: 36px;
 
-  padding: 6px 14px 8px;
+  padding: 8px 14px 8px;
 
-  border: 1.5px solid;
+  // border: 1.5px solid;
   border-radius: 14px;
-  border-color: var(--white);
+  // border-color: var(--white);
+  background-color: var(--darkbrown);
 
   font-family: 'PP Neue Machina Plain Regular';
   font-style: normal;
@@ -140,13 +163,13 @@
   cursor: pointer;
 
   &:hover {
-    background-color: var(--lightgrey);
-    border-color: var(--lightgrey);
+    background-color: var(--darkbrown2);
+    // border-color: var(--lightgrey);
   }
 
   &.active {
     color: var(--black);
-    background-color: var(--white);
+    background-color: var(--lila);
   }
 }
 
@@ -178,7 +201,7 @@
 
   border: 2px solid;
   border-radius: 26px;
-  border-color: var(--white);
+  border-color: var(--black);
 
   background-repeat: no-repeat;
   background-position: center center;
@@ -189,8 +212,9 @@
   }
 }
 
-.A_CraftsCardTitle {
-  width: 316px;
+.A_CraftsCardTitle,
+.A_ContentItemTitle {
+  width: 334px;
   max-height: 48px;
 
   font-family: 'PP Neue Machina';
@@ -200,6 +224,27 @@
   line-height: 24px;
 
   color: var(--white);
+
+  &.black {
+    color: var(--black);
+  }
+}
+
+.A_CraftsCardDescription,
+.A_ContentItemDescription {
+  font-family: 'PP Neue Montreal';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 21px;
+
+  width: 334px;
+
+  color: var(--lightgrey2);
+
+  &.black {
+    color: var(--black);
+  }
 }
 
 //
@@ -218,7 +263,11 @@
   color: var(--black);
 
   white-space: nowrap;
-  animation: marquee 40s infinite linear;
+  animation: marquee 50s infinite linear;
+
+  &.white {
+    color: var(--white);
+  }
 }
 
 .A_LeadStringCraftPageLineTop::after {
@@ -252,7 +301,19 @@
   z-index: 50;
 
   white-space: nowrap;
-  animation: marquee2 10s infinite linear;
+  animation: marquee2 15s infinite linear;
+
+  &.black {
+    color: var(--black);
+  }
+
+  &.Remesla {
+    width: 1010px;
+    height: 112px;
+    background-image: url('./images/main/lead_shape.svg');
+    padding-left: 7px;
+    padding-top: 8px;
+  }
 
   &.Uelen-bone-carving {
     width: 1394px;
@@ -260,17 +321,87 @@
     background-image: url('./images/craft/uelen-bone-carving/lead_shape.svg');
     padding-left: 17px;
     padding-top: 14px;
+  }
 
-    // &::after {
-    //   content: 'Уэленская резьба по кости\00a0\00a0\00a0';
-    //
-    //   background-repeat: no-repeat;
-    //   width: 1394px;
-    //   height: 118px;
-    //   background-image: url('./images/craft/uelen-bone-carving/lead_shape.svg');
-    //   padding-left: 19px;
-    //   padding-top: 16px;
-    // }
+  &.Abash-toy {
+    width: 1094px;
+    height: 118px;
+    background-image: url('./images/craft/abashevskaya-toy/lead_shape.svg');
+    padding-left: 17px;
+    padding-top: 14px;
+  }
+
+  &.Dim-toy {
+    width: 1116px;
+    height: 111px;
+    background-image: url('./images/craft/dimskaya-toy/lead_shape.svg');
+    padding-left: 12px;
+    padding-top: 6px;
+  }
+
+  &.Gorodets-paint {
+    width: 1110px;
+    height: 111px;
+    background-image: url('./images/craft/gorodets-painting/lead_shape.svg');
+    padding-left: 10px;
+    padding-top: 6px;
+  }
+  &.Rakul-paint {
+    width: 1045px;
+    height: 111px;
+    background-image: url('./images/craft/rakul-painting/lead_shape.svg');
+    padding-left: 7px;
+    padding-top: 6px;
+  }
+
+  &.Skopin-cer {
+    width: 1157px;
+    height: 111px;
+    background-image: url('./images/craft/skopinsk-ceramic/lead_shape.svg');
+    padding-left: 9px;
+    padding-top: 8px;
+  }
+  &.Tul-stal {
+    width: 794px;
+    height: 111px;
+    background-image: url('./images/craft/tulskaya-stal/lead_shape.svg');
+    padding-left: 10px;
+    padding-top: 7px;
+  }
+  &.Tver-lace {
+    width: 961px;
+    height: 111px;
+    background-image: url('./images/craft/tverskaya-lace/lead_shape.svg');
+    padding-left: 10px;
+    padding-top: 6px;
+  }
+  &.Vol-lace {
+    width: 1157px;
+    height: 111px;
+    background-image: url('./images/craft/vologodskoe-lace/lead_shape.svg');
+    padding-left: 8px;
+    padding-top: 7px;
+  }
+  &.Velik-rospis {
+    width: 1348px;
+    height: 111px;
+    background-image: url('./images/craft/veliko/lead_shape.svg');
+    padding-left: 8px;
+    padding-top: 7px;
+  }
+  &.Volog-hohloma {
+    width: 1132px;
+    height: 111px;
+    background-image: url('./images/craft/vologodskaya-hohloma/lead_shape.svg');
+    padding-left: 8px;
+    padding-top: 7px;
+  }
+  &.Paleh-min {
+    width: 1171px;
+    height: 111px;
+    background-image: url('./images/craft/palehsk-min/lead_shape.svg');
+    padding-left: 8px;
+    padding-top: 7px;
   }
 }
 
@@ -324,7 +455,7 @@
     height: 152px;
     background-image: url('./images/craft/gorodets-painting/lead_shape.svg');
     padding-left: 12px;
-    padding-top: 15px;
+    padding-top: 6px;
   }
 
   &.-Rakul-painting {
@@ -955,6 +1086,23 @@
   }
 }
 
+.A_MapMarkerTitle {
+  font-family: 'PP Neue Machina';
+  font-weight: 800;
+  font-size: 18px;
+  text-align: center;
+  color: var(--black);
+}
+
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
 //
 //
 //
@@ -964,26 +1112,26 @@
   font-family: 'PP Neue Machina';
   font-style: normal;
   font-weight: 800;
-  font-size: 71px;
-  line-height: 67px;
+  font-size: 95px;
+  line-height: 97px;
 
-  color: var(--white);
+  color: var(--black);
 
   background-repeat: no-repeat;
 
-  width: 605px;
-  height: 87px;
+  width: 812px;
+  height: 116px;
   background-image: url('./images/search/shape_title.svg');
-  padding-left: 5px;
+  padding-left: 7px;
   padding-top: 12px;
 }
 
 .A_SearchInput {
-  border: 4px solid black;
+  border: 4px solid white;
   border-radius: 14px;
   width: 470px;
   height: 2px;
-  background-color: transparent;
+  // background-color: (--darkgrey);
   padding: 22px;
 
   font-family: 'PP Neue Montreal';
@@ -992,7 +1140,7 @@
   font-size: 18px;
 
   &:focus {
-    border-color: inherit;
+    // border-color: inherit;
     -webkit-box-shadow: none;
     box-shadow: none;
     outline: none;
@@ -1013,9 +1161,9 @@
   font-size: 20px;
   line-height: 24px;
 
-  color: var(--white);
+  color: var(--black);
 
-  background: var(--black);
+  background: var(--white);
   border-radius: 14px;
   cursor: pointer;
   user-select: none;
@@ -1025,8 +1173,8 @@
   }
 
   &.-disabled {
-    background: lightgrey;
-    color: grey;
+    background: grey;
+    color: lightgrey;
     cursor: default;
   }
 }
@@ -1043,28 +1191,4 @@
   background-repeat: no-repeat;
   background-position: center center;
   object-fit: cover;
-}
-
-.A_ContentItemTitle {
-  max-width: 368px;
-
-  font-family: 'PP Neue Machina Plain';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 26px;
-  line-height: 27px;
-
-  color: var(--black);
-}
-
-.A_ContentItemDescription {
-  max-width: 368px;
-
-  font-family: 'PP Neue Montreal';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-
-  color: var(--black);
 }

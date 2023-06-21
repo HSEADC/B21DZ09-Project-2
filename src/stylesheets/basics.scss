@@ -1,5 +1,6 @@
 body {
   background-color: var(--white);
+  box-sizing: border-box;
 
   &.black {
     background-color: var(--black);

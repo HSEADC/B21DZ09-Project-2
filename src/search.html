@@ -3,7 +3,10 @@
   <head>
     <link rel="icon" href="favicon.ico" />
     <meta charset="utf-8" />
-
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,user-scalable=no"
+    />
     <!-- Primary Meta Tags -->
     <title>Поиск по сайту • Ремёсла России</title>
     <meta name="title" content="Поиск по сайту • Ремёсла России" />
@@ -44,17 +47,20 @@
     <analytics></analytics>
   </head>
 
-  <body class="-white">
-    <div class="O_Header -white">
+  <body class="black">
+    <div class="O_Header black">
       <div class="M_HeaderNav">
-        <a class="A_Logo -black" href="/">Ремёсла России</a>
-        <div class="C_HeaderNavSections">
-          <a class="A_HeaderSection -black" href="./crafts.html">Библиотека</a>
-          <a class="A_HeaderSection -black" href="./map.html">Карта</a>
-          <a class="A_HeaderSection -black" href="./articles.html"
+        <a class="A_Logo" href="/">Ремёсла России</a>
+        <div class="C_HeaderNavSections black">
+          <a class="A_HeaderSection white" href="../crafts.html">Библиотека</a>
+          <a class="A_HeaderSection white" href="../articles.html"
             >Статьи и подборки</a
           >
-          <a class="Q_Icon -size28x28 -Search" href="./search"></a>
+          <a class="A_HeaderSection white" href="../map.html">Карта</a>
+          <a
+            class="Q_Icon HeaderSearch-White size27x27"
+            href="../search.html"
+          ></a>
         </div>
       </div>
     </div>
@@ -67,6 +73,42 @@
       </div>
 
       <section class="C_Content"></section>
+    </div>
+
+    <div class="O_Footer black">
+      <div class="M_FooterNav">
+        <div class="C_FooterNavSections">
+          <a href="../about.html" class="A_FooterSection white">О проекте</a>
+          <a
+            href="https://t.me/addstickers/RussianCrafts"
+            class="A_FooterSection white"
+            >Стикеры в&nbsp;ТГ</a
+          >
+          <a href="../search.html" class="A_FooterSection white"
+            >Поиск по&nbsp;сайту</a
+          >
+        </div>
+        <div class="W_FooterIcons">
+          <div class="C_FooterIconsSocialNetwork">
+            <a
+              class="A_FooterIconSocialNetwork -VK-White"
+              href="https://vk.com/crafts_ru"
+              target="_blank"
+            ></a>
+            <a
+              class="A_FooterIconSocialNetwork -TG-White"
+              href="https://t.me/crafts_ru"
+              target="_blank"
+            ></a>
+            <a
+              class="A_FooterIconSocialNetwork -Dzen-White"
+              href="https://dzen.ru/crafts_ru"
+              target="_blank"
+            ></a>
+          </div>
+          <p class="A_FooterInfo">HSE ADC 2023. Учебный проект</p>
+        </div>
+      </div>
     </div>
   </body>
 </html>

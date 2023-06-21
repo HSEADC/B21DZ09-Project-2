@@ -14,14 +14,14 @@ function createContentCard(contentItemData) {
   contentItemCover.classList.add('A_ContentItemCover')
   contentItemCover.src = contentItemData.image
 
-  const contentItemTags = document.createElement('div')
-  contentItemTags.classList.add('C_ContentItemTags')
+  // const contentItemTags = document.createElement('div')
+  // contentItemTags.classList.add('C_ContentItemTags')
 
   contentItemData.tags.forEach((tag) => {
     const contentItemTag = document.createElement('div')
     contentItemTag.classList.add('A_ContentItemTag')
     contentItemTag.innerText = tag
-    contentItemTags.appendChild(contentItemTag)
+    // contentItemTags.appendChild(contentItemTag)
   })
 
   const contentItemTitle = document.createElement('h2')
@@ -34,7 +34,7 @@ function createContentCard(contentItemData) {
 
   contentItem.href = contentItemLink
   contentItem.appendChild(contentItemCover)
-  contentItem.appendChild(contentItemTags)
+  // contentItem.appendChild(contentItemTags)
   contentItem.appendChild(contentItemTitle)
   contentItem.appendChild(contentItemDescription)
 
