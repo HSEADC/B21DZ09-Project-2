@@ -169,7 +169,7 @@
 
   &.active {
     color: var(--black);
-    background-color: var(--lila);
+    background-color: var(--red);
   }
 }
 
@@ -209,6 +209,15 @@
 
   &:hover {
     border: 4px solid;
+    border-color: var(--black);
+  }
+
+  &.white {
+    border-color: var(--white);
+    &:hover {
+      border: 4px solid;
+      border-color: var(--white);
+    }
   }
 }
 
@@ -661,7 +670,7 @@
 
 .A_SliderImage {
   width: 880px;
-  height: 520px;
+  height: 620px;
   overflow: hidden;
 
   .W_SliderRails {
@@ -769,291 +778,160 @@
   }
 }
 
+.A_ArticleTitle {
+  font-family: 'PP Neue Machina';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 95px;
+  line-height: 97px;
+
+  color: var(--black);
+
+  justify-content: flex-end;
+
+  margin-left: 228px;
+  margin-bottom: 30px;
+
+  z-index: 50;
+  background-repeat: no-repeat;
+
+  &.white {
+    color: var(--white);
+  }
+
+  &.dpi {
+    width: 602px;
+    height: 116px;
+    background-image: url('./images/article/dpi/lead.svg');
+    padding-left: 8px;
+    padding-top: 10px;
+    margin-left: 410px;
+    margin-bottom: 30px;
+  }
+}
+
 //
 //
 //Start- стартовый экран
-.A_MainPageLogo {
+.A_MainImg {
+  &.Matr {
+    width: 343px;
+    height: 408px;
+  }
+  &.MDPI {
+    width: 504px;
+    height: 340px;
+    margin-left: -230px;
+  }
+}
+
+.A_MainTitle {
   font-family: 'PP Neue Machina';
   font-style: normal;
   font-weight: 800;
-  font-size: 110px;
-  line-height: 100px;
-
-  color: var(--black);
+  font-size: 59px;
+  line-height: 60px;
 
   background-repeat: no-repeat;
-
-  width: 552px;
-  height: auto;
-  background-image: url('./images/Start/StartLogo.svg');
-  padding-left: 21px;
-  padding-top: 24px;
-}
-
-.A_MainPageBodyText {
-  font-family: 'PP Neue Montreal';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 30px;
-
-  max-width: 490px;
 
   color: var(--white);
-}
 
-.A_Sticker {
-  position: absolute;
-
-  background-repeat: no-repeat;
-  background-size: contain;
-
-  &.-Doll {
-    left: 12px;
-    top: 10px;
-    width: 237px;
-    height: 482px;
-    transform: rotate(-6deg);
-
-    background-image: url('images/Start/StickerDoll.png');
-  }
-
-  &.-Hohloma2 {
-    left: 290px;
-    top: 82px;
-    width: 315px;
-    height: 273px;
-    transform: rotate(18deg);
-
-    background-image: url('images/Start/StickerHohloma2.png');
-  }
-
-  &.-Hohloma {
-    left: 300px;
-    top: 390px;
-    width: 170px;
-    height: 105px;
-    transform: rotate(10deg);
-
-    background-image: url('images/Start/StickerHohloma.png');
-  }
-
-  &.-Print {
-    left: 558px;
-    top: 348px;
-    width: 200px;
+  &.Matr {
+    width: 471px;
     height: 132px;
-    transform: rotate(-28deg);
-
-    background-image: url('images/Start/StickerPrint.png');
+    background-image: url('./images/main/title_shape1.svg');
+    padding-left: 7px;
+    padding-top: 6px;
   }
 
-  &.-Gzhel {
-    left: 652px;
-    top: 112px;
-    width: 210px;
-    height: 166px;
-    transform: rotate(5deg);
-
-    background-image: url('images/Start/StickerGzhel.png');
-  }
-
-  &.-Matreshka {
-    left: 840px;
-    top: 260px;
-    width: 151px;
-    height: 254px;
-    transform: rotate(10deg);
-
-    background-image: url('images/Start/StickerMatreshka.png');
-  }
-
-  &.-Flower {
-    left: 870px;
-    top: 30px;
-    width: 124px;
-    height: 128px;
-
-    background-image: url('images/Start/StickerFlower.png');
-  }
-
-  &.-Print2 {
-    left: 982px;
-    top: 180px;
-    width: 101px;
-    height: 101px;
-    transform: rotate(-142deg);
-
-    background-image: url('images/Start/StickerPrint2.png');
-  }
-
-  &.-Hohloma3 {
-    left: 1020px;
-    top: 346px;
-    width: 126px;
-    height: 109px;
-    transform: rotate(74deg);
-
-    background-image: url('images/Start/StickerHohloma3.png');
-  }
-
-  &.-Head {
-    left: 1140px;
-    top: 82px;
-    width: 216px;
-    height: 348px;
-    transform: rotate(7deg);
-
-    background-image: url('images/Start/StickerHead.png');
+  &.MDPI {
+    width: 712px;
+    height: 135px;
+    background-image: url('./images/main/title_shape2.svg');
+    padding-left: 6px;
+    padding-top: 9px;
   }
 }
 
-.A_MainPageSectionTitle {
-  font-family: 'PP Neue Machina Plain Regular';
-  font-size: 64px;
-  line-height: 66px;
-  text-align: center;
-
-  color: var(--white);
-
-  max-width: 850px;
-}
-
-.A_MainPageDescription {
-  font-family: 'PP Neue Montreal';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  text-align: center;
-
-  color: var(--grey);
-
-  max-width: 530px;
-}
-
-.A_MainPageTeaserTitle {
+.A_MainTitlePop {
   font-family: 'PP Neue Machina';
   font-style: normal;
   font-weight: 800;
-  font-size: 80px;
-  line-height: 82px;
-
-  color: var(--black);
+  font-size: 42px;
+  line-height: 43px;
 
   background-repeat: no-repeat;
 
-  width: 267px;
-  height: auto;
-  background-image: url('./images/Start/ArticleName.svg');
-  padding-left: 8px;
-  padding-top: 7px;
-}
-
-.A_MainPageButton {
-  font-family: 'PP Neue Montreal';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 43px;
-
   color: var(--white);
 
-  padding: 11px 37px 10px 40px;
-
-  background: var(--black);
-  border-radius: 65px;
+  width: 631px;
+  height: 49px;
+  background-image: url('./images/main/most.svg');
+  padding-left: 4px;
+  padding-top: 4px;
 }
 
-.A_MainPageTeaserButton {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 14px 42px 15px 41px;
-
-  border: 3px solid var(--white);
-  border-radius: 65px;
-
+.A_MainTextBody {
   font-family: 'PP Neue Montreal';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 43px;
-
-  color: var(--white);
-
-  transition: 0.5s;
-
-  &:hover {
-    color: var(--black);
-    background-color: var(--white);
-  }
-}
-
-.A_SelectInput {
-  position: absolute;
-  font-family: 'PP Neue Montreal';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-
-  width: 650px;
-  height: 70px;
-  padding-left: 30px;
-
-  border-radius: 65px;
-  border: none;
-
-  outline: none;
-
-  &::placeholder {
-    font-family: 'PP Neue Montreal';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-  }
-}
-
-.A_SelectOptionListItem {
-  font-family: 'PP Neue Machina';
   font-style: normal;
   font-weight: 400;
-  font-size: 21px;
-  line-height: 22px;
+  font-size: 18px;
+  line-height: 25px;
 
-  color: var(--white);
+  color: var(--black);
 
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-left: 30px;
+  &.w505 {
+    width: 505px;
+  }
+}
 
-  width: 900px;
-  height: 70px;
+.A_MainButton {
+  box-sizing: border-box;
 
-  background: var(--grey);
-  border: 2px solid var(--black);
-  border-radius: 65px;
+  padding: 11px 22px 9px 28px;
 
-  cursor: pointer;
+  border-radius: 25px;
+  background-color: var(--white);
 
-  &:first-child {
-    margin-top: 5px;
+  font-family: 'PP Neue Machina';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 26px;
+
+  text-align: center;
+
+  color: var(--black);
+}
+
+.A_MainTagCategory {
+  box-sizing: border-box;
+
+  padding: 11px 22px 9px 22px;
+
+  border-radius: 19px;
+  background-color: var(--white);
+
+  font-family: 'PP Neue Machina';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 18px;
+
+  text-align: center;
+
+  color: var(--black);
+
+  position: absolute;
+
+  &.Matr {
+    left: 80px;
+    top: -21px;
   }
 
-  &:last-child {
-    margin-bottom: 5px;
-  }
-
-  &:hover {
-    background-color: var(--darkgrey);
-  }
-
-  &.active {
-    color: var(--black);
+  &.MDPI {
+    right: 80px;
+    top: -21px;
   }
 }
 

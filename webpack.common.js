@@ -198,7 +198,6 @@ module.exports = {
       chunks: ['craft_article']
     }),
 
-
     //Craft, вологодская хохлома — страница отдельного ремесла
     new HtmlWebpackPlugin({
       template: './src/crafts/vologodskaya-hohloma.html',
@@ -217,6 +216,18 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/articles/bone-carving.html',
       filename: './articles/bone-carving.html',
+      chunks: ['index']
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/articles/dpi.html',
+      filename: './articles/dpi.html',
+      chunks: ['index']
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/articles/matrioshka.html',
+      filename: './articles/matrioshka.html',
       chunks: ['index']
     }),
 

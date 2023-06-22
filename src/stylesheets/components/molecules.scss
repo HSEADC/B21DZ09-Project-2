@@ -297,58 +297,52 @@
   }
 }
 
-//
-//
-//
-//Start- стартовый экран
-.M_MainPageStartTexts {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 106px;
-}
-
-.M_MainPageStartStickers {
-  width: 1350px;
-  height: 528px;
-
-  position: relative;
-}
-
-.M_MainPageSectionTexts {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-}
-
-.M_SelectField {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  position: relative;
-
-  width: 940px;
-  height: 74px;
-
-  background: var(--white);
-  border-radius: 65px;
-
-  .W_SelectButtons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-    top: 5px;
-    right: 5px;
-
-    position: absolute;
-  }
-}
-
-.M_MainPageTeaserTexts {
+.M_ContentFirst {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 30px;
+
+  .C_CraftLeadDescriptionTags {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+//
+//
+//
+//Start- стартовый экран
+.M_MainContentM {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+
+  margin-top: 64px;
+  margin-bottom: 50px;
+}
+
+.M_MainContentD {
+  display: flex;
+  align-items: flex-start;
+  // gap: -232px;
+
+  margin-top: 96px;
+  margin-bottom: 62px;
+}
+
+.M_MainRead {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 36px;
+
+  .W_MainTexts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
 }

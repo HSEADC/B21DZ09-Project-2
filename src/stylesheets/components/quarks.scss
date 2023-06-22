@@ -65,11 +65,11 @@
     }
   }
 
-  &.-ArrowLeft {
+  &.ArrowLeft {
     background-image: url('images/Icons/Q_IconArrowLeft.svg');
   }
 
-  &.-ArrowRight {
+  &.ArrowRight {
     background-image: url('images/Icons/Q_IconArrowRight.svg');
   }
 
@@ -94,6 +94,13 @@
   width: 880px;
   height: 520px;
   object-fit: cover;
+}
+
+.Q_CraftBodyImageGal {
+  object-fit: fill;
+  background-size: cover;
+  width: 880px;
+  height: 620px;
 }
 
 .Q_CraftBodyImage {
@@ -142,7 +149,7 @@
   }
 
   &.gal {
-    width: 870px;
+    width: 880px;
     height: auto;
 
     left: 0;
@@ -556,5 +563,20 @@
     transform: rotate(7deg);
 
     background-image: url('./images/craft/palehsk-min/lead.png');
+  }
+}
+
+.Q_ArticleLeadImage {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &.dpi {
+    margin-left: 740px;
+    margin-bottom: 10px;
+    width: 613px;
+    height: 306px;
+
+    background-image: url('./images/article/dpi/lead.png');
   }
 }
