@@ -3843,7 +3843,6 @@ airtable_umd_default().configure({
   apiKey: token
 });
 var base = airtable_umd_default().base('apphiZTHlgZHxwtMA');
-
 function getPostTeasers() {
   return new Promise(function (resolve, reject) {
     var content = [];
@@ -3866,24 +3865,16 @@ function getPostTeasers() {
   });
 }
 
-
 ;// CONCATENATED MODULE: ./src/javascript/search.js
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
 function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-
 function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
 
 
 var content;
-
 function createContentCard(contentItemData) {
   var contentItem = document.createElement('a');
   contentItem.classList.add('O_ContentItem');
@@ -3891,14 +3882,17 @@ function createContentCard(contentItemData) {
   var contentItemCover = document.createElement('img');
   contentItemCover.classList.add('A_ContentItemCover');
   contentItemCover.src = contentItemData.image;
-  var contentItemTags = document.createElement('div');
-  contentItemTags.classList.add('C_ContentItemTags');
+
+  // const contentItemTags = document.createElement('div')
+  // contentItemTags.classList.add('C_ContentItemTags')
+
   contentItemData.tags.forEach(function (tag) {
     var contentItemTag = document.createElement('div');
     contentItemTag.classList.add('A_ContentItemTag');
     contentItemTag.innerText = tag;
-    contentItemTags.appendChild(contentItemTag);
+    // contentItemTags.appendChild(contentItemTag)
   });
+
   var contentItemTitle = document.createElement('h2');
   contentItemTitle.classList.add('A_ContentItemTitle');
   contentItemTitle.innerText = contentItemData.title;
@@ -3907,12 +3901,11 @@ function createContentCard(contentItemData) {
   contentItemDescription.innerText = contentItemData.description;
   contentItem.href = contentItemLink;
   contentItem.appendChild(contentItemCover);
-  contentItem.appendChild(contentItemTags);
+  // contentItem.appendChild(contentItemTags)
   contentItem.appendChild(contentItemTitle);
   contentItem.appendChild(contentItemDescription);
   return contentItem;
 }
-
 function renderCardsByIds(container, ids) {
   ids = _toConsumableArray(new Set(ids));
   ids.forEach(function (id) {
@@ -3923,7 +3916,6 @@ function renderCardsByIds(container, ids) {
     });
   });
 }
-
 function rerenderSearchedContent(requestText) {
   var contentItemsContainer = document.querySelector('.C_Content');
   contentItemsContainer.innerHTML = '';
@@ -3932,12 +3924,11 @@ function rerenderSearchedContent(requestText) {
     var nbspRegex = /[\u202F\u00A0]/gm;
     var punctuationRegex = /[.,\/#!$%\^&\*;:{}=\-_`~()]/gm;
     var title = contentItem.title,
-        description = contentItem.description;
+      description = contentItem.description;
     title = title.replaceAll(nbspRegex, ' ');
     title = title.replaceAll(punctuationRegex, '');
     description = description.replaceAll(nbspRegex, ' ');
     description = description.replaceAll(punctuationRegex, '');
-
     if (requestText.length >= 3) {
       if (title.includes(requestText) || description.includes(requestText)) {
         contentItemIds.push(contentItem.id);
@@ -3946,38 +3937,31 @@ function rerenderSearchedContent(requestText) {
       contentItemIds.push(contentItem.id);
     }
   });
-
   if (contentItemIds.length > 0) {
     renderCardsByIds(contentItemsContainer, contentItemIds);
   } else {
     functionNothingFound();
   }
 }
-
 function functionNothingFound() {
   var contentItemsContainer = document.querySelector('.C_Content');
   contentItemsContainer.innerHTML = 'Ничего не найдено';
 }
-
 function initSearch() {
   var requestText = getSearchRequest();
   var O_Search = document.querySelector('.O_Search');
   var A_SearchInput = O_Search.querySelector('.A_SearchInput');
   var A_SearchButton = O_Search.querySelector('.A_SearchButton');
-
   if (requestText != undefined) {
     A_SearchInput.value = requestText;
-
     if (content) {
       rerenderSearchedContent(requestText);
     }
   } else {
     A_SearchInput.value = '';
   }
-
   A_SearchInput.addEventListener('input', function (e) {
     requestText = e.target.value;
-
     if (requestText.length >= 3) {
       A_SearchButton.classList.remove('-disabled');
     } else {
@@ -3986,7 +3970,6 @@ function initSearch() {
   });
   A_SearchInput.addEventListener('keydown', function (e) {
     requestText = e.target.value;
-
     if (e.key === 'Enter') {
       setSearchRequest(requestText);
     }
@@ -3999,29 +3982,25 @@ function initSearch() {
     }
   });
 }
-
 function getSearchRequest() {
   var url = new URL(window.location.href);
   var searchParams = new URLSearchParams(url.search);
-
   if (searchParams.has('request')) {
     return searchParams.get('request');
   }
 }
-
 function setSearchRequest(requestText) {
   // const url = new URL(window.location.href)
   // const searchParams = new URLSearchParams(url.search)
   //
   // searchParams.set('request', requestText)
+
   var url = getPathFromUrl(window.location.href);
   window.location.href = url + '?request=' + requestText;
 }
-
 function getPathFromUrl(url) {
   return url.split('?')[0];
 }
-
 document.addEventListener('DOMContentLoaded', function () {
   getPostTeasers().then(function (data) {
     content = data;

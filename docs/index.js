@@ -3,7 +3,10 @@
 var __webpack_exports__ = {};
 
 
- // console.log('Test')
+
+
+// console.log('Test')
+
 //
 //
 //форма на стартовом экране
@@ -77,7 +80,6 @@ var selectOptions = [{
   text: 'Тверская вышивка',
   link: './crafts/tverskaya-lace.html'
 }];
-
 function initSelect() {
   var selectElement = document.querySelector('.O_Select');
   var optionListElement = document.querySelector('.C_SelectOptionList');
@@ -85,7 +87,7 @@ function initSelect() {
   var dropdownButton = document.querySelector('.Q_Icon', '.-Filter');
   selectOptions.forEach(function (option) {
     var text = option.text,
-        link = option.link;
+      link = option.link;
     var listItem = document.createElement('a');
     listItem.classList.add('A_SelectOptionListItem');
     listItem.innerText = text;
@@ -105,13 +107,11 @@ function initSelect() {
   });
   selectInput.addEventListener('input', function (e) {
     var value = e.target.value;
-
     if (value.length >= 2) {
       rerenderSearchContent(value);
     }
   });
 }
-
 document.addEventListener('DOMContentLoaded', function () {
   initSelect();
 });
