@@ -3,9 +3,18 @@
   <head>
     <link rel="icon" href="favicon.ico" />
     <meta charset="utf-8" />
-
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,user-scalable=no"
+    />
     <!-- Primary Meta Tags -->
     <title>Карта • Ремёсла России</title>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+
     <meta name="title" content="Карта • Ремёсла России" />
     <meta
       name="description"
@@ -42,85 +51,60 @@
   </head>
 
   <body>
-    <div class="O_Header">
+    <div class="O_Header black">
       <div class="M_HeaderNav">
         <a class="A_Logo" href="/">Ремёсла России</a>
-        <div class="C_HeaderNavSections">
-          <a class="A_HeaderSection" href="./crafts.html">Библиотека</a>
-          <a class="A_HeaderSection" href="./map.html">Карта</a>
-          <a class="A_HeaderSection" href="./articles.html"
+        <div class="C_HeaderNavSections black">
+          <a class="A_HeaderSection white" href="../crafts.html">Библиотека</a>
+          <a class="A_HeaderSection white" href="../articles.html"
             >Статьи и подборки</a
           >
+          <a class="A_HeaderSection white" href="../map.html">Карта</a>
+          <a
+            class="Q_Icon HeaderSearch-White size27x27"
+            href="../search.html"
+          ></a>
         </div>
       </div>
     </div>
 
-    <div class="S_MapPage">
-      <!-- <h1 class="A_SectionTitle -Map">Карта ремёсел</h1> -->
+    <div class="O_Map" id="map"></div>
 
-      <div class="Q_Icon -MapPagePoint -size48x48"></div>
-
-      <section class="S_Modal">
-        <div class="Q_BackgroundBlur"></div>
-        <div class="O_MapModal">
-          <div class="Q_Icon -Cross -MapModal -size48x48"></div>
-
-          <div class="M_MapModalContent">
-            <div class="W_MapModalTexts">
-              <div class="M_CraftBodyTexts">
-                <h3 class="A_CraftBodySubtitle">
-                  Уэленская резьба по&nbsp;кости
-                </h3>
-                <p class="A_CraftBodyText -w480">
-                  Уэленская резьба по&nbsp;кости&nbsp;&mdash; традиционный
-                  промысел чукчей и&nbsp;эскимосов, возникший более трех тысяч
-                  лет назад. Жители Чукотки не&nbsp;только прекрасные оленеводы
-                  и&nbsp;охотники, но&nbsp;и&nbsp;талантливые мастера, которые
-                  из&nbsp;моржовых клыков, используя нож и&nbsp;бормашину,
-                  вырезают различные фигуры.
-                </p>
-              </div>
-              <a
-                class="A_MapModalToCraft"
-                href="./crafts/uelen-bone-carving.html"
-                >на&nbsp;страницу ремесла &rarr;</a
-              >
-            </div>
-            <img
-              class="A_StickerMap -UelenBear"
-              src="./images/map/UelenBear.png"
-              alt=""
-            />
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <!-- <div class="O_Footer">
+    <!-- <div class="O_Footer black">
       <div class="M_FooterNav">
-        <div class="A_FooterSection">
-          <a href="#">О проекте</a>
+        <div class="C_FooterNavSections">
+          <a href="../about.html" class="A_FooterSection white">О проекте</a>
+          <a
+            href="https://t.me/addstickers/RussianCrafts"
+            class="A_FooterSection white"
+            >Стикеры в&nbsp;ТГ</a
+          >
+          <a href="../search.html" class="A_FooterSection white"
+            >Поиск по&nbsp;сайту</a
+          >
         </div>
-        <div class="C_FooterIconsSocialNetwork">
-          <a
-            class="A_FooterIconSocialNetwork -VK"
-            href="https://vk.com/crafts_ru"
-            target="_blank"
-          ></a>
-          <a
-            class="A_FooterIconSocialNetwork -TG"
-            href="https://t.me/crafts_ru"
-            target="_blank"
-          ></a>
-          <a
-            class="A_FooterIconSocialNetwork -Dzen"
-            href="https://dzen.ru/crafts_ru"
-            target="_blank"
-          ></a>
+        <div class="W_FooterIcons">
+          <div class="C_FooterIconsSocialNetwork">
+            <a
+              class="A_FooterIconSocialNetwork -VK-White"
+              href="https://vk.com/crafts_ru"
+              target="_blank"
+            ></a>
+            <a
+              class="A_FooterIconSocialNetwork -TG-White"
+              href="https://t.me/crafts_ru"
+              target="_blank"
+            ></a>
+            <a
+              class="A_FooterIconSocialNetwork -Dzen-White"
+              href="https://dzen.ru/crafts_ru"
+              target="_blank"
+            ></a>
+          </div>
+          <p class="A_FooterInfo">HSE ADC 2023. Учебный проект</p>
         </div>
       </div>
     </div> -->
-    <!-- тут будет карта с мэпбокс
-    <a href="./">На главную</a> -->
+    <!-- TEST -->
   </body>
 </html>

@@ -2,7 +2,7 @@
   cursor: pointer;
   background-repeat: no-repeat;
 
-  &.-size48x48 {
+  &.size48x48 {
     width: 48px;
     height: 48px;
   }
@@ -10,6 +10,11 @@
   &.-size28x28 {
     width: 28px;
     height: 28px;
+  }
+
+  &.size27x27 {
+    width: 27px;
+    height: 27px;
   }
 
   &.-size6x6 {
@@ -21,12 +26,20 @@
     background-image: url('images/Icons/Q_IconSearch.svg');
   }
 
+  &.HeaderSearch {
+    background-image: url('images/Icons/Q_IconHeaderSearch.svg');
+  }
+
+  &.HeaderSearch-White {
+    background-image: url('images/Icons/Q_IconHeaderSearch-White.svg');
+  }
+
   &.-Filter {
     background-image: url('images/Icons/Q_IconFilter.svg');
   }
 
-  &.-MapPoint {
-    background-image: url('images/Icons/Q_IconMap.svg');
+  &.MapPointBlack {
+    background-image: url('images/Icons/Q_IconMapBlack.svg');
   }
 
   &.-Cross {
@@ -52,11 +65,11 @@
     }
   }
 
-  &.-ArrowLeft {
+  &.ArrowLeft {
     background-image: url('images/Icons/Q_IconArrowLeft.svg');
   }
 
-  &.-ArrowRight {
+  &.ArrowRight {
     background-image: url('images/Icons/Q_IconArrowRight.svg');
   }
 
@@ -68,13 +81,6 @@
   &.-Inactive {
     opacity: 0.5;
   }
-}
-
-.Q_CraftLeadImage {
-  width: 1180px;
-  height: auto;
-
-  margin-bottom: -90px;
 }
 
 .Q_CraftAboutImage {
@@ -90,49 +96,180 @@
   object-fit: cover;
 }
 
+.Q_CraftBodyImageGal {
+  object-fit: fill;
+  background-size: cover;
+  width: 880px;
+  height: 620px;
+}
+
 .Q_CraftBodyImage {
   object-fit: cover;
 
-  &.-Gallery1 {
-    width: 280px;
-    height: 220px;
-  }
-
-  &.-Gallery2 {
-    width: 380px;
-    height: 220px;
-  }
-
-  &.-w480 {
-    width: 480px;
-    height: auto;
-  }
-
-  &.-w580 {
+  &.w580 {
     width: 580px;
     height: auto;
   }
 
-  &.-w680 {
-    width: 680px;
+  &.w654 {
+    width: 654px;
     height: auto;
   }
 
-  &.-w1180 {
-    width: 1180px;
+  &.w830 {
+    width: 830px;
     height: auto;
   }
 
-  &.-Left100 {
-    margin: 0 0 0 100px;
+  &.pecul1 {
+    position: absolute;
+    width: 366px;
+    height: auto;
+
+    left: 0;
+    top: 0;
   }
 
-  &.-Left200 {
-    margin: 0 0 0 200px;
+  &.pecul2 {
+    position: absolute;
+    width: 366px;
+    height: auto;
+
+    left: 416px;
+    top: 57px;
   }
 
-  &.-Left600 {
-    margin: 0 0 0 600px;
+  &.pecul3 {
+    position: absolute;
+    width: 292px;
+    height: auto;
+
+    left: 169px;
+    top: 307px;
+  }
+
+  &.gal {
+    width: 880px;
+    height: auto;
+
+    left: 0;
+    top: 0;
+  }
+}
+
+.Q_CraftHistoryImage {
+  object-fit: cover;
+  position: absolute;
+
+  &.Uelen-bone-carving {
+    width: 692px;
+    height: auto;
+
+    top: 60px;
+    right: 770px;
+  }
+
+  &.Dim-toy {
+    width: 434px;
+    height: auto;
+
+    top: -42px;
+    right: 861px;
+  }
+
+  &.Gorodets-paint {
+    width: 965px;
+    height: auto;
+
+    top: 78px;
+    right: 548px;
+  }
+
+  &.Rakul-paint {
+    width: 899px;
+    height: auto;
+
+    top: 60px;
+    right: 638px;
+  }
+
+  &.Skopinsk-cer {
+    width: 1063px;
+    height: auto;
+
+    top: 60px;
+    right: 560px;
+  }
+
+  &.Tul-stal {
+    width: 486px;
+    height: auto;
+
+    top: 115px;
+    right: 810px;
+  }
+
+  &.Tver-lace {
+    width: 602px;
+    height: auto;
+
+    top: 90px;
+    right: 780px;
+  }
+
+  &.Vol-lace {
+    width: 1118px;
+    height: auto;
+
+    top: 53px;
+    right: 606px;
+  }
+
+  &.Veliko-rospis {
+    width: 590px;
+    height: auto;
+
+    top: -189px;
+    right: 797px;
+  }
+
+  &.Vologod-hohloma {
+    width: 692px;
+    height: auto;
+
+    top: -188px;
+    right: 770px;
+  }
+
+  &.Paleh-min {
+    width: 577px;
+    height: auto;
+
+    top: 95px;
+    right: 801px;
+  }
+
+  &.pecul2 {
+    position: absolute;
+    width: 366px;
+    height: auto;
+
+    left: 416px;
+    top: 57px;
+  }
+
+  &.pecul3 {
+    position: absolute;
+    width: 292px;
+    height: auto;
+
+    left: 169px;
+    top: 307px;
+  }
+
+  &.gal {
+    width: 870px;
+    height: auto;
   }
 }
 
@@ -146,4 +283,300 @@
 .Q_CraftBodyMapImage {
   width: 380px;
   height: auto;
+}
+
+.Q_MapMarker {
+  background-size: cover;
+  cursor: pointer;
+
+  &.uelen {
+    width: 252px;
+    height: 74px;
+    transform: rotate(-2deg);
+
+    background-image: url('./images/map/uelen.png');
+  }
+
+  &.abash {
+    width: 116px;
+    height: 121px;
+
+    background-image: url('./images/map/abash.png');
+  }
+
+  &.vologlace {
+    width: 172px;
+    height: 103px;
+    transform: rotate(-5deg);
+
+    background-image: url('./images/map/vologod-lace.png');
+  }
+
+  &.gorod {
+    width: 109px;
+    height: 188px;
+    transform: rotate(3deg);
+
+    background-image: url('./images/map/gorod.png');
+  }
+
+  &.rakul {
+    width: 176px;
+    height: 100px;
+
+    background-image: url('./images/map/rakul.png');
+  }
+
+  &.skop {
+    width: 96px;
+    height: 154px;
+
+    background-image: url('./images/map/skopin.png');
+  }
+
+  &.tver {
+    width: 186px;
+    height: 75px;
+    transform: rotate(-5deg);
+
+    background-image: url('./images/map/tver.png');
+  }
+
+  &.tyla {
+    width: 163px;
+    height: 116px;
+
+    background-image: url('./images/map/tyla.png');
+  }
+
+  &.dpi {
+    width: 80px;
+    height: 80px;
+
+    background-image: url('./images/map/dpi.png');
+  }
+
+  &.veliko {
+    width: 126px;
+    height: 126px;
+
+    background-image: url('./images/map/veliko.png');
+  }
+
+  &.vologhoh {
+    width: 192px;
+    height: 121px;
+    transform: rotate(2deg);
+
+    background-image: url('./images/map/vologod-hoh.png');
+  }
+
+  &.dim {
+    width: 100px;
+    height: 143px;
+
+    background-image: url('./images/map/dimk.png');
+  }
+
+  &.paleh {
+    width: 145px;
+    height: 107px;
+    transform: rotate(10deg);
+
+    background-image: url('./images/map/palek.png');
+  }
+}
+
+//
+//
+
+.Q_MainLeadImage {
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  position: absolute;
+
+  z-index: 10;
+
+  &.sticker-doll {
+    left: 10px;
+    top: 200px;
+    width: 258px;
+    height: 523px;
+    transform: rotate(-9deg);
+
+    background-image: url('./images/main/sticker1.png');
+  }
+
+  &.sticker-line {
+    left: 125px;
+    top: 246px;
+    width: 567px;
+    height: 103px;
+    transform: rotate(-17deg);
+
+    background-image: url('./images/main/sticker2.png');
+  }
+
+  &.sticker-flower {
+    left: 446px;
+    top: 310px;
+    width: 136px;
+    height: 136px;
+    transform: rotate(-9deg);
+
+    background-image: url('./images/main/sticker3.png');
+  }
+
+  &.sticker-lace {
+    left: 345px;
+    top: 460px;
+    width: 182px;
+    height: 305px;
+    transform: rotate(119deg);
+
+    background-image: url('./images/main/sticker4.png');
+  }
+
+  &.sticker-head {
+    left: 578px;
+    top: 322px;
+    width: 240px;
+    height: 385px;
+    transform: rotate(7deg);
+
+    background-image: url('./images/main/sticker5.png');
+  }
+}
+
+.Q_CraftLeadImage {
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  z-index: 10;
+
+  &.Uelen-bone-carving {
+    margin-left: -10px;
+    margin-top: 265px;
+    width: 1468px;
+    height: 338px;
+    transform: rotate(-13deg);
+
+    background-image: url('./images/craft/uelen-bone-carving/lead.png');
+  }
+
+  &.Abash-toy {
+    margin-left: -10px;
+    margin-top: 80px;
+    width: 401px;
+    height: 704px;
+
+    background-image: url('./images/craft/abashevskaya-toy/lead.png');
+  }
+
+  &.Dim-toy {
+    // margin-left: -10px;
+    margin-top: 95px;
+    width: 325px;
+    height: 681px;
+
+    background-image: url('./images/craft/dimskaya-toy/lead.png');
+  }
+  &.Gorodets-paint {
+    // margin-left: -10px;
+    margin-top: 60px;
+    width: 430px;
+    height: 793px;
+    transform: rotate(8deg);
+
+    background-image: url('./images/craft/gorodets-painting/lead.png');
+  }
+  &.Rakul-paint {
+    // margin-left: -10px;
+    margin-top: 260px;
+    width: 824px;
+    height: 418px;
+    transform: rotate(5deg);
+
+    background-image: url('./images/craft/rakul-painting/lead.png');
+  }
+
+  &.Skopinsk-cer {
+    // margin-left: -10px;
+    margin-top: 180px;
+    width: 840px;
+    height: 440px;
+
+    background-image: url('./images/craft/skopinsk-ceramic/lead.png');
+  }
+  &.Tul-stal {
+    margin-left: -10px;
+    margin-top: 227px;
+    width: 750px;
+    height: 503px;
+
+    background-image: url('./images/craft/tulskaya-stal/lead.png');
+  }
+  &.Tver-lace {
+    // margin-left: -10px;
+    margin-top: 280px;
+    width: 804px;
+    height: 347px;
+    transform: rotate(-12deg);
+
+    background-image: url('./images/craft/tverskaya-lace/lead.png');
+  }
+  &.Vol-lace {
+    margin-left: -10px;
+    margin-top: 220px;
+    width: 800px;
+    height: 480px;
+
+    transform: rotate(18deg);
+
+    background-image: url('./images/craft/vologodskoe-lace/lead.png');
+  }
+  &.Veliko-rospis {
+    // margin-left: -10px;
+    margin-top: 180px;
+    width: 570px;
+    height: 570px;
+
+    background-image: url('./images/craft/veliko/lead.png');
+  }
+
+  &.Volog-hohloma {
+    margin-left: -10px;
+    margin-top: 240px;
+    width: 756px;
+    height: 437px;
+    transform: rotate(7deg);
+
+    background-image: url('./images/craft/vologodskaya-hohloma/lead.png');
+  }
+
+  &.Paleh-min {
+    // margin-left: -10px;
+    margin-top: 250px;
+    width: 579px;
+    height: 420px;
+    transform: rotate(7deg);
+
+    background-image: url('./images/craft/palehsk-min/lead.png');
+  }
+}
+
+.Q_ArticleLeadImage {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &.dpi {
+    margin-left: 740px;
+    margin-bottom: 10px;
+    width: 613px;
+    height: 306px;
+
+    background-image: url('./images/article/dpi/lead.png');
+  }
 }

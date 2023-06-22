@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
 
-  width: 1460px;
+  width: 100%;
 
   &.-StartScreen {
     justify-content: flex-end;
@@ -15,7 +15,7 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-start;
-    gap: 80px;
+    gap: 70px;
   }
 }
 
@@ -25,14 +25,30 @@
   justify-content: space-between;
   align-items: center;
 
-  width: 1254px;
+  width: 100%;
+
+  .C_FooterNavSections {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .W_FooterIcons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    height: 100%;
+  }
 
   .C_FooterIconsSocialNetwork {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-start;
-    gap: 18px;
+    gap: 40px;
   }
 }
 
@@ -66,6 +82,13 @@
   flex-direction: column;
   align-items: center;
   gap: 14px;
+
+  .W_CraftsCardTexts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+  }
 }
 
 //
@@ -104,26 +127,65 @@
   }
 }
 
+//
+//
+
+.M_CraftAboutTexts {
+  //new
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .W_CraftTitleGeo {
+    gap: 0;
+  }
+}
+
+.M_CraftBodyTexts {
+  //new
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.M_ImageWithDescription {
+  //new
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  &.v2 {
+    margin-left: 756px;
+  }
+
+  &.v3 {
+    margin-left: 175px;
+  }
+
+  .W_ImageDescription {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+
+.M_CraftBodyImages {
+  position: relative;
+  width: 782px;
+  height: 586px;
+}
+
+//
+//
+
 .M_CraftAbout {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 20px;
-}
-
-.M_CraftBodyTexts {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
-
-  &.-Left100 {
-    margin-left: 100px;
-  }
-
-  &.-Left200 {
-    margin-left: 200px;
-  }
 }
 
 .M_CraftBodyMap {
@@ -188,7 +250,6 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  padding: 0px 12px 8px;
 
   width: 280px;
   height: 160px;
@@ -236,58 +297,52 @@
   }
 }
 
-//
-//
-//
-//Start- стартовый экран
-.M_MainPageStartTexts {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 106px;
-}
-
-.M_MainPageStartStickers {
-  width: 1350px;
-  height: 528px;
-
-  position: relative;
-}
-
-.M_MainPageSectionTexts {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-}
-
-.M_SelectField {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  position: relative;
-
-  width: 940px;
-  height: 74px;
-
-  background: var(--white);
-  border-radius: 65px;
-
-  .W_SelectButtons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-    top: 5px;
-    right: 5px;
-
-    position: absolute;
-  }
-}
-
-.M_MainPageTeaserTexts {
+.M_ContentFirst {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 30px;
+
+  .C_CraftLeadDescriptionTags {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+//
+//
+//
+//Start- стартовый экран
+.M_MainContentM {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+
+  margin-top: 64px;
+  margin-bottom: 50px;
+}
+
+.M_MainContentD {
+  display: flex;
+  align-items: flex-start;
+  // gap: -232px;
+
+  margin-top: 96px;
+  margin-bottom: 62px;
+}
+
+.M_MainRead {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 36px;
+
+  .W_MainTexts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
 }
